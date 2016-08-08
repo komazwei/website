@@ -7,8 +7,7 @@ layout: Post
 
 In the world of instant information it is difficult to keep up to date with information that's relevant to our business.
 
-![Business Updates](/images/blog/business-updates.png)
-READMORE
+![Business Updates](/assets/posts/business-updates.png)
 
 Keeping track of all changes on contracts and updates to business processes can be complex task. Previously you would have to navigate through various forms and reports to get insight into changes that are important to you.
 

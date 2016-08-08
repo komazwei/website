@@ -1,7 +1,6 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
-import Hero from "../../Hero"
 import Page from "../Page"
 import PagesList from "../../PagesList"
 

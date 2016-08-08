@@ -11,8 +11,7 @@ blog: blog
 
 Understanding the location of customers is critical in agriculture. We've launched tools that make it easy to visualise your customer base.
 
-![Customer WallMap](/images/blog/customer-wallmap.jpg)
-READMORE
+![Customer WallMap](/assets/posts/customer-wallmap.jpg)
 
 Many companies talk about their customer insight but rarely venture into doing something about gaining it. To draw up to date customer information from various nooks and crannies throughout your organisation is simply not as simple as it sounds.
 
