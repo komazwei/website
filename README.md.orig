@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Phenomic](https://github.com/MoOx/phenomic) boilerplate
 
 ## Install dependencies
@@ -17,5 +18,7 @@ $ npm start
 ```console
 $ npm run build
 ```
+=======
 # website
 Agrista's new universal website built using Phenomic
+>>>>>>> 58f78a0303b7dea8ac0f382c192108610a4c22f3
