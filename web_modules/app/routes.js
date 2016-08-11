@@ -8,8 +8,12 @@ import Page from "../layouts/Page"
 import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
-import Post from "../layouts/Post"
 import Blog from "../layouts/Blog"
+import Archive from "../layouts/Archive"
+import Post from "../layouts/Post"
+import Docs from "../layouts/Docs"
+import GuideIndex from "../layouts/GuideIndex"
+import Guide from "../layouts/Guide"
 
 class PageContainer extends Component {
   render() {
@@ -23,7 +27,11 @@ class PageContainer extends Component {
           PageLoading,
           Homepage,
           Blog,
+          Archive,
           Post,
+          Docs,
+          GuideIndex,
+          Guide,
         } }
       />
     )
