@@ -2,7 +2,7 @@
 title: Getting started with farm maps
 app: farm-map
 layout: Guide
-index: 1
+index: 5
 ---
 
 Fields are used in various places:

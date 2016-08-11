@@ -1,5 +1,5 @@
 ---
-title: Asset registration - building a farm map
+title: Asset registration - mapping farms
 date: 2013-08-09
 layout: Post
 published: true
