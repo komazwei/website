@@ -1,8 +1,9 @@
-/* @flow */
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import Page from "../Page"
-import PagesList from "../../PagesList"
+import Hero from "../../components/Hero"
+import Features from "../../components/Features"
+import PagesList from "../../components/PagesList"
 
 const numberOfLatestPosts = 6
 
@@ -21,6 +22,8 @@ export default class Homepage extends Component {
 
     return (
       <Page { ...this.props }>
+        <Hero />
+        <Features />
         <h2>{ "Latest Posts" }</h2>
         <PagesList pages={ latestPosts } />
       </Page>

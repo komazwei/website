@@ -1,13 +1,16 @@
 import React, { Component } from "react"
 import { Route } from "react-router"
 
-import LayoutContainer from "../LayoutContainer"
+import LayoutContainer from "../layouts/LayoutContainer"
 import PhenomicPageContainer from "phenomic/lib/PageContainer"
+import "../styles/global.styles"
 
 import Page from "../layouts/Page"
 import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
+import Services from "../layouts/Services"
+import Partners from "../layouts/Partners"
 import Blog from "../layouts/Blog"
 import Archive from "../layouts/Archive"
 import Post from "../layouts/Post"
@@ -26,6 +29,8 @@ class PageContainer extends Component {
           PageError,
           PageLoading,
           Homepage,
+          Services,
+          Partners,
           Blog,
           Archive,
           Post,

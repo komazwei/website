@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 
-import Header from "../Header"
-import Footer from "../Footer"
+import NavHeader from "../../components/Header"
+import Footer from "../../components/Footer"
 
-import "./index.global.css"
-import styles from "./index.css"
+// import "./index.global.css"
+// import styles from "./index.css"
 
 export default class Layout extends Component {
 
@@ -23,7 +23,7 @@ export default class Layout extends Component {
     } = this.context.metadata
 
     return (
-      <div className={ styles.layout }>
+      <div>
         <Helmet
           meta={ [
             {
@@ -46,8 +46,8 @@ export default class Layout extends Component {
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
 
-        <Header />
-        <div className={ styles.content }>
+        <NavHeader />
+        <div>
           { this.props.children }
         </div>
         <Footer />

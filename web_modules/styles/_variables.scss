@@ -195,7 +195,7 @@ $layout-drawer-navigation-link-active-background: unquote("rgb(#{$palette-grey-3
 $layout-drawer-navigation-link-active-color: unquote("rgb(#{$color-light-contrast})") !default;
 
 // Header
-$layout-header-bg-color: #fff !default;
+$layout-header-bg-color: unquote("rgb(#{$color-primary})") !default;
 $layout-header-text-color: unquote("rgb(#{$color-primary-contrast})") !default;
 $layout-header-nav-hover-color: unquote("rgba(#{$palette-grey-700}, 0.6)") !default;
 $layout-header-tab-text-color: unquote("rgba(#{$color-primary-contrast}, 0.6)") !default;

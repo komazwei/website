@@ -7,7 +7,7 @@ const PagesList = ({ pages }) => {
     <div>
       {
         pages.length
-        ? (
+          ? (
           <ul>
             {
               pages.map((page) => (
@@ -16,7 +16,7 @@ const PagesList = ({ pages }) => {
             }
           </ul>
         )
-        : "No posts yet."
+          : "No posts yet."
       }
     </div>
   )

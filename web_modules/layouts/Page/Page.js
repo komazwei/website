@@ -1,8 +1,9 @@
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 import invariant from "invariant"
+import { BodyContainer, joinUri } from "phenomic"
 
-class FullWidthPage extends Component {
+class Page extends Component {
   render() {
     const { props, context } = this
 
@@ -17,7 +18,6 @@ class FullWidthPage extends Component {
       body,
       header,
       footer,
-      hideTitle,
     } = props
 
     invariant(
@@ -30,7 +30,10 @@ class FullWidthPage extends Component {
     const meta = [
       { property: "og:type", content: "article" },
       { property: "og:title", content: metaTitle },
-      { property: "og:url", content: __url },
+      {
+        property: "og:url",
+        content: joinUri(process.env.PHENOMIC_USER_URL, __url),
+      },
       { property: "og:description", content: head.description },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: metaTitle },
@@ -45,19 +48,9 @@ class FullWidthPage extends Component {
           title={ metaTitle }
           meta={ meta }
         />
-
-        {
-          !hideTitle && head.title &&
-          <h1>{ head.title }</h1>
-        }
-
+        { head.title }
         { header }
-        {
-          body &&
-          <div
-            dangerouslySetInnerHTML={ { __html: body } }
-          />
-        }
+        <BodyContainer>{ body }</BodyContainer>
         { props.children }
         { footer }
       </div>
@@ -65,23 +58,18 @@ class FullWidthPage extends Component {
   }
 }
 
-FullWidthPage.propTypes = {
+Page.propTypes = {
   children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
   __filename: PropTypes.string.isRequired,
   __url: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
-  hideTitle: PropTypes.bool,
   body: PropTypes.string.isRequired,
   header: PropTypes.element,
   footer: PropTypes.element,
 }
 
-FullWidthPage.defaultProps = {
-  hideTitle: false,
-}
-
-FullWidthPage.contextTypes = {
+Page.contextTypes = {
   metadata: PropTypes.object.isRequired,
 }
 
-export default FullWidthPage
+export default Page
