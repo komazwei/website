@@ -5,7 +5,6 @@ import Page from "../Page"
 import PagesList from "../../components/PagesList"
 
 export default class GuideIndex extends Component {
-
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
     __filename: PropTypes.string/* .isRequired */,
@@ -32,7 +31,6 @@ export default class GuideIndex extends Component {
   }
 
   render() {
-    console.log(this)
     return (
       <Page { ...this.props}>
         <h2>{ "Guides for: " } { this.props.head.app }</h2>

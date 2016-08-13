@@ -1,5 +1,7 @@
 ---
-title: "Valuation Report"
+title: Valuation Report
+layout: Guide
+app: farm-valuation
 ---
 
 Compiling a farm valuation report requires the completion of a few tasks. Each task can be edited to capture or updated the required information. Once a task is finished it can be marked as **Complete** and will be removed from your task list.

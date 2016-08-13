@@ -1,5 +1,7 @@
 ---
-title: "Receiving Valuation Requests"
+title: Receiving Valuation Requests
+layout: Guide
+index: 10
 ---
 
 ## Receive valuation request

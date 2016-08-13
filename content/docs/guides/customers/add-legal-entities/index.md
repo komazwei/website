@@ -1,3 +1,5 @@
 ---
-title: "Adding legal entities"
+title: Adding legal entities
+layout: Guide
+app: customers
 ---

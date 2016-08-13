@@ -1,6 +1,6 @@
 ---
 title: Farm boundaries
-app: "farm-map"
+app: farm-map
 layout: Guide
 index: 3
 ---

@@ -1,5 +1,7 @@
 ---
-title: "Add Assets"
+title: Add Assets
+layout: Guide
+app: assets
 ---
 
 Capture the customer's asset value with the **Add Asset** option from the Tool box.

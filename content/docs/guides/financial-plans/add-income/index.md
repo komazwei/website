@@ -1,5 +1,7 @@
 ---
-title: "Add Sources of Income"
+title: Add Sources of Income
+layout: Guide
+app: financial-plans
 ---
 
 Capture the customer's additional sources of income with the **Add Income** option from the Tool box.

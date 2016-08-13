@@ -1,5 +1,7 @@
 ---
-title: "Add Liabilities"
+title: Add Liabilities
+layout: Guide
+app: financial-plans
 ---
 
 Capture the customer's liabilities with the **Add Liability** option from the Tool box.

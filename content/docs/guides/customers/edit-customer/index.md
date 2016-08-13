@@ -1,5 +1,7 @@
 ---
-title: "Modify a Customer Portfolio"
+title: Modify a Customer Portfolio
+layout: Guide
+app: customers
 ---
 
 ## Editing a customer's details

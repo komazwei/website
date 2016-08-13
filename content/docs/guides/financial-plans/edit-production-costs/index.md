@@ -1,5 +1,7 @@
 ---
-title: "Estimate Production Costs"
+title: Estimate Production Costs
+layout: Guide
+app: financial-plans
 ---
 
 Total expenditure on production expenses can vary from the per hectare budget assumptions. The **Edit Production Costs** tool opens a production cost summary which can be edited to reflect actual expenses.

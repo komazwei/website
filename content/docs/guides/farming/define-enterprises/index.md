@@ -1,5 +1,7 @@
 ---
-title: "Forecast Production Income"
+title: Forecast Production Income
+layout: Guide
+app: farming
 ---
 
 ## Define Enterprises

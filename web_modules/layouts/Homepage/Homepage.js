@@ -1,11 +1,8 @@
 import React, { Component, PropTypes } from "react"
-import enhanceCollection from "phenomic/lib/enhance-collection"
 import Page from "../Page"
-import Hero from "../../components/Hero"
-import Features from "../../components/Features"
-import PagesList from "../../components/PagesList"
-
-const numberOfLatestPosts = 6
+// import cx from "classnames"
+import Hero from "./Hero"
+// import Features from "../../components/Features"
 
 export default class Homepage extends Component {
   static contextTypes = {
@@ -13,19 +10,9 @@ export default class Homepage extends Component {
   }
 
   render() {
-    const latestPosts = enhanceCollection(this.context.collection, {
-      filter: { layout: "Post" },
-      sort: "date",
-      reverse: true,
-    })
-    .slice(0, numberOfLatestPosts)
-
     return (
-      <Page { ...this.props }>
-        <Hero />
-        <Features />
-        <h2>{ "Latest Posts" }</h2>
-        <PagesList pages={ latestPosts } />
+      <Page { ...this.props } >
+        <Hero { ...this.props } />
       </Page>
     )
   }

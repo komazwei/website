@@ -1,5 +1,6 @@
 ---
 title: "How to value farmland"
+app: farm-map
 layout: Guide
 index: 4
 ---

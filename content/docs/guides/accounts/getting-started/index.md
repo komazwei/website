@@ -1,6 +1,7 @@
 ---
-title: "Getting Started"
+title: Getting Started
 layout: Guide
+app: accounts
 ---
 
 There are four easy steps to get going with your new Agrista Enterprise account:

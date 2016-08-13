@@ -1,5 +1,7 @@
 ---
-title: "Prepare Enterprise Budgets"
+title: Prepare Enterprise Budgets
+app: enterprise-budgets
+layout: Guide
 ---
 
 To forecast production income and expenses you will need to prepare a budget for each commodity your customer is producing. Budgets must be downloaded into your Agrista account for you to use them in a FRP. To prepare budgets you need to navigate to the **Enterprise Budgets** option in your Agrista account. A list of your existing budgets will display. 

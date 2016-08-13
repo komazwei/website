@@ -1,5 +1,7 @@
 ---
-title: "Generate an Agri-Report"
+title: Generate an Agri-Report
+layout: Guide
+app: financial-plans
 ---
 
 An Agri-Report can be generated off a Financial Resource Plan and exported as a pdf document. An Agri-Report is a free-text document with pre-defined sections headings and FRP summary tables. It can include attachments and an official signature.

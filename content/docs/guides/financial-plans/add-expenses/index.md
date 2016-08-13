@@ -1,5 +1,7 @@
 ---
-title: "Add Expenses"
+title: Add Expenses
+layout: Guide
+app: financial-plans
 ---
 
 Capture the customer's additional expenses with the **Add Expense** option from the Tool box.

@@ -1,5 +1,7 @@
 ---
-title: "Market Analysis"
+title: Market Analysis
+layout: Guide
+index: 10
 ---
 
 The Market Analysis tool provides a tool to analyse market share and product demand among various geographic regions. Data from customer portfolios is combined with regional enterprise budgets, land use data gathered from satellite imagery, and a few basic assumptions about local farming practices to generate an interactive map. The map shows what and how much farmers in the region are spending and producing, as well as your company's market footprint for each farming enterprise.

@@ -1,5 +1,7 @@
 ---
-title: "Capture Financial data"
+title: Using the toolbox
+layout: Guide
+app: financial-plans
 ---
 
 ### 

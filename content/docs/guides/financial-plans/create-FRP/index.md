@@ -1,5 +1,7 @@
 ---
-title: "Create a Financial Resource Plan"
+title: Receiving Valuation Requests
+layout: Guide
+app: financial-plans
 ---
 
 1. Go to Customers

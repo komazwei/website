@@ -1,5 +1,7 @@
 ---
-title: "Add Production Credit"
+title: Add Production Credit
+layout: Guide
+app: financial-plans
 ---
 
 ## Add Production Credit

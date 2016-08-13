@@ -1,5 +1,7 @@
 ---
-title: "Add Audited Financials"
+title: Add Audited Financials
+layout: Guide
+app: financial-plans
 ---
 
 Add audited financials to the Balance Sheet and Income statement tables of the Financial Resource Plan. Add any audited financials accrued during the past 10 years. 

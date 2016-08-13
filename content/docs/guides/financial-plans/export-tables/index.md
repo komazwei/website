@@ -1,5 +1,7 @@
 ---
-title: "Export cash flow tables"
+title: Export cash flow tables
+layout: Guide
+app: financial-plans
 ---
 
 Monthly cash flow data is generated from all of the information captured in the Financial Resource Plan. To view the cash flow select the **Year 1** or **Year 2** tab from the top FRP navigation bar. 

@@ -1,5 +1,7 @@
 ---
-title: "Managing your customers"
+title: Managing your customers
+layout: Guide
+app: customers
 ---
 
 The Customer Portfolio is the central place from which you can add all relevant information about your customers and view their farms and assets.

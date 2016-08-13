@@ -1,3 +1,5 @@
 ---
-title: "Sharing a document"
+title: Sharing a document
+app: documents
+layout: Guide
 ---

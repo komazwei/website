@@ -45,7 +45,6 @@ export default class Layout extends Component {
           } ] }
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
-
         <NavHeader />
         <div>
           { this.props.children }
