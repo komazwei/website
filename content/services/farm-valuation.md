@@ -1,6 +1,6 @@
 ---
 title: Farm Valuations
-layout: Service
+layout: Services
 index: 1
 ---
 

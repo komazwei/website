@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from "react"
 import { Link } from "react-router"
+import cx from "classnames"
 
 import {
   Header, Navigation,
@@ -14,8 +15,12 @@ export default class NavHeader extends Component {
   };
 
   render() {
+    const headerClasses = cx(
+      styles.header
+    )
+
     return (
-      <Header className={ styles.header }>
+      <Header transparent waterfall className={ headerClasses }>
         <Navigation>
           <Link to="/">
             { "Home" }

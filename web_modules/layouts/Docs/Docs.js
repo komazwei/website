@@ -1,4 +1,3 @@
-/* @flow */
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import Page from "../Page"

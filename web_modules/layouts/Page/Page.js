@@ -48,7 +48,6 @@ class Page extends Component {
           title={ metaTitle }
           meta={ meta }
         />
-        { head.title }
         { header }
         <BodyContainer>{ body }</BodyContainer>
         { props.children }

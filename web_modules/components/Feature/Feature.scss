@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 /* Features */
 .section {
   background: #fff;
@@ -102,7 +103,7 @@
 }
 
 .section--grey {
-  background-color: unquote("rgb(#{$palette-grey-100})");
+  background-color: $palette-grey-100;
 }
 
 @media only screen and (min-width: 48.0625rem) and (max-width: 63.9375rem) {

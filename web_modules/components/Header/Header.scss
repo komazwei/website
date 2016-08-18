@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 
 .header {
-  /*color: #fff;*/
-  background: $color-primary;
+  color: $text-color-primary !important;
+  background-color: #fff;
 }

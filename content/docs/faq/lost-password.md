@@ -1,6 +1,6 @@
 ---
 title: How do I recover my password?
-layout: FAQ
+section: FAQ
 index: 1
 ---
 

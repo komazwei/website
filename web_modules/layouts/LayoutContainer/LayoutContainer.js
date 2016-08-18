@@ -1,13 +1,14 @@
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 
+import { Layout, Content } from "react-mdl"
 import NavHeader from "../../components/Header"
-import Footer from "../../components/Footer"
+import SiteFooter from "../../components/Footer"
 
 // import "./index.global.css"
 // import styles from "./index.css"
 
-export default class Layout extends Component {
+export default class LayoutContainer extends Component {
 
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
@@ -45,11 +46,13 @@ export default class Layout extends Component {
           } ] }
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
-        <NavHeader />
-        <div>
-          { this.props.children }
-        </div>
-        <Footer />
+        <Layout>
+          <NavHeader />
+          <Content>
+            { this.props.children }
+            <SiteFooter />
+          </Content>
+        </Layout>
       </div>
     )
   }

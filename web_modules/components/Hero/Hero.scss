@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@import "../../styles/variables";
 /* Hero */
 .hero {
   position: relative;
@@ -6,7 +6,7 @@
   vertical-align: middle;
 }
 
-.hero__bg-container {
+.heroBgContainer {
   background-size: cover;
   display: inline-block;
   width: 100%;
@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
 }
 
-.hero__fab {
+.heroFab {
   height: 56px !important;
   margin-left: -28px;
   margin-left: -1.75rem;
@@ -31,17 +31,17 @@
 }
 
 @media only screen and (min-width: 64rem) {
-  .hero__fab {
+  .heroFab {
     display: block
   }
 }
 
-.hero__fab .material-icons {
+.heroFab .material-icons {
   margin-top: 2px;
   margin-top: 0.125rem
 }
 
-.hero__fab:hover {
+.heroFab:hover {
   background: #fff
 }
 
@@ -92,7 +92,7 @@
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero__bg-container-overlay {
+  .heroBgContainerOverlay {
     background: none;
     padding: 12% 5%;
   }
@@ -127,18 +127,16 @@
   line-height: 1.4;
 }
 
-.heroSignup {
+.heroCTABtn {
+  border-radius: 3px;
+  margin-top: 35px;
   display: inline-block;
   position: relative;
-}
-
-.heroBtn {
-  padding: 23px 23px 25px;
-  padding: 1.4375rem 1.4375rem 1.5625rem;
+  padding: 11px 25px;
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero__btn {
+  .heroBtn {
     display: inline-block
   }
 }

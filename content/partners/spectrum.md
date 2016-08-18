@@ -1,6 +1,6 @@
 ---
 title: Spectrum Valuations
-layout: Partner
+layout: Partners
 index: 1
 ---
 

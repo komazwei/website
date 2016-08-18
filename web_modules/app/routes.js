@@ -12,7 +12,6 @@ import Homepage from "../layouts/Homepage"
 import Services from "../layouts/Services"
 import Partners from "../layouts/Partners"
 import Blog from "../layouts/Blog"
-import Archive from "../layouts/Archive"
 import Post from "../layouts/Post"
 import Docs from "../layouts/Docs"
 import GuideIndex from "../layouts/GuideIndex"
@@ -32,7 +31,6 @@ class PageContainer extends Component {
           Services,
           Partners,
           Blog,
-          Archive,
           Post,
           Docs,
           GuideIndex,

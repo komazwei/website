@@ -1,4 +1,3 @@
-/* @flow */
 import React, { Component, PropTypes } from "react"
 import Page from "../../layouts/Page"
 import PostItem from "./PostItem"
