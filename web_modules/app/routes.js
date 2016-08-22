@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import { Route } from "react-router"
+import PhenomicPageContainer from "phenomic/lib/PageContainer"
 
 import LayoutContainer from "../layouts/LayoutContainer"
-import PhenomicPageContainer from "phenomic/lib/PageContainer"
+
 import "../styles/global.styles"
 
 import Page from "../layouts/Page"

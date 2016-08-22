@@ -5,7 +5,7 @@ import { Footer,
   FooterDropDownSection,
   FooterLinkList } from "react-mdl"
 
-// import styles from "./Footer.scss"
+// import styles from "./SiteFooter.scss"
 
 export default class SiteFooter extends Component {
   render() {

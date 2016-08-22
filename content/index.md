@@ -1,6 +1,7 @@
 ---
-title: Show creditors how you farm different.
+metaTitle: "Agrista, an online service empowering farmers to obtain credit."
 layout: Homepage
+title: Show creditors how you farm different.
 subTitle: Let is help you prepare your farm records and financial plans without the pain of using spreadsheets.
 heroCTA: Get Started
 lead: How our small business loans work
@@ -13,7 +14,7 @@ features:
     You can then easily access online benchmarking services from selected 
     partners that give you new insight into what farming enterprises are 
     offer the best returns.
-  img: /images/pages/home/sections/safety/data-encryption.png
+  img: /images/pages/home/safety/data-encryption.png
 - name: revenue-projection-feature
   title: Revenue Projections
   description: |
@@ -21,7 +22,7 @@ features:
     resource plans that not only help you communicate your plan with financiers, 
     but also help you optimise the procurement of inputs and services and the 
     marketing of your produce.
-  img: /images/pages/home/sections/safety/data-encryption.png
+  img: /images/pages/home/safety/data-encryption.png
 - name: financial-plans-feature
   title: Financial Plans
   description: |
@@ -29,20 +30,20 @@ features:
     offer a trusted payment solution that allows you to control your 
     payments to third parties and at the same time provide payment 
     guarantees to your suppliers.
-  img: /images/pages/home/sections/safety/fraud-protection.png
+  img: /images/pages/home/safety/fraud-protection.png
 featurettes:
 - name: capture-asset-featurette
   title: Capture assets
   description: |
     We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
     partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/sections/safety/data-encryption.png
+  image: /images/pages/home/safety/data-encryption.png
 - name: revenue-projection-featurette
   title: Provide revenue projections
   description: |
     We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
     partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/sections/safety/data-encryption.png
+  image: /images/pages/home/safety/data-encryption.png
 - name: data-access-featurette
   title: |
     Control who has
@@ -50,7 +51,7 @@ featurettes:
   description: |
     We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
     partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/sections/safety/data-encryption.png
+  image: /images/pages/home/safety/data-encryption.png
 featureHighlights:
 - name: farm-maps-highlight
   title: Farm Maps

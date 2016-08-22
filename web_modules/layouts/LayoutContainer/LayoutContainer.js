@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
-
+import GoogleAnalyticsTracker from "../../components/GoogleAnalyticsTracker"
 import { Layout, Content } from "react-mdl"
-import NavHeader from "../../components/Header"
-import SiteFooter from "../../components/Footer"
+import Navbar from "../../components/Navbar"
+import SiteFooter from "../../components/SiteFooter"
 
 // import "./index.global.css"
 // import styles from "./index.css"
@@ -12,6 +12,7 @@ export default class LayoutContainer extends Component {
 
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+    params: PropTypes.object,
   };
 
   static contextTypes = {
@@ -24,8 +25,11 @@ export default class LayoutContainer extends Component {
     } = this.context.metadata
 
     return (
-      <div>
+      <GoogleAnalyticsTracker params={ this.props.params }>
         <Helmet
+          link={ [
+            { "rel": "icon", "href": "/images/favicon.png" },
+          ] }
           meta={ [
             {
               name: "generator", content: `${
@@ -47,13 +51,13 @@ export default class LayoutContainer extends Component {
         />
         <style>{ "@-ms-viewport { width: device-width; }" }</style>
         <Layout>
-          <NavHeader />
+          <Navbar />
           <Content>
             { this.props.children }
             <SiteFooter />
           </Content>
         </Layout>
-      </div>
+      </GoogleAnalyticsTracker>
     )
   }
 }

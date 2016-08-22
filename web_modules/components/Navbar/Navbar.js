@@ -6,9 +6,9 @@ import {
   Header, Navigation,
 } from "react-mdl"
 
-import styles from "./Header.scss"
+import styles from "./Navbar.scss"
 
-export default class NavHeader extends Component {
+export default class Navbar extends Component {
 
   static contextTypes = {
     metadata: PropTypes.object.isRequired,
