@@ -50,7 +50,7 @@ export default class GuideIndex extends Component {
               })
                 .map((item) => {
                   return (
-                    <Link to={ item.__url } key={ item.topic }>{ item.title }</Link>
+                    <Link to={ item.__url } key={ item.__url }>{ item.title }</Link>
                   )
                 }) }
             </div>
