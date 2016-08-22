@@ -15,7 +15,7 @@ export default class Docs extends Component {
     })
 
     const faq = enhanceCollection(this.context.collection, {
-      filter: { layout: "FAQ" },
+      filter: { section: "FAQ" },
       sort: "index",
     })
 

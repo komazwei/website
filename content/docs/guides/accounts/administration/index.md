@@ -2,6 +2,8 @@
 title: Account Administration
 layout: Guide
 app: accounts
+topic: administering-accounts
+index: 10
 ---
 
 Congratulations on signing up for an Agrista Enterprise account! During the registration process a primary user account was created. You can use this account to get set up and customise your Enterprise instance.

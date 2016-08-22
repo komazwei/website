@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
+import { Link } from "react-router"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import Page from "../Page"
 import PagesList from "../../components/PagesList"
@@ -15,26 +16,46 @@ export default class GuideIndex extends Component {
   }
 
   static contextTypes = {
-    collection: PropTypes.array.isRequired,
+    collection: PropTypes.array/* .isRequired */,
   }
 
   get collection() {
     return enhanceCollection(this.context.collection, {
       /* filter: (t) => {
-        const isGuide = t.layout === "Guide"
-        const appName = t.app === "farm-map"
-        return (appName && isGuide)
-      },*/
+       const isGuide = t.layout === "Guide"
+       const appName = t.app === "farm-map"
+       return (appName && isGuide)
+       },*/
       filter: { layout: "Guide", app: this.props.head.app },
       sort: "index",
     })
   }
 
   render() {
+    const {
+      collection,
+    } = this.context
+
     return (
       <Page { ...this.props}>
-        <h2>{ "Guides for: " } { this.props.head.app }</h2>
-        <PagesList pages={ this.collection } />
+        <h1>{ "Guides for: " } { this.props.head.app }</h1>
+        { this.props.head && this.props.head.topics &&
+        this.props.head.topics.map((topic) => {
+          return (
+            <div key={ topic.name }>
+              <h2>{ topic.title }</h2>
+              { enhanceCollection(collection, {
+                filter: { layout: "Guide", topic: topic.name },
+                sort: "index",
+              })
+                .map((item) => {
+                  return (
+                    <Link to={ item.__url } key={ item.topic }>{ item.title }</Link>
+                  )
+                }) }
+            </div>
+          )
+        }) }
       </Page>
     )
   }

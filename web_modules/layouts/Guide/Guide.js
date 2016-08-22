@@ -2,9 +2,10 @@ import React, { Component, PropTypes } from "react"
 
 import Page from "../Page"
 
-class Guide extends Component {
-
-  // it's up to you to choose what to do with this layout ;)
+export default class Guide extends Component {
+  static propTypes = {
+    head: PropTypes.object.isRequired,
+  }
 
   render() {
     const { props } = this
@@ -29,9 +30,3 @@ class Guide extends Component {
     )
   }
 }
-
-Guide.propTypes = {
-  head: PropTypes.object.isRequired,
-}
-
-export default Guide

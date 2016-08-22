@@ -2,6 +2,7 @@
 title: Modify a Customer Portfolio
 layout: Guide
 app: customers
+index: 15
 ---
 
 ## Editing a customer's details

@@ -2,6 +2,7 @@
 title: Receiving Valuation Requests
 layout: Guide
 app: financial-plans
+index: 5
 ---
 
 1. Go to Customers

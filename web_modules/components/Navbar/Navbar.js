@@ -20,24 +20,24 @@ export default class Navbar extends Component {
     )
 
     return (
-      <Header transparent waterfall className={ headerClasses }>
+      <Header className={ headerClasses }>
         <Navigation>
-          <Link to="/">
+          <Link to="/" activeClassName="active">
             { "Home" }
           </Link>
-          <Link to="/services">
+          <Link to="/services" activeClassName="active">
             { "Services" }
           </Link>
-          <Link to="/partners">
+          <Link to="/partners" activeClassName="active">
             { "Partners" }
           </Link>
-          <Link to="/docs">
+          <Link to="/docs" activeClassName="active">
             { "Docs" }
           </Link>
-          <Link to="/blog">
+          <Link to="/blog" activeClassName="active">
             { "Blog" }
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" activeClassName="active">
             { "Contact Us" }
           </Link>
         </Navigation>

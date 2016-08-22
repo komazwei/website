@@ -2,6 +2,7 @@
 title: Receiving Valuation Requests
 layout: Guide
 index: 10
+app: tasks
 ---
 
 ## Receive valuation request

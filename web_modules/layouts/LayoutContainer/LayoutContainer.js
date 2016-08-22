@@ -7,6 +7,7 @@ import SiteFooter from "../../components/SiteFooter"
 
 // import "./index.global.css"
 // import styles from "./index.css"
+import "../../styles/react-mdl/material.min.js"
 
 export default class LayoutContainer extends Component {
 

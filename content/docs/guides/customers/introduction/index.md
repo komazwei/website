@@ -1,6 +1,7 @@
 ---
 title: Managing your customers
 layout: Guide
+index: 5
 app: customers
 ---
 

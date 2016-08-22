@@ -2,6 +2,7 @@
 title: Add Assets
 layout: Guide
 app: assets
+index: 5
 ---
 
 Capture the customer's asset value with the **Add Asset** option from the Tool box.

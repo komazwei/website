@@ -1,11 +1,12 @@
 ---
-title: Getting Started
+title: Getting started with your account
 layout: Guide
 app: accounts
+topic: accounts-getting-started
+index: 1
 ---
 
 There are four easy steps to get going with your new Agrista Enterprise account:
-
 
 `1` Set your password
 
@@ -30,19 +31,6 @@ Enter a password twice and click The **Submit** button.
 ## Download the app
 
 The Enterprise Mobile is designed to help you while you are out in the field. We have ensured that all primary functionality is available offline so that you can sync your tablet and head out for the day.
-
-### System requirements
-
-Enterprise Mobile can be installed on mobile devices running the following operating systems:
-
-* Android: version 4.4 or higher
-* iOS: version 6 or higher
-
-It requires permission to access the following:
-
-* Location (GPS)
-* Camera
-* File storage
 
 ### Installing
 

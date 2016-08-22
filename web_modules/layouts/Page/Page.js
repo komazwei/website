@@ -17,8 +17,8 @@ class Page extends Component {
       __url,
       head,
       body,
-      header,
-      footer,
+      //header,
+      //footer,
     } = props
 
     invariant(
@@ -49,10 +49,8 @@ class Page extends Component {
           title={ metaTitle }
           meta={ meta }
         />
-        { header }
         <BodyContainer>{ body }</BodyContainer>
         { props.children }
-        { footer }
       </div>
     )
   }

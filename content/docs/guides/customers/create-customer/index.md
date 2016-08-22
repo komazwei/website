@@ -2,6 +2,7 @@
 title: Create a Customer Portfolio
 layout: Guide
 app: customers
+index: 10
 ---
 
 The Customer Portfolio is the central place to which you can add all relevant information about your customer. Each Customer Portfolio provides you with a 360° view of your customer's farming business.

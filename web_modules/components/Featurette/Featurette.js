@@ -7,7 +7,7 @@ import invariant from "invariant"
 const Featurette = (props) => {
   invariant(
     props.head && props.head.features,
-    "Home page needs a feature list"
+    "Home page needs a featurette list"
   )
 
   const sectionClasses = cx(

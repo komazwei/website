@@ -4,4 +4,4 @@ section: FAQ
 index: 1
 ---
 
-Go to the login screen and slect the "Forgot Password" button.
+Go to the login screen and select the "Forgot Password" button.

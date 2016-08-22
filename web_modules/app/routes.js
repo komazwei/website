@@ -11,7 +11,9 @@ import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 import Homepage from "../layouts/Homepage"
 import Services from "../layouts/Services"
+import Service from "../layouts/Service"
 import Partners from "../layouts/Partners"
+import Partner from "../layouts/Partner"
 import Blog from "../layouts/Blog"
 import Post from "../layouts/Post"
 import Docs from "../layouts/Docs"
@@ -30,7 +32,9 @@ class PageContainer extends Component {
           PageLoading,
           Homepage,
           Services,
+          Service,
           Partners,
+          Partner,
           Blog,
           Post,
           Docs,
