@@ -2,5 +2,6 @@
 title: Sharing a document
 app: documents
 layout: Guide
-app: documents
+index: 5
 ---
+How to share a document.

@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from "react"
 import { Link } from "react-router"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import Page from "../Page"
-import PagesList from "../../components/PagesList"
+// import PagesList from "../../components/PagesList"
 
 export default class GuideIndex extends Component {
   static propTypes = {

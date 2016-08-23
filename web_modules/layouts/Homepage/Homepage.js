@@ -10,7 +10,7 @@ import Featurette from "../../components/Featurette"
 import FeatureHighlight from "../../components/FeatureHighlight"
 // import Feature from "../../components/Feature"
 
-export default class Homepage extends Component {
+export default class Page extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
     __filename: PropTypes.string.isRequired,
