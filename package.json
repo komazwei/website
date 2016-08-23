@@ -2,6 +2,7 @@
   "private": true,
   "name": "website",
   "homepage": "https://www.agrista.com",
+  "sitename": "Agrista. Farm different.",
   "twitter": "agrista",
   "repository": "https://github.com/agrista/website",
   "scripts": {
@@ -78,7 +79,7 @@
     "moment": "^2.14.1",
     "node-sass": "^3.8.0",
     "npm-run-all": "^1.7.0",
-    "phenomic": "^0.15.0",
+    "phenomic": "^0.16.0",
     "postcss-browser-reporter": "^0.4.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-import": "^8.1.2",

@@ -1,6 +1,8 @@
 import path from "path"
 import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
+import { phenomicLoader } from "phenomic"
+
 import pkg from "./package.json"
 
 export const makeConfig = (config = {}) => {
@@ -17,7 +19,7 @@ export const makeConfig = (config = {}) => {
         {
           // phenomic requirement
           test: /\.md$/,
-          loader: "phenomic/lib/content-loader",
+          loader: phenomicLoader,
           // config is in phenomic.contentLoader section below
           // so you can use functions (and not just JSON) due to a restriction
           // of webpack that serialize/deserialize loader `query` option.
@@ -57,7 +59,7 @@ export const makeConfig = (config = {}) => {
           exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "web_modules"),
           loader: ExtractTextPlugin.extract(
-            "style-loader", [ `css-loader?modules&localIdentName=${
+            "style-loader", [`css-loader?modules&localIdentName=${
               config.production
                 ? "[hash:base64:5]"
                 : "[path][name]--[local]--[hash:base64:5]"
@@ -135,26 +137,24 @@ export const makeConfig = (config = {}) => {
     },
 
     phenomic: {
-      contentLoader: {
-        context: path.join(__dirname, config.source),
-        // renderer: (text) => html
-        description: {
-          pruneLength: 200,
-        },
-        feedsOptions: {
-          title: pkg.config.sitename,
-          site_url: pkg.homepage,
-        },
-        feeds: {
-          "feed.xml": {
-            collectionOptions: {
-              filter: {
-                layout: "Post",
-              },
-              sort: "date",
-              reverse: true,
-              limit: 20,
+      context: path.join(__dirname, config.source),
+      // renderer: (text) => html
+      description: {
+        pruneLength: 200,
+      },
+      feedsOptions: {
+        title: pkg.config.sitename,
+        site_url: pkg.homepage,
+      },
+      feeds: {
+        "feed.xml": {
+          collectionOptions: {
+            filter: {
+              layout: "Post",
             },
+            sort: "date",
+            reverse: true,
+            limit: 20,
           },
         },
       },
@@ -200,11 +200,11 @@ export const makeConfig = (config = {}) => {
     },
 
     resolve: {
-      extensions: [ ".js", ".json", "" ],
-      root: [ path.join(__dirname, "node_modules") ],
+      extensions: [".js", ".json", ""],
+      root: [path.join(__dirname, "node_modules")],
     },
     resolveLoader: {
-      root: [ path.join(__dirname, "node_modules") ],
+      root: [path.join(__dirname, "node_modules")],
     },
   }
 }
