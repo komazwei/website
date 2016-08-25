@@ -12,6 +12,8 @@ topics:
   title: Add field boundaries
 - name: land-use
   title: Specify land use
+- name: map-pins
+  title: Points of interest  
 ---
 
 # Welcome to the Agrista Farm Map help center
