@@ -2,7 +2,7 @@
 title: Getting started with your fam map
 layout: Guide
 app: farm-map
-topic: fam-map-getting-started
+topic: farm-map-getting-started
 index: 1
 ---
 
