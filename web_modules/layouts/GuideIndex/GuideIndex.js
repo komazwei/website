@@ -19,18 +19,6 @@ export default class GuideIndex extends Component {
     collection: PropTypes.array/* .isRequired */,
   }
 
-  get collection() {
-    return enhanceCollection(this.context.collection, {
-      /* filter: (t) => {
-       const isGuide = t.layout === "Guide"
-       const appName = t.app === "farm-map"
-       return (appName && isGuide)
-       },*/
-      filter: { layout: "Guide", app: this.props.head.app },
-      sort: "index",
-    })
-  }
-
   render() {
     const {
       collection,
@@ -52,7 +40,8 @@ export default class GuideIndex extends Component {
                   return (
                     <Link to={ item.__url } key={ item.__url }>{ item.title }</Link>
                   )
-                }) }
+                })
+              }
             </div>
           )
         }) }
