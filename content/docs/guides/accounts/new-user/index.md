@@ -21,6 +21,6 @@ All of the users registered on your Enterprise account are listed in the User Ma
 
 5. Click Save
 
-![Add user](images/ENT_user_add.jpg)
+![Add user](/images/guides/accounts/ENT_user_add.jpg)
 
 The new user will receive an email notification with a link to reset their password.

@@ -17,5 +17,5 @@ index: 7
 5. Enter your new password into Confirm Password
 6. Click Done to save your changes
 
-![Profile editing](images/ENT_profile_edit.jpg)
+![Profile editing](/images/guides/accounts/ENT_profile_edit.jpg)
 

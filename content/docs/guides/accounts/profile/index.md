@@ -10,7 +10,7 @@ index: 5
 
 Your profile details are accessed by clicking on your picture at the top of the main menu.
 
-![User profile](images/ENT_profile.jpg)
+![User profile](/images/guides/accounts/ENT_profile.jpg)
 
 In your profile you can:
 
