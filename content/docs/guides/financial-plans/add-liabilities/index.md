@@ -2,6 +2,8 @@
 title: Add Liabilities
 layout: Guide
 app: financial-plans
+topic: assets&liabilities
+inedx: 10
 ---
 
 Capture the customer's liabilities with the **Add Liability** option from the Tool box.
@@ -17,7 +19,7 @@ Capture the customer's liabilities with the **Add Liability** option from the To
   - Current Amount Owed - amount outstanding on the start date of the FRP
   - Interest - annualised interest rate
 
-![Add asset form](images/add_liability.jpg)
+![Add asset form](/images/guides/financial-plans/add_liability.jpg)
 
 3. Click **Save**
 

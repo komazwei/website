@@ -2,6 +2,7 @@
 title: Receiving Valuation Requests
 layout: Guide
 app: financial-plans
+topic: frp-getting-started
 index: 5
 ---
 
@@ -9,18 +10,18 @@ index: 5
 2. Navigate to your customer's Documents tab 
 3. Click the **Document** button and select **Financial Resource Plan**
 
-![Document types](images/document_options.jpg)
+![Document types](/images/guides/financial-plans/document_options.jpg)
 
 The Financial Resource Plan modal will open which requires a start date. The Start Date marks the beginning of the 2-year financial plan and will automatically be the date at which all opening balances must be captured.
 
 4. Enter the start date of the FRP 
 5. Click the **Done** button
 
-![FRP start date](images/FRP_start_date.jpg)
+![FRP start date](/images/guides/financial-plans/FRP_start_date.jpg)
 
 The new Financial Resource Plan document will open on the Details page
 
-![New FRP](images/FRP_empty.jpg)
+![New FRP](/images/guides/financial-plans/FRP_empty.jpg)
 
 Data can be entered into the FRP via the **Toolbox** button. 
 
@@ -33,10 +34,10 @@ If the customer has an existing credit account with your company, you can captur
 
 This opens the **Overview & Account Details** modal, shown below, where you can capture the customer's account number, opening balance, current limit, interest rates and depreciation rate. You can also enter the date of the farm visit and modify the start date of the FRP.
 
-![Overview & account details](images/account_details.jpg)
+![Overview & account details](/images/guides/financial-plans/account_details.jpg)
 
 Click **Save** to return to the FRP. 
 
 The Cash Flow Budget graph and table will update to reflect the information you have just entered.
 
-![Cash flow budget](images/cash_flow_budget.jpg)
+![Cash flow budget](/images/guides/financial-plans/cash_flow_budget.jpg)

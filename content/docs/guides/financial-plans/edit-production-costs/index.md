@@ -2,6 +2,8 @@
 title: Estimate Production Costs
 layout: Guide
 app: financial-plans
+topic: production
+index: 15
 ---
 
 Total expenditure on production expenses can vary from the per hectare budget assumptions. The **Edit Production Costs** tool opens a production cost summary which can be edited to reflect actual expenses.
@@ -13,4 +15,4 @@ Indirect production costs, such as fuel, water, electricity etc., can also be ad
 3. Add addition indirect expense categories using the Add Category drop down list.
 4. Click Save
 
-![Edit Production Cost](images/production_costs.jpg)
+![Edit Production Cost](/images/guides/financial-plans/production_costs.jpg)
