@@ -23,11 +23,11 @@ There are four easy steps to get going with your new Agrista Enterprise account:
 
 You will receive an email notification once your system administrator has added you to your company's Enterprise instance. In this email is a link that will allow you to set your password.
 
-![New user invite](/images/guides/accounts/getting-started/ENT_new_user_invite.jpg)
+![New user invite](/images/guides/accounts/ENT_new_user_invite.jpg)
 
 Enter a password twice and click The **Submit** button.
 
-![Set your password](/images/guides/accounts/getting-started/ENT_reset_password.jpg)
+![Set your password](/images/guides/accounts/ENT_reset_password.jpg)
 
 .. note:: If you did not receive an email, check your spam folder for enteprise@agrista.com. Or go straight to https://enterprise.agrista.com/ and use the **Reset Password** button to inititate the same process.
 

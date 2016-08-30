@@ -32,7 +32,7 @@ Your Enterprise account can be configured to accommodate your company's size and
 
 The Role Manager is a tool to control what users can and cannot do within the system, e.g. a manager would need access to the Reports feature, while field staff may only need access to the tasks feature. A user role is assigned to each user when their account is created. It grants them access to the basic system and controls which applications they will see on their main menu.
 
-![Role Manager](images/ENT_role_manager.jpg)
+![Role Manager](/images/guides/accounts/ENT_role_manager.jpg)
  
 
 #### Add a user role
@@ -46,7 +46,7 @@ Set up different user roles in the Role Manager and assign applications to each 
 5. Assign applications to the role
 6. Click the Save button
 
-![Add user role](images/ENT_user_role_add.jpg)
+![Add user role](/images/guides/accounts/ENT_user_role_add.jpg)
 
 .. warning:: Remember to click the save button, otherwise your changes will not be updated. 
 

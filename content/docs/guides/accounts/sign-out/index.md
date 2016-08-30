@@ -22,12 +22,12 @@ Enterprise Mobile can be left open while you use your mobile device for other ac
 
 Should you wish to sign out, navigate to User Settings on the main menu
 
-![Navigate to Settings](images/ENT_MOB_menu_settings.jpg)
+![Navigate to Settings](/images/guides/accounts/ENT_MOB_menu_settings.jpg)
 
 Select *Sign out*
 
-![Select sign out](images/ENT_MOB_settings_sign_out.jpg)
+![Select sign out](/images/guides/accounts/ENT_MOB_settings_sign_out.jpg)
 
 Confirm the data deletion by clicking the Sign out button
 
-![Confirm sign out](images/ENT_MOB_sign_out.jpg)
+![Confirm sign out](/images/guides/accounts/ENT_MOB_sign_out.jpg)
