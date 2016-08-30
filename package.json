@@ -17,6 +17,7 @@
   "phenomic": {
     "assets": "images",
     "CNAME": false,
+    "devPort": 3456,
     "offline": true
   },
   "config": {
