@@ -1,21 +1,13 @@
 ---
-title: Highest and Best Use
+title: Electricity
 layout: Guide
 app: farm-valuation
 topic: farm-services
-index: 1
+index: 10
 ---
 
-## Edit farm services
+The **Electricity** section of the farm services task provides drop down lists to capture the electricity services on the farm.
 
-1. Choose the Select Farm Services task and click Edit
-2. Edit farm services details and add attachments if applicable
-3. Select the Done button
-
-![Farm services 1](/images/guides/farm-valuation/ENT_farm_services.png)
-
-![Farm services 2](/images/guides/farm-valuation/ENT_farm_services_ii.png)
-
-![Farm services 3](/images/guides/farm-valuation/ENT_farm_services_iii.png)
-
-4. Click Complete. The task cannot be edited further.
+1. Choose from the drop down lists in the **Electricity** section to describe the electricity supply on the farm.
+	- Multiple kVA supply points can be specified by selecting from the **kVA** drop down list multiple times.
+2. Select the **Done** button to save your changes
