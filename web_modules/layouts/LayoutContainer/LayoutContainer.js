@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import GoogleAnalyticsTracker from "../../components/GoogleAnalyticsTracker"
 import { Layout, Content } from "react-mdl"
 import Navbar from "../../components/Navbar"
-import SiteFooter from "../../components/SiteFooter"
+// import SiteFooter from "../../components/SiteFooter"
 
 // import "./index.global.css"
 // import styles from "./index.css"
@@ -55,7 +55,6 @@ export default class LayoutContainer extends Component {
           <Navbar />
           <Content>
             { this.props.children }
-            <SiteFooter />
           </Content>
         </Layout>
       </GoogleAnalyticsTracker>

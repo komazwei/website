@@ -1,68 +1,46 @@
-import React from "react"
-import cs from "classnames"
+/* @flow */
+import React, { Component, PropTypes } from "react"
+import { Link } from "react-router"
+import cx from "classnames"
 
 import styles from "./Accordion.scss"
 
-// Accordian Class
-// Dynamic/Recursive
-// a parent>child>child... relationship is required
-// the whole object can be named however you like,
-// but each child object needs to be identified as "children"
-class Accordion extends React.Component {
-  constructor(props) {
-    super(props);
+export default class Accordion extends Component {
+
+  static propTypes = {
+    summary: PropTypes.string.isRequired,
+    details: PropTypes.string.isRequired,
+  }
+
+  constructor() {
+    super()
     this.state = {
-      openLevelRow: "", // this is the current open level row in an accordian (starts out with none being open)
-      selfLevelObject: props.newLevel // the current level object containing all rows and their data/children
-    };
+      active: false,
+    }
   }
 
-  // This is our toggle open/close method
-  // if row is already open, close it
-  // uniqueSelector is unique per row, and also a key
-  // in the selfLevelObject (could be a name, id)
-  toggleOpenClose(uniqueSelector) {
-    // simple ternary assignment
+  handleToggle = () =>  {
     this.setState({
-      openLevelRow: this.state.openLevelRow != uniqueSelector ? uniqueSelector : ""
-    });
+      active: !this.state.active,
+    })
   }
 
-  render () {
-    // deconstruct assignment from state
-    const { selfLevelObject, openLevelRow } = this.state
+  render() {
+    const stateStyle = this.state.active ? styles.active : styles.inactive
 
     return (
-      <div>
-        {selfLevelObject.map((row, i) =>
-        {/* Collectively where all children of the same hierchy level are listed*/}
-        <div className="accordian-hold-self-level" key={i} >
-        {/* This is an individual collapsable Row */}
-        <div onClick={this.toggleOpenClose.bind(this, row.uniqueSelector)} className="accordian-title-row">
-          <p className='accordian-title'> {row.title}</p>
+      <section className={ cx(styles.parent) }>
+        <h2 onClick={ this.handleToggle }>{ this.props.summary }</h2>
+        <div className={ cx(styles.overflow, stateStyle) }>
+          <div className={ cx(styles.children) }>
+            <div className={ cx(styles.child) }>
+              <Link to={ "accounts" }>
+                { this.props.details }
+              </Link>
+            </div>
+          </div>
         </div>
-        {/*
-         When iterating the list, find out if a row has been opened
-         */}
-        {this.state.openLevelRow != row.uniqueSelector ? <span></span> :
-          /*
-           This code block is called if the current row is opened
-           now we to need to find out if there are children,
-           if not, then we are at the bottom, do what ever
-           you'd like with the bottom row
-           */
-          selfLevelObject[uniqueSelector].children != undefined ?
-            <Accordian newLevel={selfLevelObject[uniqueSelector].children} />
-            : // else
-          // TODO - whatever you want with bottom row
-        }
-      </div>
-    )}
-  </div>
-  );
+      </section>
+    )
   }
-}
-
-Accordion.propTypes = {
-  newLevel: React.PropTypes.object
 }

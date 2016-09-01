@@ -1,0 +1,58 @@
+@import "../../styles/color-definitions";
+
+.active {
+  display: inherit;
+}
+
+@media (min-width: 771px) {
+  .content {
+      background-color: $color-primary;
+      height: 398px;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+  }
+}
+
+@media (min-width: 771px) {
+  .primaryContainer {
+      text-align: center;
+  }
+}
+
+@media (min-width: 1351px) {
+  .pageWidthContainer {
+      margin-top: 16px;
+  }
+}
+
+.page {
+    max-width: 810px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width: 771px) {
+  .page {
+      min-height: 460px;
+  }
+}
+
+nav h1 {
+  color: #212121;
+}
+
+@media (min-width: 771px) {
+  nav h1 {
+      display: block;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin: 0;
+      padding: 16px 16px 16px 72px;
+    }
+}
