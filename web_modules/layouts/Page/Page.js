@@ -63,7 +63,7 @@ Page.propTypes = {
   head: PropTypes.object.isRequired,
   body: PropTypes.string.isRequired,
   header: PropTypes.element,
-  footer: PropTypes.element,
+  //footer: PropTypes.element,
 }
 
 Page.contextTypes = {

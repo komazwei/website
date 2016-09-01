@@ -1,78 +1,29 @@
-$color-primary: #795548;
-$color-primary-light: #EFEBE9;
-$color-primary-hover: #6D4C41;
-$color-primary-dark: #5D4037;
+@import "../../styles/color-definitions";
 
 a {
   text-decoration: none;
 }
-
-.appbarContainer {
-  background-color: $color-primary;
-}
-
-@media (min-width: 1186px) {
-  .appbarContainer {
-    text-align: center;
-  }
-}
-
-@media (min-width: 771px) {
-  .appbar {
-    padding: 0 10px 0 26px;
-  }
-}
-
-@media (min-width: 1186px) {
-  .appbar {
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 0 0 0 16px;
-    text-align: left;
-    width: 1170px;
-  }
-}
-
-@media (min-width: 1351px) {
-  .appbar {
-    padding-left: 80px;
-    width: 100%;
-  }
-}
-
-.appbarTitle {
-  color: #fff;
-  display: inline;
-  font-size: 20px;
-  line-height: 64px;
-  text-decoration: none;
-}
-
 @media (min-width: 771px) {
   .primaryContainer {
     text-align: center;
   }
 }
-
 @media (min-width: 976px) {
   .primaryContainer {
     background-color: $color-primary;
     padding: 0 0 64px 12px;
   }
 }
-
 @media (min-width: 1186px) {
   .primaryContainer {
     padding-left: 16px;
   }
 }
-
 @media (min-width: 1351px) {
   .primaryContainer {
     padding-left: 128px;
   }
 }
-
 @media (min-width: 1186px) {
   .pageWidthContainer {
     margin: 0 auto;
@@ -81,7 +32,6 @@ a {
     width: 1170px;
   }
 }
-
 @media (min-width: 1351px) {
   .pageWidthContainer {
     padding-left: 0;
@@ -97,21 +47,18 @@ a {
   position: relative;
   width: 100%;
 }
-
 @media (min-width: 771px) {
   .page {
     box-sizing: border-box;
     padding: 32px;
   }
 }
-
 @media (min-width: 976px) {
   .page {
     float: left;
     width: 640px;
   }
 }
-
 @media (min-width: 1186px) {
   .page {
     padding: 64px;
@@ -126,6 +73,7 @@ a {
     line-height: 32px;
     margin: 32px 0 8px;
   }
+
   h2 {
     font-size: 20px;
     font-weight: 500;
@@ -133,13 +81,11 @@ a {
     margin: 24px 0 8px;
   }
 }
-
 @media (min-width: 771px) {
   .articleContainer {
     padding: 0;
   }
 }
-
 @media (min-width: 975px) {
   .articleContainer {
     min-height: 232px;
@@ -151,7 +97,6 @@ a {
   line-height: 32px;
   margin: 0 0 8px;
 }
-
 @media (min-width: 771px) {
   .articleTitle {
     font-size: 34px;
@@ -163,7 +108,6 @@ a {
 .primaryNav {
   background-color: $color-primary;
 }
-
 @media (min-width: 976px) {
   .primaryNav {
     display: table-cell;
@@ -175,20 +119,17 @@ a {
   margin-left: 10px;
   width: 256px;
 }
-
 @media (min-width: 771px) {
   .primaryNav nav {
     margin-left: 32px;
     text-align: left;
   }
 }
-
 @media (min-width: 976px) {
   .primaryNav nav {
     min-height: 262px;
   }
 }
-
 @media (min-width: 1351px) {
   .primaryNav nav {
     margin-left: 64px;
@@ -199,13 +140,11 @@ a {
   display: inline-block;
   margin-top: 10px;
 }
-
 @media (min-width: 771px) {
   .siblingNav {
     width: 100%;
   }
 }
-
 @media (min-width: 976px) {
   .siblingNav {
     margin-top: 2px;
@@ -219,7 +158,6 @@ a {
   line-height: 24px;
   margin: 20px 16px 0 4px;
 }
-
 @media (min-width: 771px) {
   .siblingNav h4 {
     margin-top: 6px;
@@ -232,14 +170,14 @@ a {
   display: block;
   padding: 14px 0 14px 14px;
 }
-
 @media (min-width: 976px) {
   .siblingNav .siblingList a.siblingLink {
     padding: 6px 0 6px 14px;
   }
 }
 
-.siblingNav a.title-link, .sibling-nav a.title-link:visited {
+.sibling-nav a.title-link:visited,
+.siblingNav a.title-link {
   color: #fff;
 }
 
@@ -258,7 +196,6 @@ a {
 .siblingNav .siblingList {
   margin-bottom: 15px;
 }
-
 @media (min-width: 976px) {
   .siblingNav .siblingList {
     margin-bottom: 0;
@@ -269,8 +206,23 @@ a {
   padding: 0;
 }
 
-.siblingNav a.titleLink, .siblingNav a.titleLink:visited {
+.siblingNav a.titleLink,
+.siblingNav a.titleLink:visited {
   color: #fff;
+}
+
+.siblingNav h4 {
+  color: $color-white;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 20px 0 4px;
+}
+@media (min-width: 771px) {
+  .siblingNav h4 {
+    margin-top: 6px;
+  }
 }
 
 .siblingNav a.siblingLink:hover {
@@ -290,7 +242,6 @@ a {
   display: block;
   padding: 14px 0 14px 14px;
 }
-
 @media (min-width: 976px) {
   .siblingNav .siblingList a.siblingLink {
     padding: 6px 0 6px 14px;
@@ -302,6 +253,7 @@ a {
   padding: 80px 56px;
   margin-bottom: 80px;
   background-color: #fff;
+
   h1 {
     font-size: 24px;
     line-height: 32px;
@@ -309,10 +261,13 @@ a {
     color: #212121;
     font-weight: 400;
   }
+
   h2 {
     font: 20px;
   }
-  h1 > a, h2 > a {
+
+  h1 > a,
+  h2 > a {
     visibility: hidden;
     float: left;
     padding-right: 4px;

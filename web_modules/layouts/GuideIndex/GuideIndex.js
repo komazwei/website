@@ -1,9 +1,14 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
-import { Link } from "react-router"
-import enhanceCollection from "phenomic/lib/enhance-collection"
-import Page from "../Page"
+// import { Link } from "react-router"
+// import enhanceCollection from "phenomic/lib/enhance-collection"
+import SiteFooter from "../../components/SiteFooter"
+import TopicAccordion from "./TopicAccordion"
+import AppBar from "../../components/AppBar"
 // import PagesList from "../../components/PagesList"
+import cx from "classnames"
+
+import styles from "./GuideIndex.scss"
 
 export default class GuideIndex extends Component {
   static propTypes = {
@@ -16,36 +21,31 @@ export default class GuideIndex extends Component {
   }
 
   static contextTypes = {
-    collection: PropTypes.array/* .isRequired */,
+    collection: PropTypes.array.isRequired,
   }
 
   render() {
-    const {
-      collection,
-    } = this.context
-
     return (
-      <Page { ...this.props}>
-        <h1>{ "Guides for: " } { this.props.head.app }</h1>
-        { this.props.head && this.props.head.topics &&
-        this.props.head.topics.map((topic) => {
-          return (
-            <div key={ topic.name }>
-              <h2>{ topic.title }</h2>
-              { enhanceCollection(collection, {
-                filter: { layout: "Guide", topic: topic.name },
-                sort: "index",
-              })
-                .map((item) => {
-                  return (
-                    <Link to={ item.__url } key={ item.__url }>{ item.title }</Link>
-                  )
-                })
-              }
+      <div>
+        <AppBar key={ this.props.head.name } url={ this.props.__url } title={ this.props.head.title } />
+        <div className={ cx(styles.content) }>
+          <section className={ cx(styles.primaryContainer) }>
+            <div className={ cx(styles.pageWidthContainer) }>
+              <div className={ cx(styles.page) }>
+                <nav>
+                  <h1>{ "Welcome to the Agrista " }{ this.props.head.title }{ " Help Center" }</h1>
+                  { this.props.head && this.props.head.topics &&
+                    this.props.head.topics.map((topic) => (
+                      <TopicAccordion key={ topic.name } title={ topic.title } topic={ topic.name } />
+                    ))
+                  }
+                </nav>
+              </div>
             </div>
-          )
-        }) }
-      </Page>
+          </section>
+          <SiteFooter />
+        </div>
+      </div>
     )
   }
 }

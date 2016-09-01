@@ -5,7 +5,7 @@ import cx from "classnames"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
 // import {Content, Grid, Cell} from "react-mdl"
-// import Ribbon from "../../components/Ribbon"
+import AppBar from "../../components/AppBar"
 
 import styles from "./Guide.scss"
 
@@ -44,16 +44,16 @@ export default class Guide extends Component {
         <Helmet
           title={ head.title }
           meta={ [
-          { property: "og:type", content: "article" },
-          { name: "twitter:card", content: "summary" },
-          { property: "og:title", content: head.title },
-          { name: "twitter:title", content: head.title },
-          { property: "og:description", content: head.description },
-          { name: "twitter:description", content: head.description },
-          { property: "og:url", content: pkg.homepage + __url },
-          // { property: "og:image", content: header.image },
-          // { name: "twitter:image", content: header.image },
-          { name: "twitter:creator", content: `@${ head.twitter }` },
+            { property: "og:type", content: "article" },
+            { name: "twitter:card", content: "summary" },
+            { property: "og:title", content: head.title },
+            { name: "twitter:title", content: head.title },
+            { property: "og:description", content: head.description },
+            { name: "twitter:description", content: head.description },
+            { property: "og:url", content: pkg.homepage + __url },
+            // { property: "og:image", content: header.image },
+            // { name: "twitter:image", content: header.image },
+            { name: "twitter:creator", content: `@${ head.twitter }` },
           ] }
         />
         <div>
@@ -65,9 +65,7 @@ export default class Guide extends Component {
               })
                 .map((item) => {
                   return (
-                    <Link key={ item.app } to={ item.app } className={ cx(styles.appbarTitle) }>
-                      { item.title } { "Help" }
-                    </Link>
+                    <AppBar key={ item.app } url={ item.__url } title={ item.title } />
                   )
                 })
               }
@@ -85,10 +83,8 @@ export default class Guide extends Component {
                 <div className={ cx(styles.primaryNav) }>
                   <nav>
                     <div className={ cx(styles.siblingNav) }>
-                      <h4>
-                        <Link to="{ head.app }" className={ cx(styles.titleLink) }>
-                          { "Help" }
-                        </Link>
+                      <h4 className={ cx(styles.titleLink) }>
+                        { "Help" }
                       </h4>
                       <ul className={ cx(styles.siblingList) }>
                         {
@@ -96,29 +92,29 @@ export default class Guide extends Component {
                             filter: { layout: "Guide", topic: head.topic },
                             sort: "index",
                           })
-                            .map((item) => {
-                              return (
-                                <li key={ item.__url }>
-                                  <Link
-                                    to={ item.__url }
-                                    className={ cx(styles.siblingLink) }
-                                    activeClassName={ cx(styles.siblingLinkCurrent) }
-                                  >
-                                    { item.title }
-                                  </Link>
-                                </li>
-                              )
-                            })
+                          .map((item) => {
+                            return (
+                              <li key={ item.__url }>
+                                <Link
+                                  to={ item.__url }
+                                  className={ cx(styles.siblingLink) }
+                                  activeClassName={ cx(styles.siblingLinkCurrent) }
+                                >
+                                  { item.title }
+                                </Link>
+                              </li>
+                            )
+                          })
                         }
-                      </ul >
-                    </div >
-                  </nav >
-                </div >
-              </div >
-            </div >
-          </section >
-        </div >
-      </div >
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     )
   }
 }
