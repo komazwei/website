@@ -2,13 +2,15 @@
 title: Using the toolbox
 layout: Guide
 app: financial-plans
+topic: frp-getting-started
+index: 10
 ---
 
 ### 
 
 Work your way through the Toolbox:
 
-![Toolbox](images/Toolbox.jpg)
+![Toolbox](/images/guides/financial-plans/Toolbox.jpg)
 
 #### Allocate Farm Land Use
 
@@ -20,7 +22,7 @@ This only needs to be done once per customer and will pull through to each subse
 3. Add a value for each category
 4. Click Save
 
-![Farm Land Use](images/define_land_use.jpg)
+![Farm Land Use](/images/guides/financial-plans/define_land_use.jpg)
 
 #### Define Enterprises
 
@@ -33,7 +35,7 @@ This tool combines the land components with the budgets you have prepared. Each 
 
 Livestock sales will pull through from the budget, but additional breeding stock figures can be added by selecting them from the Commodity drop down list. 
 
-![Define Enterprises](images/define_enterprises.jpeg)
+![Define Enterprises](/images/guides/financial-plans/define_enterprises.jpeg)
 
 #### Edit Production Costs
 
@@ -44,7 +46,7 @@ This tool opens the Production Schedule generated in the previous step and allow
 3. Use the tabs to switch between the different enterprises, or make edits to the sum of enterprises on the All tab.
 4. Click Save
 
-![Edit Production Cost](images/production_costs.jpeg)
+![Edit Production Cost](/images/guides/financial-plans/production_costs.jpeg)
 
 #### Add Production Credit
 
@@ -56,8 +58,8 @@ Capture all sources of production credit available to the customer.
 4. Add any planned repayments, including the value and date of crop payments. Remember to click the plus button on the repayment for it to be saved.
 5. Click Save
  
-![Add Production Credit](images/production_credit_1.jpeg)
-![Add Production Credit](images/production_credit_2.jpeg)
+![Add Production Credit](/images/guides/financial-plans/production_credit_1.jpeg)
+![Add Production Credit](/images/guides/financial-plans/production_credit_2.jpeg)
 
 #### Add Asset
 

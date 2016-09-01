@@ -2,6 +2,8 @@
 title: Add Production Credit
 layout: Guide
 app: financial-plans
+topic: credit
+index: 5
 ---
 
 ## Add Production Credit
@@ -17,5 +19,5 @@ Capture all sources of production credit available to the customer.
 4. Add any planned repayments, including the value and date of crop payments. Click the plus button on the repayment for it to be saved. To edit a repayment, use the red delete icon to remove it then recapture the correct information.
 5. Click Save
 
-![Add Production Credit](images/production_credit_1.jpg)
-![Add Production Credit](images/production_credit_2.jpg)
+![Add Production Credit](/images/guides/financial-plans/production_credit_1.jpg)
+![Add Production Credit](/images/guides/financial-plans/production_credit_2.jpg)

@@ -2,6 +2,8 @@
 title: Add Expenses
 layout: Guide
 app: financial-plans
+topic: income&expenses
+idex: 10
 ---
 
 Capture the customer's additional expenses with the **Add Expense** option from the Tool box.
@@ -13,7 +15,7 @@ Capture the customer's additional expenses with the **Add Expense** option from 
   - Type - Select either Capital, Other or Production
   - Description - differentiate between similar expenses by adding a description
 
-![Add expense form](images/add_expense_form.jpg)
+![Add expense form](/images/guides/financial-plans/add_expense_form.jpg)
 
 #### Specify when the expense occurs:
 **Reoccurring costs**
@@ -21,20 +23,20 @@ Capture the customer's additional expenses with the **Add Expense** option from 
 2. Specify the payment month and expense amount 
 3. Click **Apply**
 
-![Expense allocation](images/expense_allocation.jpg)
+![Expense allocation](/images/guides/financial-plans/expense_allocation.jpg)
 
 The graph will update to reflect the expense data
-![Quarterly expense](images/quarterly_expense.jpg)
+![Quarterly expense](/images/guides/financial-plans/quarterly_expense.jpg)
 
 **Irregular costs** 
 1. Select *Manually* from the Allocation drop down list. 
 2. Select the month of the cost and fill in the amount. 
 3. Click the **Plus** button to add the cost to the expense data.
 
-![Manual expense allocation](images/manual_allocation.jpg)
+![Manual expense allocation](/images/guides/financial-plans/manual_allocation.jpg)
 
 The graph will update to reflect the expense data
-![Manual expense](images/manual_expense.jpg)
+![Manual expense](/images/guides/financial-plans/manual_expense.jpg)
 
 4. Click **Save**
 
@@ -44,6 +46,6 @@ The graph will update to reflect the expense data
 
 To make changes to an existing Expense, click on the Expense name in the Income & Expenses table. 
 
-![Edit expense form](images/edit_expense.jpg)
+![Edit expense form](/images/guides/financial-plans/edit_expense.jpg)
 
 The expense form will open in edit-mode. Make your changes and click **Save**

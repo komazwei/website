@@ -1,10 +1,10 @@
 ---
 title: Assign tasks
 layout: Guide
-index: 10
-app: tasks
+app: farm-valuation
+topic: request-managing
+index: 15
 ---
-
 
 All tasks associated with the farm valuation capture are displayed in the tasks menu.
 
