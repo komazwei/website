@@ -1,5 +1,5 @@
 ---
-title: Pin homestead
+title: Frequently Asked Questions
 layout: Guide
 app: farm-valuation
 topic: property-location

@@ -3,7 +3,7 @@ title: Modify request
 layout: Guide
 app: farm-valuation
 topic: property-location
-index: 8
+index: 12
 ---
 
 ### Amend request details

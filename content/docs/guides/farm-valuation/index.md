@@ -27,7 +27,9 @@ topics:
 - name: comparable-properties
   title: Comparable properties
 - name: environmental-questionnaire
-  title: Environmenatl Questionnaire
+  title: Environmental Questionnaire
 - name: conclusion
-  title: Report conculsion
+  title: Report conclusion
+- name: invoice
+  title: Attach Invoice 
 ---

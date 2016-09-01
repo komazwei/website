@@ -1,5 +1,5 @@
 ---
-title: Pin homestead
+title: Mark farm gate location
 layout: Guide
 app: farm-valuation
 topic: property-location
