@@ -31,10 +31,12 @@ export default class PageError extends Component {
           {
             error === 404 &&
             <div>
-              { "It seems you find a broken link. " }
-              { "Sorry about that. " }
+              { "It seems this page is missing. " }
+              { "Check the URL for spelling mistakes or use the navigation bar to return to our main pages. " }
               <br />
-              { "Do not hesitate to report us this page 😁." }
+              { "Do not hesitate to contact us if you were expecting to see something else on this page. " }
+              <br />
+              { "Copy the URL and paste it into our Contact Us form - you will find the link in the nagivation bar above  😁." }
             </div>
           }
         </div>
