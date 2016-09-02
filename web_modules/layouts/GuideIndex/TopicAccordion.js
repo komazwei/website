@@ -45,12 +45,12 @@ export default class TopicAccordion extends Component {
 
     return (
       <section className={ cx(styles.parent, stateStyle) }>
-        <h2 onClick={ this.handleToggle }>{ this.props.title }</h2>
+        <h2 onClick={ this.handleToggle } className={ styles.parentTitle }>{ this.props.title }</h2>
         <div className={ cx(styles.overflow) }>
           <div className={ cx(styles.children) }>
             { guides.map((guide) => (
               <div key={ guide.__url } className={ cx(styles.child) }>
-                <Link to={ guide.__url }>
+                <Link to={ guide.__url } className={ styles.guideLink }>
                   { guide.title }
                 </Link>
               </div>

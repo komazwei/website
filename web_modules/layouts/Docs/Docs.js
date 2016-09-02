@@ -1,7 +1,14 @@
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
-import Page from "../Page"
-import PagesList from "../../components/PagesList"
+import cx from "classnames"
+
+// import Page from "../Page"
+import AppBar from "../../components/AppBar"
+import AppCards from "../../components/AppCards"
+import FAQAccordion from "./FAQAccordion"
+import SiteFooter from "../../components/SiteFooter"
+
+import styles from "./Docs.scss"
 
 export default class Docs extends Component {
   static contextTypes = {
@@ -9,23 +16,37 @@ export default class Docs extends Component {
   }
 
   render() {
+    const { props } = this
+
+    const {
+      // __filename,
+      __url,
+      head,
+      //body,
+      //header,
+      //footer,
+    } = props
+
     const apps = enhanceCollection(this.context.collection, {
       filter: { layout: "GuideIndex" },
       sort: "index",
     })
 
-    const faq = enhanceCollection(this.context.collection, {
-      filter: { section: "FAQ" },
-      sort: "index",
-    })
-
     return (
-      <Page { ...this.props}>
-        <h2>{ "Apps" }</h2>
-        <PagesList pages={ apps } />
-        <h2>{ "FAQ" }</h2>
-        <PagesList pages={ faq } />
-      </Page>
+      <div>
+        <AppBar key={ head.name } url={ __url } title={ "Agrista" } />
+        <div className={ cx(styles.content) }>
+          <section className={ cx(styles.primaryContainer) }>
+            <div className={ cx(styles.pageWidthContainer) }>
+              <div className={ cx(styles.page) }>
+                <AppCards apps={ apps } />
+                <FAQAccordion questions={ head.faq } />
+              </div>
+            </div>
+          </section>
+          <SiteFooter />
+        </div>
+      </div>
     )
   }
 }
