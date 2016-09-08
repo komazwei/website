@@ -8,12 +8,12 @@ topics:
   title: Getting started
 - name: production
   title: Production planning
+- name: credit
+  title: Production credit  
 - name: income&expenses
   title: Income and Expenses
 - name: assets&liabilities
   title: Assets and Liabilities
-- name: credit
-  title: Production credit
 - name: financials
   title: Audited Financials
 - name: completed-FRP
