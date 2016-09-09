@@ -1,13 +1,19 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
+import cx from "classnames"
+
+import styles from "./AppCards.scss"
 
 const AppCards = ({ apps }) => {
   return (
-    <section>
-      <ul>
+    <section className={ cx(styles.appSelector) }>
+      <ul className={ cx(styles.list) }>
         { apps.map((app) => (
-          <li key={ app.title }>
-            <Link to={ app.__url }>{ app.title }</Link>
+          <li key={ app.title } className={ cx(styles.item) }>
+            <Link to={ app.__url }>
+              <img src="/images/apps/farm-valuations.png"></img>
+              <h3>{ app.title }</h3>
+            </Link>
           </li>
           ))
         }
