@@ -2,6 +2,7 @@
 title: Create a Customer Portfolio
 layout: Guide
 app: customers
+topic: getting-started
 index: 10
 ---
 
@@ -23,7 +24,7 @@ Adding new customers to your Enterprise account is easy. All you need is a name 
 
 Required fields are highlighted in red
 
-![Adding a customer portfolio](images/new_portfolio_form.jpg)
+![Adding a customer portfolio](/images/guides/customers/new_portfolio_form.jpg)
 
 The new customer portfolio will appear in the Customer list.
 
@@ -33,7 +34,7 @@ The new customer portfolio will appear in the Customer list.
 
 The customer details tab gives you a quick overview of your customer's contact details, classification and farming segmentation.
 
-![Customer details](images/customer_details.jpg)
+![Customer details](/images/guides/customers/customer_details.jpg)
 
 You can also judge the portfolios level of completeness by seeing if the customer's basic information has been captured. Basic information is required for the customer portfolio to contribute to your company's Management Reports and is defined as follows:
 
@@ -41,4 +42,4 @@ You can also judge the portfolios level of completeness by seeing if the custome
 - Capture homestead location - the Wall Map feature shows your company's geographic footprint and requires that each portfolio contains a homestead marker
 - Locate farm portions - 
 
-![Customer portfolio completeness](images/portfolio_completeness.jpg)
+![Customer portfolio completeness](/images/guides/customers/portfolio_completeness.jpg)
