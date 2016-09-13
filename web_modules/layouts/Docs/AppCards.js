@@ -11,7 +11,7 @@ const AppCards = ({ apps }) => {
         { apps.map((app) => (
           <li key={ app.title } className={ cx(styles.item) }>
             <Link to={ app.__url }>
-              <img src="/images/apps/farm-valuations.png"></img>
+              <img src={ app.image }></img>
               <h3>{ app.title }</h3>
             </Link>
           </li>

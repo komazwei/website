@@ -4,7 +4,7 @@ import cx from "classnames"
 
 // import Page from "../Page"
 import AppBar from "../../components/AppBar"
-import AppCards from "../../components/AppCards"
+import AppCards from "./AppCards"
 import FAQAccordion from "./FAQAccordion"
 import SiteFooter from "../../components/SiteFooter"
 
