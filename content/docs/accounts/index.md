@@ -3,7 +3,7 @@ title: Accounts
 layout: GuideIndex
 index: 1
 app: accounts
-image: /images/apps/farm-valuations.png
+image: /images/apps/account.png
 topics:
 - name: accounts-getting-started
   title: Getting started with Agrista Accounts

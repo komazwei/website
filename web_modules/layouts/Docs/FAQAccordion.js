@@ -40,10 +40,11 @@ export default class FAQAccordion extends Component {
     const stateStyle = this.state.active ? styles.active : styles.inactive
 
     return (
-      <div>
+      <div className={ cx(styles.container) }>
+        <h2 className={ cx(styles.title) }>FAQs</h2>
         { this.props.questions.map((question) => (
           <div key={ question.url } className={ cx(styles.wrapper, stateStyle) }>
-            <div className={ cx(styles.container) }>
+            <div className={ cx(styles.questionContainer) }>
               <a onClick={ this.handleToggle } className={ styles.question }>
                 { question.question }
               </a>

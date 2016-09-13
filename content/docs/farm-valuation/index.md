@@ -3,6 +3,7 @@ title: Farm Valuation
 layout: GuideIndex
 index: 45
 app: farm-valuation
+image: /images/apps/farm-valuation.png
 topics:
 - name: fv-getting-started
   title: Getting started
@@ -15,7 +16,7 @@ topics:
 - name: title-deeds
   title: Attach title deeds task
 - name: farm-description
-  title: Farm Description  
+  title: Farm Description
 - name: farm-services
   title: Farm Services
 - name: fixed-improvements
@@ -31,5 +32,5 @@ topics:
 - name: conclusion
   title: Report conclusion
 - name: invoice
-  title: Attach Invoice 
+  title: Attach Invoice
 ---
