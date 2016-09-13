@@ -7,6 +7,7 @@ import cx from "classnames"
 import styles from "./FAQAccordion.scss"
 
 export default class FAQAccordion extends Component {
+
   static propTypes = {
     // children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
     // __filename: PropTypes.string/* .isRequired */,
@@ -15,11 +16,8 @@ export default class FAQAccordion extends Component {
     // body: PropTypes.string/* .isRequired */,
     // className: PropTypes.string,
     // title: PropTypes.string.isRequired,
-    questions: PropTypes.array.isRequired,
-  }
-
-  static contextTypes = {
-    collection: PropTypes.array.isRequired,
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
   }
 
   constructor() {
@@ -40,20 +38,17 @@ export default class FAQAccordion extends Component {
     const stateStyle = this.state.active ? styles.active : styles.inactive
 
     return (
-      <div className={ cx(styles.container) }>
-        <h2 className={ cx(styles.title) }>FAQs</h2>
-        { this.props.questions.map((question) => (
-          <div key={ question.url } className={ cx(styles.wrapper, stateStyle) }>
-            <div className={ cx(styles.questionContainer) }>
-              <a onClick={ this.handleToggle } className={ styles.question }>
-                { question.question }
-              </a>
-            </div>
-            <div className={ cx(styles.overflow) }>
-              <div className={ cx(styles.content) } >{ question.answer }</div>
-            </div>
+      <div className={ cx(styles.wrapper) }>
+        <div className={ cx(styles.parent, stateStyle) }>
+          <div className={ cx(styles.questionContainer) }>
+            <a onClick={ this.handleToggle } className={ styles.question }>
+              { this.props.question }
+            </a>
           </div>
-        )) }
+          <div className={ cx(styles.overflow) }>
+            <div className={ cx(styles.content) } >{ this.props.answer }</div>
+          </div>
+        </div>
       </div>
     )
   }

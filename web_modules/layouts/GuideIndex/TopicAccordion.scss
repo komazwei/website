@@ -54,10 +54,6 @@
   color: $color-white;
 }
 
-.inactive {
-  //display: none;
-}
-
 .parent.active {
   background: $palette-grey-700;
   padding-bottom: 10px;
@@ -101,10 +97,10 @@
 
 .parent.active .children {
     margin-bottom: 0;
-    //transition: margin-top .5s;
+    transition: margin-top .5s;
 }
 
 .children {
     margin-bottom: -9999px;
-    //transition: margin-bottom 0s .5s,margin-top .5s;
+    transition: margin-bottom 0s .5s,margin-top .5s;
 }

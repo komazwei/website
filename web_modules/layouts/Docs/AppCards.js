@@ -1,3 +1,4 @@
+/* @flow */
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
 import cx from "classnames"
@@ -9,7 +10,7 @@ const AppCards = ({ apps }) => {
     <section className={ cx(styles.appSelector) }>
       <ul className={ cx(styles.list) }>
         { apps.map((app) => (
-          <li key={ app.title } className={ cx(styles.item) }>
+          <li key={ app.__url } className={ cx(styles.item) }>
             <Link to={ app.__url }>
               <img src={ app.image }></img>
               <h3>{ app.title }</h3>

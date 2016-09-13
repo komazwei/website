@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import cx from "classnames"
@@ -32,18 +33,27 @@ export default class Docs extends Component {
       sort: "index",
     })
 
+    const faqs = head.faq
+
     return (
       <div>
         <AppBar key={ head.name } url={ __url } title={ "Agrista" } />
         <div className={ cx(styles.content) }>
-          <section className={ cx(styles.primaryContainer) }>
+          <div className={ cx(styles.primaryContainer) }>
             <div className={ cx(styles.pageWidthContainer) }>
               <div className={ cx(styles.page) }>
-                <AppCards apps={ apps } />
-                <FAQAccordion questions={ head.faq } />
+                <section>
+                  <AppCards apps={ apps } />
+                </section>
+                <section className={ cx(styles.faqSection) }>
+                  <h3>FAQs</h3>
+                  { faqs.map((faq) => (
+                    <FAQAccordion key={ faq.slug } question={ faq.question } answer={ faq.answer } />
+                  )) }
+                </section>
               </div>
             </div>
-          </section>
+          </div>
           <SiteFooter />
         </div>
       </div>

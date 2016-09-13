@@ -1,39 +1,44 @@
 @import "../../styles/color-definitions";
-
 @media (min-width: 771px) {
   .primaryContainer {
-      text-align: center;
+    text-align: center;
   }
 }
-
 @media (min-width: 1351px) {
   .pageWidthContainer {
-      margin-top: 16px;
+    margin-top: 16px;
   }
 }
 
 .page {
-    max-width: 1106px;
-    background-color: $color-white;
-    text-align: left;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-    display: inline-block;
-    position: relative;
-    width: 100%;
+  max-width: 1106px;
+  background-color: $color-white;
+  text-align: left;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  display: inline-block;
+  position: relative;
+  width: 100%;
 }
-
 @media (min-width: 771px) {
   .page {
-      min-height: 460px;
+    min-height: 460px;
+  }
+}
+@media (min-width: 771px) {
+  .content {
+    background-color: $color-primary;
+    height: 398px;
+    position: absolute;
+    top: 60px;
+    width: 100%;
   }
 }
 
-@media (min-width: 771px) {
-  .content {
-      background-color: $color-primary;
-      height: 398px;
-      position: absolute;
-      top: 60px;
-      width: 100%;
+.faqSection {
+  padding: 0 64px 64px;
+
+  h3 {
+    font-size: 24px;
+    margin: 36px 0 4px;
   }
 }
