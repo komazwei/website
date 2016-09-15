@@ -3,6 +3,7 @@ title: Managing your customers
 layout: Guide
 index: 5
 app: customers
+topic: getting-started
 ---
 
 The Customer Portfolio is the central place from which you can add all relevant information about your customers and view their farms and assets.
@@ -70,40 +71,6 @@ To correct or update a customer portfolio, the following fields can be edited:
 
 ------------
 
-## Agricultural legal entities
-
-
-The Legal Entities tab on a customer portfolio identifies the farmer or other entity involved in the farming business. Farming business can have many different operational fronts, e.g. companies buying and selling products, trading names and private accounts for individuals. All of these different aspects of the farming business can be collected together under the legal entities tab.
-
-Legal entities can be deactivated once they are no longer relevant to the customer portfolio.
-
-### Add a legal entity
-
-1. Select the Customer Portfolio you wish to modify by clicking Customers on the main menu and searching in the search box.
-2. Choose the appropriate Customer Portfolio.
-3. Click Legal Entities on the Customer panel.
-4. Click Add Entity.
-5. Enter the appropriate information and click Save.
-
-![Add a legal entity](images/ENT_legal_entity_add.jpg)
-
-
-After saving, the new legal is added to the legal entity list.
-
-### Edit or deactive a legal entity
-
-1. Click Legal Entities on the Customer panel.
-2. To modify the existing Legal Entity, click on the appropriate name.
-3. Click the Edit button
-4. Edit the active fields, or
-5. Click deactivate at the bottom of the window
-6. Click Save
-
-Note: Legal entities cannot be deactivated if there are assets still assigned to them in the customer portfolio. 
-
-![Edit a legal entity](images/ENT_legal_entity_edit.jpg)
-
-
 -----------
 
 ## Farm Map
@@ -120,35 +87,7 @@ A farm is the geographical region within which a customer uses for the purpose o
 
 ### Add a farm
 
-1. To begin, add a customer's farm by selecting the customer and clicking the Farm Map tab.
-2. Click Add and then select Farm.
-3. On the map, zoom in to the appropriate place and highlight the relevant portion(s).
-4. Alternatively, use the polygon tool on the map to draw the farm boundaries manually.
-5. Fill in the farm name and assign a legal entity to each portion 
-6. Click Save.
 
-![Add a farm](images/ENT_farm_add.jpg)
-
-The farm will display on your map.
-
-### Add a homestead
-
-A homestead pin shows the location of the primary dwelling
-
-1. To add a homestead pin, click the Farm Map tab on the Customer panel.
-2. Click Homestead.
-3. On the map, click the Pin and place the house icon in the appropriate location.
-4. Click Done.
-
-![Pin the homestead](images/ENT_homestead.jpg)
-
-### Add a farm gate
-
-1. To add a farm gate, click the Farm Map tab on the Customer panel.
-2. Click Add and select Farm Gate.
-3. On the map, click the Pin and place the gate icon in the appropriate location.
-4. Assign the gate to a farm and give it a name.
-5. Click Done.
 
 
 ## Define land use
