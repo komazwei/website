@@ -1,0 +1,44 @@
+@import "../../styles/color-definitions";
+
+.header {
+  background-color: $color-white !important;
+  height: 56px !important;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 80px !important;
+    padding-top: 8px !important;
+  }
+}
+
+.link {
+  color: $palette-grey-600 !important;
+  font-size: 12px;
+  padding: 0 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .link {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+}
+
+.link:hover {
+  color: $color-accent !important;
+  text-decoration: none;
+  transition: 0.15s ease-in color;
+}
+
+.cta {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  line-height: 36px !important;
+}

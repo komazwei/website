@@ -9,5 +9,5 @@ faq:
   question: How do add new users?
   answer: >
     Please contact your administrator to add new users.
-    If you are not sure who your administrator is, please contact our support.
+    If you are not sure who your administrator is, please contact our support
 ---

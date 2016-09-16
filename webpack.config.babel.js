@@ -45,7 +45,7 @@ export const makeConfig = (config = {}) => {
           ],
           include: [
             path.resolve(__dirname, "scripts"),
-            path.resolve(__dirname, "web_modules"),
+            path.resolve(__dirname, "src"),
           ],
         },
 
@@ -57,7 +57,7 @@ export const makeConfig = (config = {}) => {
         {
           test: /\.css$/,
           exclude: /\.global\.css$/,
-          include: path.resolve(__dirname, "web_modules"),
+          include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract(
             "style-loader", [`css-loader?modules&localIdentName=${
               config.production
@@ -140,7 +140,7 @@ export const makeConfig = (config = {}) => {
       context: path.join(__dirname, config.source),
       // renderer: (text) => html
       description: {
-        pruneLength: 200,
+        pruneLength: 300,
       },
       feedsOptions: {
         title: pkg.config.sitename,
@@ -173,8 +173,8 @@ export const makeConfig = (config = {}) => {
 
     sassLoader: {
       includePaths: [
-        path.join(config.cwd, "web_modules/styles"),
-        path.join(config.cwd, "web_modules"),
+        path.join(config.cwd, "src/styles"),
+        path.join(config.cwd, "src"),
         path.join(config.cwd, "node_modules"),
       ],
     },
