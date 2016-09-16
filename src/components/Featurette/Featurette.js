@@ -1,55 +1,34 @@
 /* @flow */
 import React, { PropTypes } from "react"
-import styles from "./Featurette.scss"
 import cx from "classnames"
-import invariant from "invariant"
 
-const Featurette = (props) => {
-  invariant(
-    props.head && props.head.features,
-    "Home page needs a featurette list"
-  )
+import { Grid, Cell } from "react-mdl"
 
-  const sectionClasses = cx(
-    styles.aux,
-    styles.sectionModules
-  )
+import styles from "./Featurette.scss"
 
-  const cellClasses = cx(
-    "mdl-cell",
-    "mdl-cell--6-col",
-    "mdl-cell--12-col-phone",
-    "section__module"
-  )
-
+const Featurette = ({ title, image, description }) => {
   return (
-    <section>
-      <div className={ sectionClasses }>
-        <div className={ "mdl-grid" }>
-          {
-            props.head && props.head.featurettes &&
-            props.head.featurettes.map((featurette) => {
-              return (
-                <div
-                  key={ featurette.name }
-                  className={ cellClasses }
-                >
-                  <img src={ featurette.image } />
-                  <h4>{ featurette.title }</h4>
-                  <p>{ featurette.description }</p>
-                </div>
-              )
-            })
-          }
+    <Grid className={ cx(styles.section) }>
+      <Cell col={ 6 }>
+        <div className={ cx(styles.imageContainer) }>
+          <img src={ image } className={ cx(styles.image) } />
         </div>
-      </div>
-    </section>
+      </Cell>
+      <Cell col={ 6 }>
+        <header className={ cx(styles.header) }>
+          <h2 className={ cx(styles.title) }>{ title }</h2>
+          <p>{ description }</p>
+        </header>
+      </Cell>
+    </Grid>
   )
 }
 
 Featurette.propTypes = {
-  __filename: PropTypes.string.isRequired,
-  head: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  rtl: PropTypes.bool,
 }
 
 export default Featurette

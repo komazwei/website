@@ -20,36 +20,6 @@
   background-repeat: no-repeat;
 }
 
-.fab {
-  height: 56px !important;
-  margin-left: -28px;
-  margin-left: -1.75rem;
-  margin-bottom: -28px;
-  margin-bottom: -1.75rem;
-  width: 56px;
-  width: 3.5rem;
-  background: $color-white;
-  bottom: 0;
-  color: $color-accent;
-  display: none;
-  left: 50%;
-  position: absolute;
-}
-@media only screen and (min-width: 1024px) {
-  .fab {
-    display: block;
-  }
-}
-
-.fab .material-icons {
-  margin-top: 2px;
-  margin-top: 0.125rem;
-}
-
-.fab:hover {
-  background: #fff;
-}
-
 /*.hero--home .hero__bg-container {
     background-image: url("/images/pages/home/sections/hero/bg-dark-640w.jpg");
 }
@@ -117,9 +87,8 @@
 }
 
 .subTitle {
-  font-weight: 300;
+  font-weight: 100;
   color: $color-white;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, .2);
   font-size: 24px;
   line-height: 1.4;
 }
@@ -127,5 +96,32 @@
 .cta {
   height: 44px !important;
   line-height: 44px !important;
-  margin-top: 24px;
+  margin-top: 24px !important;
+}
+
+.fab {
+  height: 56px !important;
+  margin-left: -28px;
+  margin-bottom: -28px;
+  width: 56px;
+  background: $color-white;
+  bottom: 0;
+  color: $color-accent;
+  display: none;
+  left: 50%;
+  position: absolute;
+}
+@media only screen and (min-width: 1024px) {
+  .fab {
+    display: block;
+  }
+}
+
+.fab .material-icons {
+  margin-top: 2px;
+  margin-top: 0.125rem;
+}
+
+.fab:hover {
+  background: #fff;
 }

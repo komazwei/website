@@ -5,7 +5,6 @@ import { joinUri } from "phenomic"
 // import cx from "classnames"
 import SiteFooter from "../../components/SiteFooter"
 import Hero from "../../components/Hero"
-import Lead from "../../components/Lead"
 import Feature from "../../components/Feature"
 import Featurette from "../../components/Featurette"
 import FeatureHighlight from "../../components/FeatureHighlight"
@@ -57,6 +56,8 @@ export default class Page extends Component {
       { name: "description", content: head.description },
     ]
 
+    const featurettes = this.props.head.featurettes
+
     return (
       <div>
         <Helmet
@@ -64,9 +65,16 @@ export default class Page extends Component {
           meta={ meta }
         />
         <Hero { ...this.props } />
-        <Lead { ...this.props } />
         <Feature { ...this.props } />
-        <Featurette { ...this.props } />
+        { featurettes.map((featurette) => (
+          <Featurette
+            key={ featurette.name }
+            image={ featurette.image }
+            title={ featurette.title }
+            description={ featurette.description }
+            rtl={ featurette.rtl }
+          />
+        )) }
         <FeatureHighlight { ...this.props } />
         <SiteFooter />
       </div>

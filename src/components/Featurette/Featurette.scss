@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../styles/color-definitions";
 
 .aux {
   max-width: 980px;
@@ -7,7 +7,7 @@
 }
 
 .section {
-  background: #fff;
+  background: $color-white;
   padding: 22px 22px 0;
   padding: 1.375rem 1.375rem 0
 }
@@ -24,40 +24,40 @@
   padding: 1.3125rem 1.25rem 1.4375rem
 }
 
-.section__title {
-  color: #444
+.title {
+  color: #444;
 }
 
-.section__image {
+.imageContainer {
   margin-top: 1em;
   text-align: center
 }
 
 @media only screen and (min-width: 64rem) {
-  .section__image {
+  .imageContainer {
     margin: 0
   }
 }
 
 @media only screen and (min-width: 48rem) {
-  .section__image {
+  .imageContainer {
     text-align: left
   }
 }
 
-.section__image img {
+.image {
   display: inline-block;
   max-width: 70%
 }
 
 @media only screen and (max-width: 30rem) {
-  .section__image img {
+  .image {
     max-width: 100%
   }
 }
 
 @media only screen and (min-width: 48rem) {
-  .section__image img {
+  .image {
     margin: 0;
     max-width: 100%;
     max-height: 500px;

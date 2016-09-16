@@ -10,48 +10,33 @@ features:
 - name: asset-register-feature
   title: Asset Registers
   description: |
-    We help you organise your farming assets and production plans. 
-    You can then easily access online benchmarking services from selected 
-    partners that give you new insight into what farming enterprises are 
+    We help you organise your farming assets and production plans.
+    You can then easily access online benchmarking services from selected
+    partners that give you new insight into what farming enterprises are
     offer the best returns.
   img: /images/pages/home/safety/data-encryption.png
 - name: revenue-projection-feature
   title: Revenue Projections
-  description: |
-    We provide smart mapping tools to help you easily draw up financial 
-    resource plans that not only help you communicate your plan with financiers, 
-    but also help you optimise the procurement of inputs and services and the 
-    marketing of your produce.
+  description: We provide smart mapping tools to help you easily draw up financial resource plans that not only help you communicate your plan with financiers, but also help you optimise the procurement of inputs and services and the marketing of your produce.
   img: /images/pages/home/safety/data-encryption.png
 - name: financial-plans-feature
   title: Financial Plans
-  description: |
-    Use our convenient online store to procure products and services. We 
-    offer a trusted payment solution that allows you to control your 
-    payments to third parties and at the same time provide payment 
-    guarantees to your suppliers.
+  description: Use our convenient online store to procure products and services. We offer a trusted payment solution that allows you to control your payments to third parties and at the same time provide payment guarantees to your suppliers.
   img: /images/pages/home/safety/fraud-protection.png
 featurettes:
 - name: capture-asset-featurette
   title: Capture assets
-  description: |
-    We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
-    partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/safety/data-encryption.png
+  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  image: /images/pages/home/featurettes/assets.png
 - name: revenue-projection-featurette
   title: Provide revenue projections
-  description: |
-    We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
-    partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/safety/data-encryption.png
-- name: data-access-featurette
-  title: |
-    Control who has
-    access to your data
-  description: |
-    We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected 
-    partners that give you new insight into what farming enterprises are offer the best returns.
-  image: /images/pages/home/safety/data-encryption.png
+  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  image: /images/pages/home/featurettes/revenues.png
+  rtl: true
+- name: financial-plans-featurette
+  title: Provide revenue projections
+  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  image: /images/pages/home/featurettes/financials.png
 featureHighlights:
 - name: farm-maps-highlight
   title: Farm Maps
