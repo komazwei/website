@@ -27,12 +27,12 @@ export default class Featurette extends Component {
       <section className={ classes }>
         <div className={ cx(styles.aux) }>
           <Grid className={ cx(styles.grid) }>
-            <Cell col={ 6 } className={ cx(styles.cell, styles.image) }>
+            <Cell col={ 6 } phone={ 12 } className={ cx(styles.cell, styles.image) }>
               <div className={ cx(styles.imageContainer) }>
                 <img src={ image } />
               </div>
             </Cell>
-            <Cell col={ 6 } className={ cx(styles.content) }>
+            <Cell col={ 6 } phone={ 12 } className={ cx(styles.content) }>
               <header className={ cx(styles.header) }>
                 <h2 className={ cx(styles.title) }>{ title }</h2>
                 <p>{ description }</p>

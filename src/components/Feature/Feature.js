@@ -1,52 +1,34 @@
+/* @flow */
 import React, { PropTypes } from "react"
-// import { Link } from "react-router"
+import { Grid, Cell } from "react-mdl"
 import cx from "classnames"
 import styles from "./Feature.scss"
-import invariant from "invariant"
 
-const Feature = (props) => {
-  invariant(
-    props.head && props.head.features,
-    "Home page needs a feature list"
-  )
-
-  const sectionClasses = cx(
-    styles.section
-  )
-  const cellClasses = cx(
-    "mdl-cell",
-    "mdl-cell--4-col",
-    "mdl-cell--12-col-phone",
-    "section__module"
-  )
+const Feature = ({ features }) => {
   return (
-    <section>
-      <div className={ sectionClasses }>
-        <div className={ "mdl-grid" }>
-          {
-            props.head && props.head.features &&
-            props.head.features.map((feature) => {
-              return (
-                <div
-                  key={ feature.name }
-                  className={ cellClasses }
-                >
-                  <img src={ feature.image } />
-                  <h2>{ feature.title }</h2>
-                  <p>{ feature.description }</p>
-                </div>
-              )
-            })
-          }
-        </div>
+    <section className={ cx(styles.section) }>
+      <div className={ cx(styles.aux) }>
+        <Grid>
+          { features.map((feature) => (
+            <Cell
+              key={ feature.name }
+              col={ 4 }
+              phone={ 12 }
+              className={ cx(styles.item) }
+            >
+              <img src={ feature.image } />
+              <h4>{ feature.title }</h4>
+              <p>{ feature.description }</p>
+            </Cell>
+          )) }
+        </Grid>
       </div>
     </section>
   )
 }
 
 Feature.propTypes = {
-  __filename: PropTypes.string.isRequired,
-  head: PropTypes.object.isRequired,
+  features: PropTypes.array.isRequired,
 }
 
 export default Feature

@@ -1,13 +1,13 @@
 @import "../../styles/color-definitions";
-/* Hero */
-.wrapper {
+
+.hero {
   position: relative;
   text-align: center;
   vertical-align: middle;
   margin-top: 56px;
 }
 @media only screen and (min-width: 1024px) {
-  .wrapper {
+  .hero {
     margin-top: 80px;
   }
 }
@@ -16,25 +16,9 @@
   background-size: cover;
   display: inline-block;
   width: 100%;
-  background-position: left top;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
-
-/*.hero--home .hero__bg-container {
-    background-image: url("/images/pages/home/sections/hero/bg-dark-640w.jpg");
-}
-
-@media screen and (min-width: 640px), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
-  .hero--home .hero__bg-container {
-      background-image: url("/images/pages/home/sections/hero/bg-dark-1280w.jpg");
-  }
-}
-
-@media screen and (min-width: 1280px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 640px), screen and (min-resolution: 192dpi) and (min-width: 640px) {
-  .hero--home .hero__bg-container {
-      background-image: url("/images/pages/home/sections/hero/bg-dark-2560w.jpg");
-  }
-}*/
 
 .container {
   background-image: url("/images/pages/home/hero/hero-bg-480.jpg");
@@ -57,7 +41,7 @@
 
 .overlay {
   height: 100%;
-  width: 100%;
+  width: 90%;
   background: rgba(0, 0, 0, 0.298039);
   padding: 12% 5% 8%;
 }
@@ -67,26 +51,20 @@
   }
 }
 
-.title {
+.hero h1 {
   font-size: 32px;
-  font-weight: 300;
+  font-size: 2rem;
+  margin: 8px 0 0;
   color: $color-white;
-  margin: 8px 0 0 0;
 }
 @media only screen and (min-width: 768px) {
-  .title {
-    font-size: 46px;
-    margin: 24px 0 38px 0;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .title {
-    font-size: 58px;
-    margin: 28px 0 42px 0;
+  .hero h1 {
+      font-size: 46px;
+      margin: 24px 0 38px 0;
   }
 }
 
-.subTitle {
+.hero p {
   font-weight: 200;
   color: $color-white;
   font-size: 24px;
@@ -104,7 +82,7 @@
   margin-left: -28px;
   margin-bottom: -28px;
   width: 56px;
-  background: $color-white;
+  background-color: $color-white;
   bottom: 0;
   color: $color-accent;
   display: none;

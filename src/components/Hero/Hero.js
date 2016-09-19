@@ -32,11 +32,11 @@ export default class Hero extends Component {
     )
 
     return (
-      <div className={ cx(styles.wrapper) }>
+      <div className={ cx(styles.hero) }>
         <div className={ cx(styles.container) }>
           <div className={ cx(styles.overlay) }>
-            <h1 className={ cx(styles.title) }>{ this.props.head.title }</h1>
-            <p className={ cx(styles.subTitle) }>{ this.props.head.title }</p>
+            <h1>{ this.props.head.title }</h1>
+            <p>{ this.props.head.title }</p>
             <Link to={ "/" } className={ cx(ctaButtonClasses, styles.cta) }>
               { this.props.head.heroCTA }
             </Link>

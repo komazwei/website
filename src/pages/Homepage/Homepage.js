@@ -57,6 +57,8 @@ export default class Page extends Component {
       { name: "description", content: head.description },
     ]
 
+    const features = this.props.head.features
+
     const featurettes = this.props.head.featurettes
 
     return (
@@ -66,7 +68,7 @@ export default class Page extends Component {
           meta={ meta }
         />
         <Hero { ...this.props } />
-        <Feature { ...this.props } />
+        <Feature features={ features } />
         { featurettes.map((featurette) => (
           <Featurette
             key={ featurette.name }
