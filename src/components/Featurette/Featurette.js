@@ -1,34 +1,47 @@
 /* @flow */
-import React, { PropTypes } from "react"
-import cx from "classnames"
-
+import React, { PropTypes, Component } from "react"
+import classNames from "classnames/bind"
 import { Grid, Cell } from "react-mdl"
-
 import styles from "./Featurette.scss"
 
-const Featurette = ({ title, image, description }) => {
-  return (
-    <Grid className={ cx(styles.section) }>
-      <Cell col={ 6 }>
-        <div className={ cx(styles.imageContainer) }>
-          <img src={ image } className={ cx(styles.image) } />
+const cx = classNames.bind(styles)
+
+export default class Featurette extends Component {
+  static propTypes = {
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    reverse: PropTypes.bool,
+    grey: PropTypes.bool,
+  }
+
+  render() {
+    const { image, title, description, reverse, grey } = this.props
+
+    const classes = cx(styles.section, {
+      reverse: reverse,
+      grey: grey,
+    })
+
+    return (
+      <section className={ classes }>
+        <div className={ cx(styles.aux) }>
+          <Grid className={ cx(styles.grid) }>
+            <Cell col={ 6 } className={ cx(styles.cell, styles.image) }>
+              <div className={ cx(styles.imageContainer) }>
+                <img src={ image } />
+              </div>
+            </Cell>
+            <Cell col={ 6 } className={ cx(styles.content) }>
+              <header className={ cx(styles.header) }>
+                <h2 className={ cx(styles.title) }>{ title }</h2>
+                <p>{ description }</p>
+              </header>
+            </Cell>
+          </Grid>
         </div>
-      </Cell>
-      <Cell col={ 6 }>
-        <header className={ cx(styles.header) }>
-          <h2 className={ cx(styles.title) }>{ title }</h2>
-          <p>{ description }</p>
-        </header>
-      </Cell>
-    </Grid>
-  )
-}
+      </section>
+    )
 
-Featurette.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  rtl: PropTypes.bool,
+  }
 }
-
-export default Featurette

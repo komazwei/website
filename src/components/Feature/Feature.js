@@ -32,7 +32,7 @@ const Feature = (props) => {
                   className={ cellClasses }
                 >
                   <img src={ feature.image } />
-                  <h4>{ feature.title }</h4>
+                  <h2>{ feature.title }</h2>
                   <p>{ feature.description }</p>
                 </div>
               )

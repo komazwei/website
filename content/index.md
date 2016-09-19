@@ -32,7 +32,8 @@ featurettes:
   title: Provide revenue projections
   description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
   image: /images/pages/home/featurettes/revenues.png
-  rtl: true
+  reverse: true
+  grey: true
 - name: financial-plans-featurette
   title: Provide revenue projections
   description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.

@@ -1,3 +1,4 @@
+/* @flow */
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 import { joinUri } from "phenomic"
@@ -72,7 +73,8 @@ export default class Page extends Component {
             image={ featurette.image }
             title={ featurette.title }
             description={ featurette.description }
-            rtl={ featurette.rtl }
+            reverse={ featurette.reverse }
+            grey={ featurette.grey }
           />
         )) }
         <FeatureHighlight { ...this.props } />
