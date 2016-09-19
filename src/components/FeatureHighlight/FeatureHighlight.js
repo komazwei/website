@@ -1,6 +1,7 @@
 import React, { PropTypes } from "react"
 // import { Link } from "react-router"
 import cx from "classnames"
+import { Grid, Cell } from "react-mdl"
 import invariant from "invariant"
 import styles from "./FeatureHighight.scss"
 
@@ -10,39 +11,30 @@ const FeatureHighlight = (props) => {
     "Home page needs a feature highlight list"
   )
 
-  const sectionClasses = cx(
-    styles.section
-  )
-
-  const cellClasses = cx(
-    "mdl-cell",
-    "mdl-cell--6-col",
-    "mdl-cell--12-col-phone",
-    "section__module"
-  )
-
   return (
-    <section>
-      <div className={ sectionClasses }>
-        <div className={ "mdl-grid" }>
+    <section className={ cx(styles.section) }>
+      <div className={ cx(styles.aux) }>
+        <Grid>
           {
             props.head && props.head.featureHighlights &&
             props.head.featureHighlights.map((featureHighlight) => {
               return (
-                <div
+                <Cell
                   key={ featureHighlight.name }
-                  className={ cellClasses }
+                  className={ styles.item }
                 >
-                  <i className={ "material-icons" }>
-                    { featureHighlight.icon }
-                  </i>
+                  <div className={ cx(styles.image) }>
+                    <i className={ "material-icons" }>
+                      { featureHighlight.icon }
+                    </i>
+                  </div>
                   <h4>{ featureHighlight.title }</h4>
                   <p>{ featureHighlight.description }</p>
-                </div>
+                </Cell>
               )
             })
           }
-        </div>
+        </Grid>
       </div>
     </section>
   )

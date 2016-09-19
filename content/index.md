@@ -42,15 +42,15 @@ featureHighlights:
 - name: farm-maps-highlight
   title: Farm Maps
   description: Farm maps offer
-  icon: expand_more
+  icon: android
 - name: enterprise-budgets-highlight
   title: Enterprise Budgets
   description: Enterprise budgets offer
-  icon: expand_more
+  icon: assignment_turned_in
 - name: production-plans-highlight
   title: Production Plans
   description: Production plans offer
-  icon: expand_more
+  icon: group_work
 - name: asset-valuations-highlight
   title: Asset Valuations
   description: Asset valuations offer
