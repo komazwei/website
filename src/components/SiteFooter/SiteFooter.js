@@ -1,16 +1,19 @@
 import React, { Component } from "react"
+import cx from "classnames"
 // import { Link } from "react-router"
 import { Footer,
   FooterSection,
   FooterDropDownSection,
   FooterLinkList } from "react-mdl"
 
+import styles from "./SiteFooter.scss"
+
 // import styles from "./SiteFooter.scss"
 
 export default class SiteFooter extends Component {
   render() {
     return (
-      <Footer size="mega">
+      <Footer size="mega" className={ cx(styles.footer) }>
         <FooterSection type="middle">
           <FooterDropDownSection title="Features">
             <FooterLinkList>

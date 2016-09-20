@@ -6,7 +6,7 @@ import styles from "./Feature.scss"
 
 const Feature = ({ features }) => {
   return (
-    <section className={ cx(styles.section) }>
+    <section id="feature" className={ cx(styles.section) }>
       <div className={ cx(styles.aux) }>
         <Grid>
           { features.map((feature) => (

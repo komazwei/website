@@ -21,14 +21,15 @@ export default class Hero extends Component {
       "mdl-js-button",
       "mdl-js-ripple-effect",
       "mdl-button--raised",
-      "mdl-button--accent"
+      "mdl-button--accent",
     )
 
     const fabButtonClasses = cx(
       "mdl-button",
       "mdl-js-button",
       "mdl-button--fab",
-      "mdl-js-ripple-effect"
+      "mdl-js-ripple-effect",
+      "mdl-shadow--4dp"
     )
 
     return (
@@ -42,7 +43,7 @@ export default class Hero extends Component {
             </Link>
           </div>
         </div>
-        <Link to={ "/" } className={ cx(fabButtonClasses, styles.fab) }>
+        <Link to="#feature" className={ cx(fabButtonClasses, styles.fab) }>
           <i className={ "material-icons" }>
             { "expand_more" }
           </i>

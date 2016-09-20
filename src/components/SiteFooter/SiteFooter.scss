@@ -1,8 +1,11 @@
+@import "../../styles/color-definitions";
+
 .footer {
+  color: $palette-brown-200;
+  background-color: $color-primary-dark;
   margin-top: 1rem;
   padding: 1rem;
   font-size: 0.75rem;
-  text-align: center;
 }
 
 .link {
