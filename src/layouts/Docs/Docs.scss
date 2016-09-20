@@ -16,7 +16,7 @@
   text-align: left;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
   display: inline-block;
-  position: relative;
+  position: inherit;
   width: 100%;
 }
 @media (min-width: 771px) {
@@ -28,10 +28,14 @@
   .content {
     background-color: $color-primary;
     height: 398px;
-    position: absolute;
+    position: inherit;
     top: 60px;
     width: 100%;
   }
+}
+
+.apps {
+  padding: 32px;
 }
 
 .faqSection {

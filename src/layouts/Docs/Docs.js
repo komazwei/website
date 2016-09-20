@@ -42,7 +42,7 @@ export default class Docs extends Component {
           <div className={ cx(styles.primaryContainer) }>
             <div className={ cx(styles.pageWidthContainer) }>
               <div className={ cx(styles.page) }>
-                <section>
+                <section className={ cx(styles.apps) } >
                   <AppCards apps={ apps } />
                 </section>
                 <section className={ cx(styles.faqSection) }>

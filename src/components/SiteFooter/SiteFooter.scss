@@ -1,19 +1,8 @@
 @import "../../styles/color-definitions";
 
 .footer {
-  color: $palette-brown-200;
-  background-color: $color-primary-dark;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-size: 0.75rem;
-}
-
-.link {
-  opacity: 0.4;
-  color: inherit;
-  text-decoration: none;
-}
-
-.reference {
-  font-weight: 100;
+  background-color: transparent !important;
+  a:hover {
+    text-decoration: underline;
+  }
 }

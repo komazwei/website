@@ -2,6 +2,12 @@
 
 .container {
   background-color: $color-primary;
+  margin-top: 56px;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: 80px;
+  }
 }
 
 @media (min-width: 1186px) {
