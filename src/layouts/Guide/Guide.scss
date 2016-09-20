@@ -1,13 +1,5 @@
 @import "../../styles/color-definitions";
 
-.page a {
-  text-decoration: none;
-}
-
-.page img {
-  max-width: 100%;
-}
-
 @media (min-width: 771px) {
   .primaryContainer {
     text-align: center;
@@ -29,6 +21,7 @@
     padding-left: 128px;
   }
 }
+
 @media (min-width: 1186px) {
   .pageWidthContainer {
     margin: 0 auto;
@@ -51,6 +44,12 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
 }
 @media (min-width: 771px) {
   .page {
@@ -251,44 +250,4 @@
   .siblingNav .siblingList a.siblingLink {
     padding: 6px 0 6px 14px;
   }
-}
-
-.content {
-  border-radius: 2px;
-  padding: 80px 56px;
-  margin-bottom: 80px;
-  background-color: $color-white;
-
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 32px 0 8px;
-    color: #212121;
-    font-weight: 400;
-  }
-
-  h2 {
-    font: 20px;
-  }
-
-  h1 > a,
-  h2 > a {
-    visibility: hidden;
-    float: left;
-    padding-right: 4px;
-    margin-left: -24px;
-    line-height: 1;
-  }
-}
-
-.layout.is-small-screen .content {
-  padding: 40px 28px;
-}
-
-.content h3 {
-  margin-top: 48px;
-}
-
-.h1 > a {
-  visibility: hidden;
 }

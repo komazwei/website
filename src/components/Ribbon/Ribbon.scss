@@ -1,4 +1,14 @@
-@import "../../styles/variables";
+@import "../../styles/color-definitions";
+
+.header {
+  background-color: $color-primary;
+  margin-top: 56px !important;
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    margin-top: 80px !important;
+  }
+}
 
 .ribbon {
   width: 100%;

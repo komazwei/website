@@ -1,6 +1,20 @@
 @import "../../styles/color-definitions";
 
-.media {
+.card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 360px;
+  width: 100% !important;
+}
+
+.card .media {
   color: $palette-grey-50;
   background-color: $color-accent;
   background-repeat: repeat;
@@ -34,7 +48,7 @@
   }
 }
 
-.supportingText {
+.card .supportingText {
   color: $palette-grey-600;
   font-size: 1rem;
   line-height: 18px;
@@ -51,7 +65,7 @@
   min-height: 64px;
 
   strong {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &:not(:last-child) {
@@ -60,7 +74,11 @@
   }
 }
 
-.meta {
+.card:not(.blogpost) .supportingText ~ .supportingText {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.card .meta {
   box-sizing: border-box;
   padding: 16px;
   display: -webkit-flex;
@@ -76,6 +94,15 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   height: auto;
+
+  > * {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 .minilogo {

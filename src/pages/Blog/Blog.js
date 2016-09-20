@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from "react"
 import cx from "classnames"
 import Page from "../../layouts/Page"
+import Ribbon from "../../components/Ribbon"
 import PostsList from "../../components/PostsList"
 // import { Link } from "react-router"
 import styles from "./Blog.scss"
@@ -25,7 +26,8 @@ export default class Blog extends Component {
 
     return (
       <Page { ...this.props }>
-        <div className={ cx(styles.wrapper) }>
+        <Ribbon />
+        <div className={ cx(styles.blog) }>
           <PostsList posts={ latestPosts } />
         </div>
       </Page>

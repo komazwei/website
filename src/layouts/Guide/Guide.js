@@ -6,6 +6,7 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 
 // import {Content, Grid, Cell} from "react-mdl"
 import AppBar from "../../components/AppBar"
+import SiteFooter from "../../components/SiteFooter"
 
 import styles from "./Guide.scss"
 
@@ -71,49 +72,52 @@ export default class Guide extends Component {
               }
             </div>
           </div>
-          <section className={ cx(styles.primaryContainer) }>
-            <div className={ cx(styles.primaryWidthContainer) }>
-              <article className={ cx(styles.page) }>
-                <section className={ cx(styles.articleContainer) }>
-                  <div className={ cx(styles.articleTitle) }>{ head.title }</div>
-                  <div dangerouslySetInnerHTML={ { __html: body } } />
-                </section>
-              </article>
-              <div>
-                <div className={ cx(styles.primaryNav) }>
-                  <nav>
-                    <div className={ cx(styles.siblingNav) }>
-                      <h4 className={ cx(styles.titleLink) }>
-                        { "Help" }
-                      </h4>
-                      <ul className={ cx(styles.siblingList) }>
-                        {
-                          enhanceCollection(collection, {
-                            filter: { layout: "Guide", topic: head.topic },
-                            sort: "index",
-                          })
-                          .map((item) => {
-                            return (
-                              <li key={ item.__url }>
-                                <Link
-                                  to={ item.__url }
-                                  className={ cx(styles.siblingLink) }
-                                  activeClassName={ cx(styles.siblingLinkCurrent) }
-                                >
-                                  { item.title }
-                                </Link>
-                              </li>
-                            )
-                          })
-                        }
-                      </ul>
-                    </div>
-                  </nav>
+          <div className={ cx(styles.content) }>
+            <section className={ cx(styles.primaryContainer) }>
+              <div className={ cx(styles.pageWidthContainer) }>
+                <article className={ cx(styles.page) }>
+                  <div className={ cx(styles.articleContainer) }>
+                    <div className={ cx(styles.articleTitle) }>{ head.title }</div>
+                    <div dangerouslySetInnerHTML={ { __html: body } } />
+                  </div>
+                </article>
+                <div>
+                  <div className={ cx(styles.primaryNav) }>
+                    <nav>
+                      <div className={ cx(styles.siblingNav) }>
+                        <h4 className={ cx(styles.titleLink) }>
+                          { "Help" }
+                        </h4>
+                        <ul className={ cx(styles.siblingList) }>
+                          {
+                            enhanceCollection(collection, {
+                              filter: { layout: "Guide", topic: head.topic },
+                              sort: "index",
+                            })
+                            .map((item) => {
+                              return (
+                                <li key={ item.__url }>
+                                  <Link
+                                    to={ item.__url }
+                                    className={ cx(styles.siblingLink) }
+                                    activeClassName={ cx(styles.siblingLinkCurrent) }
+                                  >
+                                    { item.title }
+                                  </Link>
+                                </li>
+                              )
+                            })
+                          }
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
+        <SiteFooter />
       </div>
     )
   }

@@ -4,29 +4,34 @@ import { Link } from "react-router"
 import cx from "classnames"
 import styles from "./PostPreview.scss"
 
-import { Card, Cell } from "react-mdl"
+import { Card } from "react-mdl"
 
-const PostPreview = ({ __url, date, title, description }) => {
+const PostPreview = ({ __url, date, title, description, image }) => {
   const pageDate = date ? new Date(date) : null
 
+  const imgUrl = {
+    backgroundImage: "url(" + image + ")",
+  }
+
+  console.log(imgUrl)
   return (
-    <Cell col={ 12 } shadow={ 0 }>
-      <Card className={ cx(styles.media) }>
+    <Card className={ cx(styles.card) }>
+      <div className={ cx(styles.media, imgUrl) }>
         <h3>
           <Link to={ __url } className={ cx(styles.link) }>
             { title }
           </Link>
         </h3>
-      </Card>
+      </div>
       {
         description &&
-          <Card className={ cx(styles.supportingText) }>
+          <div className={ cx(styles.supportingText) }>
             { description }
-          </Card>
+          </div>
       }
       {
         pageDate &&
-          <Card className={ cx(styles.supportingText, styles.meta) }>
+          <div className={ cx(styles.supportingText, styles.meta) }>
             <div className={ cx(styles.minilogo) }></div>
             <div>
               <strong>{ "Helmut Drewes" }</strong>
@@ -36,9 +41,9 @@ const PostPreview = ({ __url, date, title, description }) => {
                 </time>
               </span>
             </div>
-          </Card>
+          </div>
       }
-    </Cell>
+    </Card>
   )
 }
 
@@ -47,6 +52,7 @@ PostPreview.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   description: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default PostPreview
