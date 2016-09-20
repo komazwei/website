@@ -44,8 +44,8 @@ export default class TopicAccordion extends Component {
     const stateStyle = this.state.active ? styles.active : styles.inactive
 
     return (
-      <section className={ cx(styles.parent, stateStyle) }>
-        <h2 onClick={ this.handleToggle } className={ styles.parentTitle }>{ this.props.title }</h2>
+      <section className={ cx(styles.topic, stateStyle) }>
+        <h3 onClick={ this.handleToggle } className={ styles.parentTitle }>{ this.props.title }</h3>
         <div className={ cx(styles.overflow) }>
           <div className={ cx(styles.children) }>
             { guides.map((guide) => (

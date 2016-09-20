@@ -33,7 +33,7 @@ export default class GuideIndex extends Component {
             <div className={ cx(styles.pageWidthContainer) }>
               <div className={ cx(styles.page) }>
                 <nav>
-                  <h1>{ "Welcome to the Agrista " }{ this.props.head.title }{ " Help Center" }</h1>
+                  <h3>{ "Welcome to the Agrista " }{ this.props.head.title }{ " Help Center" }</h3>
                   { this.props.head && this.props.head.topics &&
                     this.props.head.topics.map((topic) => (
                       <TopicAccordion key={ topic.name } title={ topic.title } topic={ topic.name } />

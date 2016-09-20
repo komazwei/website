@@ -42,12 +42,12 @@
   }
 }
 
-nav h1 {
+nav h3 {
   color: $palette-grey-900;
 }
 
 @media (min-width: 771px) {
-  nav h1 {
+  nav h3 {
       display: block;
       font-size: 24px;
       font-weight: 400;
