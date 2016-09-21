@@ -40,12 +40,6 @@ export default class Navbar extends Component {
         className={ cx(styles.header) }
       >
         <Navigation>
-          <Link to="/services" className={ cx(styles.link) } activeClassName="active">
-            { "Services" }
-          </Link>
-          <Link to="/partners" className={ cx(styles.link) } activeClassName="active">
-            { "Partners" }
-          </Link>
           <Link to="/docs" className={ cx(styles.link) } activeClassName="active">
             { "Docs" }
           </Link>
