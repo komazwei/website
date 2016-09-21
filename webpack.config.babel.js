@@ -140,7 +140,7 @@ export const makeConfig = (config = {}) => {
       context: path.join(__dirname, config.source),
       // renderer: (text) => html
       description: {
-        pruneLength: 300,
+        pruneLength: 1000,
       },
       feedsOptions: {
         title: pkg.config.sitename,

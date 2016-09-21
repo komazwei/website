@@ -1,6 +1,6 @@
 /* @flow */
 import React, { PropTypes } from "react"
-import cx from "classnames"
+import classNames from "classnames"
 import { Grid, Cell } from "react-mdl"
 import PostPreview from "../../components/PostPreview"
 
@@ -9,7 +9,7 @@ import styles from "./PostsList.scss"
 const PostsList = ({ posts }) => {
   return (
     <div>
-      <Grid className={ cx(styles.posts) }>
+      <Grid className={ classNames(styles.posts) }>
         { posts.map((post) => (
           <Cell
             key={ post.__url }

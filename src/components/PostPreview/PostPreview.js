@@ -1,7 +1,7 @@
 /* @flow */
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
-import cx from "classnames"
+import classNames from "classnames"
 import styles from "./PostPreview.scss"
 
 import { Card } from "react-mdl"
@@ -13,26 +13,25 @@ const PostPreview = ({ __url, date, title, description, image }) => {
     backgroundImage: "url(" + image + ")",
   }
 
-  console.log(imgUrl)
   return (
-    <Card className={ cx(styles.card) }>
-      <div className={ cx(styles.media, imgUrl) }>
+    <Card className={ classNames(styles.card) }>
+      <div className={ classNames(styles.media, imgUrl) }>
         <h3>
-          <Link to={ __url } className={ cx(styles.link) }>
+          <Link to={ __url } className={ classNames(styles.link) }>
             { title }
           </Link>
         </h3>
       </div>
       {
         description &&
-          <div className={ cx(styles.supportingText) }>
+          <div className={ classNames(styles.supportingText) }>
             { description }
           </div>
       }
       {
         pageDate &&
-          <div className={ cx(styles.supportingText, styles.meta) }>
-            <div className={ cx(styles.minilogo) }></div>
+          <div className={ classNames(styles.supportingText, styles.meta) }>
+            <div className={ classNames(styles.minilogo) }></div>
             <div>
               <strong>{ "Helmut Drewes" }</strong>
               <span>

@@ -1,7 +1,7 @@
 // @flow
 import React, { Component, PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
-import Page from "../Page"
+import Page from "../../layouts/Page"
 import PagesList from "../../components/PagesList"
 
 export default class Partners extends Component {

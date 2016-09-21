@@ -26,7 +26,9 @@ export default class Blog extends Component {
 
     return (
       <Page { ...this.props }>
-        <Ribbon />
+        <Ribbon
+          title={ "Blog" }
+        />
         <div className={ cx(styles.blog) }>
           <PostsList posts={ latestPosts } />
         </div>
