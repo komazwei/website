@@ -2,10 +2,8 @@ import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 import classNames from "classnames"
 import axios from "axios"
-import { Content, Grid, Cell, Card, Textfield, Button } from "react-mdl"
-import styles from "./Contact.scss"
-// import Page from "../../layouts/Page"
-import Ribbon from "../../components/Ribbon"
+import styles from "./Contact.css"
+import Page from "../../layouts/Page"
 
 export default class Contact extends Component {
 
