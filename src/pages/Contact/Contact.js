@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from "react"
 import axios from "axios"
 import styles from "./Contact.css"
-import Page from "../Page"
+import Page from "../../layouts/Page"
 
 export default class Contact extends Component {
 
