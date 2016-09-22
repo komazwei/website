@@ -17,7 +17,8 @@ export default class SiteFooter extends Component {
           <FooterLinkList>
             <span className={ cx(styles.logo) }>©2016 Agrista</span>
             <a href="/docs">Help</a>
-            <a href="#">Privacy & Terms</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
           </FooterLinkList>
         </FooterSection>
       </Footer>

@@ -6,10 +6,10 @@ import styles from "./index.css"
 
 TopBarProgressIndicator.config({
   barColors: {
-    "0": "#fff",
-    "1.0": "#fff",
+    "0": "#689F38",
+    "1.0": "#689F38",
   },
-  shadowBlur: 5,
+  shadowBlur: 2,
 })
 
 export default class PageLoading extends Component {

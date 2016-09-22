@@ -17,12 +17,12 @@ class Partner extends Component {
         { ...props }
         header={
           <header>
-          {
-            pageDate &&
-            <time key={ pageDate.toISOString() }>
-              { pageDate.toDateString() }
-            </time>
-          }
+            {
+              pageDate &&
+                <time key={ pageDate.toISOString() }>
+                  { pageDate.toDateString() }
+                </time>
+            }
           </header>
         }
       />
