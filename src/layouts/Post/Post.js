@@ -18,7 +18,6 @@ const Post = (props, context) => {
   const imgUrl = {
     backgroundImage: "url(" + head.image + ")",
   }
-  console.log(imgUrl)
 
   const pageDate = head.date ? new Date(head.date) : null
 
