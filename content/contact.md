@@ -1,5 +1,4 @@
 ---
 title: Contact Us
+layout: Contact
 ---
-
-Contact form and mini map showing Agrista office locations.

@@ -1,9 +1,21 @@
 import React, { Component, PropTypes } from "react"
+import Helmet from "react-helmet"
+import classNames from "classnames"
 import axios from "axios"
-import styles from "./Contact.css"
-import Page from "../Page"
+import { Content, Grid, Cell, Card, Textfield, Button } from "react-mdl"
+import styles from "./Contact.scss"
+// import Page from "../../layouts/Page"
+import Ribbon from "../../components/Ribbon"
 
 export default class Contact extends Component {
+
+  static propType = {
+    children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+    __filename: PropTypes.string.isRequired,
+//    __url: PropTypes.string.isRequired,
+    head: PropTypes.object.isRequired,
+    body: PropTypes.string.isRequired,
+  }
 
   constructor(props, context) {
     super(props, context)
@@ -25,13 +37,13 @@ export default class Contact extends Component {
   handleSubmit(e) {
     e.preventDefault()
     const { name, email, text, company, phone } = this.state
-    var re = /^([\w_\.\-\+])+\@([\w\-]+\.)+([\w]{2,10})+$/
+    const re = /^([\w_\.\-\+])+\@([\w\-]+\.)+([\w]{2,10})+$/
     if (email === "" || !re.test(email)) {
       alert("please enter a valid email address")
       return false
     }
     if (email && text) {
-      var data = {
+      const data = {
         "fields": {
           "Name": name,
           "Message": text,
@@ -48,56 +60,98 @@ export default class Contact extends Component {
           "Authorization": "Bearer keyhIGB1sKiwklGzU",
         },
       }).then(function(response) {
-          // console.log(response.data);
-          // console.log(response.status);
-          // console.log(response.statusText);
-          // console.log(response.headers);
-          // console.log(response.config);
+        console.log(response.data)
+        console.log(response.status)
+        console.log(response.statusText)
+        console.log(response.headers)
+        console.log(response.config)
         window.location.href = "/thanks"
       })
-    } else {
+    }
+    else {
       alert("Please a message")
     }
   }
   render() {
-    return (
-      <Page { ...this.props} >
-          <div className={ styles.wrapper + " docs-example docs-example-htmlForms" }>
-            <form onSubmit={ this.handleSubmit }>
-              <div className="row">
-                <div className="six columns">
-                  <label htmlFor="exampleEmailInput">Name</label>
-                  <input onChange={ this.handleChange } data-input="name" className="u-full-width" type="text" value={ this.state.name }  />
-                </div>
-                <div className="six columns">
-                  <label htmlFor="exampleEmailInput">Email</label>
-                  <input onChange={ this.handleChange } className="u-full-width" data-input="email" type="email"  value={ this.state.email }  />
-                </div>
-              </div>
+    const { props } = this
 
-              <div className="row">
-                <div className="six columns">
-                  <label htmlFor="exampleEmailInput">Company</label>
-                  <input onChange={ this.handleChange } data-input="company" className="u-full-width" type="text" value={ this.state.company } />
+    const { head } = props
+
+    return (
+      <div>
+        <Helmet
+          title={ head.title }
+        />
+        <Ribbon title={ "Contact Us" } />
+        <Content className={ classNames(styles.main) }>
+          <Grid className={ classNames(styles.container) }>
+            <Cell
+              col={ 2 }
+              hidePhone
+              hideTablet
+            />
+            <Cell
+              col={ 8 }
+              shadow={ 2 }
+              className={ classNames(styles.content, "mdl-color--white") }
+            >
+              <Card>
+                <div>
+                  <form onSubmit={ this.handleSubmit }>
+                    <div>
+                      <Textfield
+                        onChange={ this.handleChange }
+                        data-input="name"
+                        value={ this.state.name }
+                        label="Name"
+                        floatingLabel
+                        style={ { width: "200px" } }
+                      />
+                      <Textfield
+                        onChange={ this.handleChange }
+                        data-input="email"
+                        value={ this.state.email }
+                        label="Email"
+                        floatingLabel
+                        style={ { width: "200px" } }
+                      />
+                      <Textfield
+                        onChange={ this.handleChange }
+                        data-input="company"
+                        value={ this.state.company }
+                        label="Company"
+                        floatingLabel
+                        style={ { width: "200px" } }
+                      />
+                      <Textfield
+                        onChange={ this.handleChange }
+                        data-input="phone"
+                        value={ this.state.phone }
+                        label="Phone"
+                        floatingLabel
+                        style={ { width: "200px" } }
+                      />
+                      <Textfield
+                        onChange={ this.handleChange }
+                        label="Enter your message..."
+                        rows={ 3 }
+                        data-input="text"
+                        value={ this.state.text }
+                        style={ { width: "200px" } }
+                      />
+                    </div>
+                    <div>
+                      <Button type="submit">
+                        Get in touch
+                      </Button>
+                    </div>
+                  </form>
                 </div>
-                <div className="six columns">
-                   <label htmlFor="exampleEmailInput">Phone</label>
-                  <input onChange={ this.handleChange } data-input="phone" className="u-full-width" type="text" value={ this.state.phone } />
-                </div>
-              </div>
-              <label htmlFor="exampleMessage">Message</label>
-              <textarea onChange={ this.handleChange } data-input="text" className={ styles.textarea + " u-full-width" } placeholder="Leave your message here!" value={ this.state.text } />
-              <div className={ styles.formSubmit }>
-                <button
-                  className={ styles.submit + " button-primary" }
-                  type="submit"
-                >
-                  Get in touch
-                </button>
-              </div>
-            </form>
-          </div>
-      </Page>
+              </Card>
+            </Cell>
+          </Grid>
+        </Content>
+      </div>
     )
   }
 }
