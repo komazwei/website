@@ -49,7 +49,7 @@ export default class Navbar extends Component {
           <Link to="/contact" className={ cx(styles.link) } activeClassName="active">
             { "Contact Us" }
           </Link>
-          <Link to={ "/" } className={ cx(ctaButtonClasses, styles.cta) }>
+          <Link to={ "/contact" } className={ cx(ctaButtonClasses, styles.cta) }>
             { "Get Started" }
           </Link>
         </Navigation>

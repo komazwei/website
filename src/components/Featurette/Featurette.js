@@ -11,25 +11,34 @@ export default class Featurette extends Component {
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    reverse: PropTypes.bool,
-    grey: PropTypes.bool,
+    isReverse: PropTypes.bool,
+    isInverse: PropTypes.bool,
+    isImgBottom: PropTypes.bool,
+    isImgFull: PropTypes.bool,
   }
 
   render() {
-    const { image, title, description, reverse, grey } = this.props
+    const { image, title, description, isReverse, isInverse, isImgBottom, isImgFull } = this.props
 
-    const classes = cx(styles.section, {
-      reverse: reverse,
-      grey: grey,
+    const sectionClasses = cx(styles.section, {
+      reverse: isReverse,
+      inverse: isInverse,
     })
 
+    const imgClasses = cx({
+      imgBottom: isImgBottom,
+      imgFull: isImgFull,
+    })
+
+    console.log(imgClasses)
+
     return (
-      <section className={ classes }>
+      <section className={ sectionClasses }>
         <div className={ cx(styles.aux) }>
           <Grid className={ cx(styles.grid) }>
             <Cell col={ 6 } phone={ 12 } className={ cx(styles.cell, styles.image) }>
               <div className={ cx(styles.imageContainer) }>
-                <img src={ image } />
+                <img src={ image } className={ imgClasses } />
               </div>
             </Cell>
             <Cell col={ 6 } phone={ 12 } className={ cx(styles.content) }>

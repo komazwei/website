@@ -13,7 +13,7 @@ features:
   image: /images/pages/home/features/assets.png
 - name: revenue-projection-feature
   title: Cash Flow Projections
-  description: We provide smart tools to help you easily draw up cash flow budgets that not only help you communicate your farming plan with creditors, but also help you get new insights into the profitability of your farming enterprises.
+  description: We provide smart tools to help you easily draw up cash flow budgets that not only help you communicate your farming plan with creditors, but also help you gain new insights into the profitability of your farming enterprises.
   image: /images/pages/home/features/revenues.png
 - name: financial-plans-feature
   title: Financial Plans
@@ -21,42 +21,45 @@ features:
   image: /images/pages/home/features/financial-plan.png
 featurettes:
 - name: capture-asset-featurette
-  title: Capture assets
-  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  title: Manage farm assets in one place
+  description: We help you organise your farming assets and liabilities. Use our interactive farm map to locate farms, fields and other assets. Import professional valuations from our partners to help you get started and to keep track of market developments in values of assets.
   image: /images/pages/home/featurettes/assets.png
+  isImgBottom: true
 - name: revenue-projection-featurette
-  title: Provide revenue projections
-  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  title: Generate cash flow budgets easily
+  description: We host community contributed enterprise budgets that you can easily assign to fields to automatically genereate finance requirements and profit margins per enterprise. .
   image: /images/pages/home/featurettes/revenues.png
-  reverse: true
-  grey: true
+  isReverse: true
+  isInverse: true
+  isImgFull: true
 - name: financial-plans-featurette
-  title: Provide revenue projections
-  description: We help you organise your farming assets and production plans. You can then easily access online benchmarking services from selected partners that give you new insight into what farming enterprises are offer the best returns.
+  title: Effortlessly prepare financial plans
+  description: Use our powerful tools to incorporate your asset register and production plans to automatically create cash flow budgets and a statement of assets and liabilities. Securily share documents online with your service providers and creditors.
   image: /images/pages/home/featurettes/financials.png
+  isImgFull: true
 featureHighlights:
 - name: farm-maps-highlight
   title: Farm Maps
-  description: Farm maps offer
-  icon: android
+  description: User our interactive farm map to draw farm boundaries, fields and the location of assets.
+  icon: place
 - name: enterprise-budgets-highlight
   title: Enterprise Budgets
-  description: Enterprise budgets offer
-  icon: assignment_turned_in
+  description: Search our community database of enterprise budgets to customise or to benchmark your production costs.
+  icon: pie_chart
 - name: production-plans-highlight
   title: Production Plans
-  description: Production plans offer
-  icon: group_work
+  description: Use our interactive production planner to record completed activities and plan your upcoming season.
+  icon: multiline_chart
 - name: asset-valuations-highlight
   title: Asset Valuations
-  description: Asset valuations offer
-  icon: expand_more
+  description: Use our partners to professionally value your assets, prepare production plans, and analyse your financials.
+  icon: people
 - name: cash-projections-highlight
-  title: Cash Projections
-  description: Cash projections offer
-  icon: expand_more
+  title: Satellite Imagery
+  description: Subscribe to our regular updates to high-resolution satellite imagery to monitor your crop assets.
+  icon: satellite
 - name: secure-sharing-highlight
   title: Secure Sharing
-  description: Secure sharing offer
-  icon: expand_more
+  description: Your data is secure and private with us. You have full control on who should have access to your data.
+  icon: security
 ---
