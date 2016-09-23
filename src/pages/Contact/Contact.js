@@ -1,8 +1,8 @@
+/* @flow */
 import React, { Component, PropTypes } from "react"
 import Helmet from "react-helmet"
 import classNames from "classnames"
-import axios from "axios"
-import { Content, Grid, Cell, Card, Textfield, Button } from "react-mdl"
+import { Content, Grid, Cell, Card, CardText, Icon } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
 import styles from "./Contact.scss"
 
@@ -16,61 +16,6 @@ export default class Contact extends Component {
     body: PropTypes.string.isRequired,
   }
 
-  constructor(props, context) {
-    super(props, context)
-    this.state = {
-      misc: null,
-    }
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-  handleChange(e) {
-    console.log(e.target.value)
-    console.log(e.target.innerText)
-    console.log(e.target.dataset)
-    const value = (e.target.value !== "") ? e.target.value : e.target.innerText
-    this.setState({
-      [`${e.target.dataset.input}`]: value,
-    })
-  }
-  handleSubmit(e) {
-    e.preventDefault()
-    const { name, email, text, company, phone } = this.state
-    const re = /^([\w_\.\-\+])+\@([\w\-]+\.)+([\w]{2,10})+$/
-    if (email === "" || !re.test(email)) {
-      alert("please enter a valid email address")
-      return false
-    }
-    if (email && text) {
-      const data = {
-        "fields": {
-          "Name": name,
-          "Message": text,
-          "Email": email,
-          "Company": company,
-          "Phone": phone,
-        },
-      }
-      axios({
-        method: "post",
-        url: "http://api.airtable.com/v0/appRokysVIYeDAEgA/Contact%20Us",
-        data: data,
-        headers: {
-          "Authorization": "Bearer keyhIGB1sKiwklGzU",
-        },
-      }).then(function(response) {
-        console.log(response.data)
-        console.log(response.status)
-        console.log(response.statusText)
-        console.log(response.headers)
-        console.log(response.config)
-        window.location.href = "/thanks"
-      })
-    }
-    else {
-      alert("Please a message")
-    }
-  }
   render() {
     const { props } = this
 
@@ -83,70 +28,75 @@ export default class Contact extends Component {
         />
         <Ribbon title={ "Contact Us" } />
         <Content className={ classNames(styles.main) }>
-          <Grid className={ classNames(styles.container) }>
-            <Cell
-              col={ 2 }
-              hidePhone
-              hideTablet
-            />
-            <Cell
-              col={ 8 }
-              shadow={ 2 }
-              className={ classNames(styles.content, "mdl-color--white") }
-            >
-              <Card>
-                <div>
-                  <form onSubmit={ this.handleSubmit }>
-                    <div>
-                      <Textfield
-                        onChange={ this.handleChange }
-                        data-input="name"
-                        value={ this.state.name }
-                        label="Name"
-                        floatingLabel
-                        style={ { width: "200px" } }
-                      />
-                      <Textfield
-                        onChange={ this.handleChange }
-                        data-input="email"
-                        value={ this.state.email }
-                        label="Email"
-                        floatingLabel
-                        style={ { width: "200px" } }
-                      />
-                      <Textfield
-                        onChange={ this.handleChange }
-                        data-input="company"
-                        value={ this.state.company }
-                        label="Company"
-                        floatingLabel
-                        style={ { width: "200px" } }
-                      />
-                      <Textfield
-                        onChange={ this.handleChange }
-                        data-input="phone"
-                        value={ this.state.phone }
-                        label="Phone"
-                        floatingLabel
-                        style={ { width: "200px" } }
-                      />
-                      <Textfield
-                        onChange={ this.handleChange }
-                        label="Enter your message..."
-                        rows={ 3 }
-                        data-input="text"
-                        value={ this.state.text }
-                        style={ { width: "200px" } }
-                      />
-                    </div>
-                    <div>
-                      <Button type="submit">
-                        Get in touch
-                      </Button>
-                    </div>
-                  </form>
-                </div>
-              </Card>
+          <Grid component={ "section" } className={ classNames(styles.sectionCenter) } shadow={ 0 } noSpacing>
+            <Cell component={ Card } col={ 12 }>
+              <Grid component={ CardText } noSpacing>
+                <Cell component="h4" col={ 12 }>
+                  { "" }
+                </Cell>
+                <Cell
+                  className={ classNames(styles.sectionCircleContainer) }
+                  col={ 2 }
+                  phone={ 1 }
+                >
+                  <div
+                    className={ classNames(styles.icon) }
+                  >
+                    <Icon name="location_city" />
+                  </div>
+                </Cell>
+                <Cell className="section__text" col={ 10 } tablet={ 6 } phone={ 3 }>
+                  <h5>Main Adress</h5>
+                  <div>
+                    <p>
+                      <span>
+                        { "Unit 401A" }
+                      </span>
+                      <span>
+                        { "66 Albert Road" }
+                      </span>
+                      <span>
+                        { "Woodstock" }
+                      </span>
+                      <span>
+                        { "South Africa" }
+                      </span>
+                    </p>
+                  </div>
+                </Cell>
+                <Cell
+                  className={ classNames(styles.sectionCircleContainer) }
+                  col={ 2 }
+                  phone={ 1 }
+                >
+                  <div
+                    className={ classNames(styles.icon) }
+                  >
+                    <Icon name="phone" />
+                  </div>
+                </Cell>
+                <Cell className="section__text" col={ 10 } tablet={ 6 } phone={ 3 }>
+                  <h5>Contact Details</h5>
+                  <div>
+                    <p>
+                      <span>
+                        { "+27 21 201 1171" }
+                      </span>
+                      <span>
+                        { "info@agrista.com" }
+                      </span>
+                    </p>
+                  </div>
+                </Cell>
+                <Cell
+                  col={ 12 }
+                >
+                  <img
+                    src="https://api.mapbox.com/styles/v1/agrista/citfw8fl800242jq5qus343f0/static/18.445252,-33.925787,11.83,0.00,0.00/600x400@2x?access_token=pk.eyJ1IjoiYWdyaXN0YSIsImEiOiJXZThUTk53In0.Sa4Yqi0MjROOsv8LX3524A" width="600"height="400"alt="Outdoors"
+                    className={ classNames(styles.map) }
+                  />
+                </Cell>
+              </Grid>
             </Cell>
           </Grid>
         </Content>
