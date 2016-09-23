@@ -1,8 +1,9 @@
 ---
-title: Farm boundaries
+title: Field boundaries
 app: farm-map
 layout: Guide
+topic: field-boundary
 index: 3
 ---
 
-Farm boudaries can be defined either by searching of registered cadastral boundaries or by digitising a polygon on the map.
+Field boudaries can be added to a farm by either selecting a boundary identified from satellite imagery or by digitising a polygon on the map.

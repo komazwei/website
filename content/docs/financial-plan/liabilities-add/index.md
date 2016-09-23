@@ -25,7 +25,7 @@ Capture the customer's liabilities with the **Add Liability** option from the To
 
 ------
 
-### Editing asset data
+### Editing liability data
 
 To make changes to an existing liability, click on the liability name in the Assets & Liabilities table. 
 
