@@ -1,7 +1,8 @@
 ---
 title: Add Assets
 layout: Guide
-app: assets
+app: financial-plans
+topic: assets&liabilities
 index: 5
 ---
 
