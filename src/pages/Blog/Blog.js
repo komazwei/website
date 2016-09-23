@@ -20,7 +20,7 @@ export default class Blog extends Component {
     const latestPosts = enhanceCollection(this.context.collection, {
       filter: { layout: "Post" },
       sort: "date",
-      reverse: true,
+      published: true,
       limit: numberOfLatestPosts,
     })
 

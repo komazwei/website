@@ -1,20 +1,20 @@
 /* @flow */
 import React, { PropTypes } from "react"
 import { Grid, Cell } from "react-mdl"
-import cx from "classnames"
+import classNames from "classnames"
 import styles from "./Feature.scss"
 
 const Feature = ({ features }) => {
   return (
-    <section id="feature" className={ cx(styles.section) }>
-      <div className={ cx(styles.aux) }>
+    <section id="feature" className={ classNames(styles.section) }>
+      <div className={ classNames(styles.aux) }>
         <Grid>
           { features.map((feature) => (
             <Cell
               key={ feature.name }
               col={ 4 }
               phone={ 12 }
-              className={ cx(styles.item) }
+              className={ classNames(styles.item) }
             >
               <img src={ feature.image } />
               <h4>{ feature.title }</h4>

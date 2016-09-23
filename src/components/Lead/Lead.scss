@@ -1,9 +1,21 @@
+@import "../../styles/color-definitions";
+
 .section {
-  background: #fff;
+  background-color: $color-white;
   padding: 22px 22px 0;
   text-align: center;
 }
 
-.container  {
-  max-width: 900px;
+.aux {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 28px;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
 }

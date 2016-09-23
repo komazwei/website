@@ -3,6 +3,8 @@ import Helmet from "react-helmet"
 import TopBarProgressIndicator from "react-topbar-progress-indicator"
 import { Spinner } from "react-mdl"
 
+import styles from "./PageLoading.scss"
+
 TopBarProgressIndicator.config({
   barColors: {
     "0": "#689F38",
@@ -20,7 +22,9 @@ export default class PageLoading extends Component {
           title={ "Loading..." }
         />
         <TopBarProgressIndicator />
-        <Spinner singleColor />
+        <div className={ styles.spinnerContainer }>
+          <Spinner singleColor />
+        </div>
       </div>
     )
   }

@@ -2,6 +2,7 @@
 title: Making it easier to follow updates in your business network
 date: 2011-07-18
 author: helmut
+published: true
 layout: Post
 ---
 

@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  text-align: center;
+//  text-align: center;
   vertical-align: middle;
   margin-top: 56px;
 }
@@ -51,15 +51,20 @@
   }
 }
 
+.heroBlock {
+  text-align: left;
+}
+
 .hero h1 {
-  font-size: 32px;
+  font-size: 33px;
   font-size: 2rem;
   margin: 8px 0 0;
   color: $color-white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media only screen and (min-width: 768px) {
   .hero h1 {
-      font-size: 46px;
+      font-size: 53px;
       margin: 24px 0 38px 0;
   }
 }
@@ -69,12 +74,14 @@
   color: $color-white;
   font-size: 24px;
   line-height: 1.4;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .hero .cta {
   height: 48px !important;
   line-height: 48px !important;
   margin-top: 24px !important;
+  padding: 3px 21px;
 }
 
 .hero .fab {
@@ -96,4 +103,8 @@
   .hero .fab {
     display: block;
   }
+}
+
+.hero .fab:hover {
+  background-color: $palette-grey-50;
 }

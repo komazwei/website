@@ -53,7 +53,7 @@ export default class Contact extends Component {
       }
       axios({
         method: "post",
-        url: "https://api.airtable.com/v0/appRokysVIYeDAEgA/Contact%20Us",
+        url: "http://api.airtable.com/v0/appRokysVIYeDAEgA/Contact%20Us",
         data: data,
         headers: {
           "Authorization": "Bearer keyhIGB1sKiwklGzU",

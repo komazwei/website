@@ -1,27 +1,40 @@
 /* @flow */
-import React, { Component, PropTypes } from "react"
+import React, { PropTypes } from "react"
 import { Grid, Cell } from "react-mdl"
-// import enhanceCollection from "phenomic/lib/enhance-collection"
+import classNames from "classnames"
 
 import styles from "./Lead.scss"
-import cx from "classnames"
 
-export default class Lead extends Component {
-  static propTypes = {
-    head: PropTypes.object.isRequired,
-    body: PropTypes.string.isRequired,
-  }
+const Lead = ({ title, description }) => {
 
-  render() {
-    return (
-      <section className={ cx(styles.section) }>
+  return (
+    <section className={ classNames(styles.section) }>
+      <div className={ classNames(styles.aux) }>
         <Grid>
-          <Cell col={ 12 } className={ cx(styles.container) }>
-            <h2>{ this.props.head.lead }</h2>
-            <p>{ this.props.head.leadDescription }</p>
+          <Cell
+            col={ 12 }
+            className={ classNames(styles.container) }
+          >
+            <h2
+              className={ classNames(styles.title) }
+            >
+              { title }
+            </h2>
+            <p
+              className={ classNames(styles.description) }
+            >
+              { description }
+            </p>
           </Cell>
         </Grid>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )
 }
+
+Lead.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
+
+export default Lead

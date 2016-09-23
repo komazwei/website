@@ -1,17 +1,12 @@
-.phenomic-HeadingAnchor {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  display: none;
-}
+@import "variables";
 
 body, p {
+  font-family: $preferred_font;
   font-size: 16px;
   font-weight: 200;
 }
 
 h1,h2 {
-  font-family: "Roboto Slab", "Helvetica", "Arial", sans-serif;
+  font-family: $header_font;
   font-weight: 300;
 }

@@ -1,7 +1,8 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
-import cx from "classnames"
+import classNames from "classnames"
 import { Link } from "react-router"
+import { Grid, Cell } from "react-mdl"
 
 import styles from "./Hero.scss"
 
@@ -16,7 +17,7 @@ export default class Hero extends Component {
   };
 
   render() {
-    const ctaButtonClasses = cx(
+    const ctaButtonClasses = classNames(
       "mdl-button",
       "mdl-js-button",
       "mdl-js-ripple-effect",
@@ -24,7 +25,7 @@ export default class Hero extends Component {
       "mdl-button--accent",
     )
 
-    const fabButtonClasses = cx(
+    const fabButtonClasses = classNames(
       "mdl-button",
       "mdl-js-button",
       "mdl-button--fab",
@@ -33,17 +34,25 @@ export default class Hero extends Component {
     )
 
     return (
-      <div className={ cx(styles.hero) }>
-        <div className={ cx(styles.container) }>
-          <div className={ cx(styles.overlay) }>
-            <h1>{ this.props.head.title }</h1>
-            <p>{ this.props.head.title }</p>
-            <Link to={ "/" } className={ cx(ctaButtonClasses, styles.cta) }>
-              { this.props.head.heroCTA }
-            </Link>
+      <div className={ classNames(styles.hero) }>
+        <div className={ classNames(styles.container) }>
+          <div className={ classNames(styles.overlay) }>
+            <Grid>
+              <Cell
+                col={ 6 }
+                className={ classNames(styles.heroBlock) }
+              >
+                <h1>
+                  { this.props.head.title }
+                </h1>
+                <Link to={ "/" } className={ classNames(ctaButtonClasses, styles.cta) }>
+                  { this.props.head.heroCTA }
+                </Link>
+              </Cell>
+            </Grid>
           </div>
         </div>
-        <Link to="#feature" className={ cx(fabButtonClasses, styles.fab) }>
+        <Link to="#feature" className={ classNames(fabButtonClasses, styles.fab) }>
           <i className={ "material-icons" }>
             { "expand_more" }
           </i>

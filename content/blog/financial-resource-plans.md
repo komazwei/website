@@ -2,7 +2,7 @@
 title: Financial Resource Plans are awesome
 date: 2016-10-01
 layout: Post
-draft: true
+published: false
 image: /images/blog/road.jpg
 ---
 
