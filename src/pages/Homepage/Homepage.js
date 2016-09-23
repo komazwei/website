@@ -8,7 +8,7 @@ import SiteFooter from "../../components/SiteFooter"
 import Hero from "../../components/Hero"
 import Lead from "../../components/Lead"
 import Feature from "../../components/Feature"
-import Featurette from "../../components/Featurette"
+import FeaturettesList from "../../fragments/FeaturettesList"
 import FeatureHighlight from "../../components/FeatureHighlight"
 // import Feature from "../../components/Feature"
 
@@ -60,8 +60,6 @@ export default class Page extends Component {
 
     const features = this.props.head.features
 
-    const featurettes = this.props.head.featurettes
-
     return (
       <div>
         <Helmet
@@ -74,16 +72,7 @@ export default class Page extends Component {
           description={ head.leadDescription }
         />
         <Feature features={ features } />
-        { featurettes.map((featurette) => (
-          <Featurette
-            key={ featurette.name }
-            image={ featurette.image }
-            title={ featurette.title }
-            description={ featurette.description }
-            reverse={ featurette.reverse }
-            grey={ featurette.grey }
-          />
-        )) }
+        <FeaturettesList featurettes={ head.featurettes } />
         <FeatureHighlight { ...this.props } />
         <SiteFooter />
       </div>

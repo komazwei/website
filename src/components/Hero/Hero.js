@@ -45,7 +45,7 @@ export default class Hero extends Component {
                 <h1>
                   { this.props.head.title }
                 </h1>
-                <Link to={ "/" } className={ classNames(ctaButtonClasses, styles.cta) }>
+                <Link to={ "/contact" } className={ classNames(ctaButtonClasses, styles.cta) }>
                   { this.props.head.heroCTA }
                 </Link>
               </Cell>
