@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { joinUri } from "phenomic"
 // import Page from "../Page"
 // import cx from "classnames"
-import SiteFooter from "../../components/SiteFooter"
+import Footer from "../../components/Footer"
 import Hero from "../../components/Hero"
 import Lead from "../../components/Lead"
 import Feature from "../../components/Feature"
@@ -74,7 +74,7 @@ export default class Page extends Component {
         <Feature features={ features } />
         <FeaturettesList featurettes={ head.featurettes } />
         <FeatureHighlight { ...this.props } />
-        <SiteFooter />
+        <Footer />
       </div>
     )
   }

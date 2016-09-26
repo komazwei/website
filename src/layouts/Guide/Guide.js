@@ -6,7 +6,8 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 
 // import {Content, Grid, Cell} from "react-mdl"
 import AppBar from "../../components/AppBar"
-import SiteFooter from "../../components/SiteFooter"
+import Footer from "../../components/Footer"
+// import SiteFooter from "../../components/SiteFooter"
 
 import styles from "./Guide.scss"
 
@@ -76,10 +77,10 @@ export default class Guide extends Component {
             <section className={ cx(styles.primaryContainer) }>
               <div className={ cx(styles.pageWidthContainer) }>
                 <article className={ cx(styles.page) }>
-                  <div className={ cx(styles.articleContainer) }>
+                  <section className={ cx(styles.articleContainer) }>
                     <div className={ cx(styles.articleTitle) }>{ head.title }</div>
                     <div dangerouslySetInnerHTML={ { __html: body } } />
-                  </div>
+                  </section>
                 </article>
                 <div>
                   <div className={ cx(styles.primaryNav) }>
@@ -116,8 +117,8 @@ export default class Guide extends Component {
               </div>
             </section>
           </div>
+          <Footer />
         </div>
-        <SiteFooter />
       </div>
     )
   }

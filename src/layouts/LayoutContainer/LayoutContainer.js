@@ -5,6 +5,7 @@ import cx from "classnames"
 import GoogleAnalyticsTracker from "../../components/GoogleAnalyticsTracker"
 import { Layout, Content } from "react-mdl"
 import Navbar from "../../components/Navbar"
+
 // import SiteFooter from "../../components/SiteFooter"
 
 // import "./index.global.css"

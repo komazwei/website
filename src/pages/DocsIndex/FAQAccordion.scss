@@ -1,0 +1,120 @@
+@import "../../styles/color-definitions";
+
+.title {
+  color: $palette-grey-900;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 0 0 8px;
+}
+
+.parent {
+  margin: 0 0 1px;
+  padding: 0;
+}
+
+.questionContainer {
+  margin: 0 -16px;
+}
+@media (min-width: 771px) {
+  .questionContainer {
+    margin: 0;
+  }
+}
+
+.question {
+  box-sizing: border-box;
+  border-top: 1px solid $palette-grey-300;
+  border-bottom: 1px solid $palette-grey-300;
+  color: $color-accent;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: -1px;
+  outline: none;
+  padding: 16px 50px 16px 16px;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 771px) {
+  .question {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+}
+
+.parent.active .question {
+  border-bottom: 0;
+  padding-bottom: 11px;
+}
+
+.question:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.question:before {
+  margin-top: -10px;
+  background: no-repeat url("/images/sprites/accordion-icons.png") 0 -36px;
+  background-size: 24px;
+  content: '';
+  height: 22px;
+  margin-top: -12px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 22px;
+}
+@media (min-width: 771px) {
+  .question:before {
+    margin-top: -8px;
+  }
+}
+
+.parent.active .question:before {
+  margin-top: -7px;
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -moz-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+}
+
+@media (min-width: 771px) {
+  .parent.active .question:before {
+    margin-top: -5px;
+  }
+}
+
+.overflow {
+  margin: 0;
+  overflow: hidden;
+}
+
+.content {
+  margin: 0 0 0 18px;
+  overflow: hidden;
+  padding: 1px 26px 19px 16px;
+  position: relative;
+}
+
+.parent.active .content {
+  margin-bottom: 0;
+}
+
+.parent:not(.active) .content {
+  margin-bottom: -9999px;
+}
+
+.content:before {
+  background-color: $palette-grey-300;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -19px;
+  width: 2px;
+}

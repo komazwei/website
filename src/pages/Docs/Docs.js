@@ -1,13 +1,14 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
+import Helmet from "react-helmet"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import cx from "classnames"
 
 // import Page from "../Page"
 import AppBar from "../../components/AppBar"
+import Footer from "../../components/Footer"
 import AppCards from "./AppCards"
 import FAQAccordion from "./FAQAccordion"
-import SiteFooter from "../../components/SiteFooter"
 
 import styles from "./Docs.scss"
 
@@ -37,6 +38,9 @@ export default class Docs extends Component {
 
     return (
       <div>
+        <Helmet
+          title={ head.title }
+        />
         <AppBar key={ head.name } url={ __url } title={ "Agrista" } />
         <div className={ cx(styles.content) }>
           <div className={ cx(styles.primaryContainer) }>
@@ -54,7 +58,7 @@ export default class Docs extends Component {
               </div>
             </div>
           </div>
-          <SiteFooter />
+          <Footer />
         </div>
       </div>
     )

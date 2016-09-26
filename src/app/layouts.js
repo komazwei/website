@@ -13,6 +13,7 @@ import RibbonPage from "../layouts/RibbonPage"
 /* custom pages */
 import Homepage from "../pages/Homepage"
 import Docs from "../pages/Docs"
+import DocsIndex from "../pages/DocsIndex"
 import Blog from "../pages/Blog"
 import Services from "../pages/Services"
 import Partners from "../pages/Partners"
@@ -35,6 +36,7 @@ export default class Layouts extends Component {
           Blog,
           Post,
           Docs,
+          DocsIndex,
           GuideIndex,
           Guide,
           RibbonPage,

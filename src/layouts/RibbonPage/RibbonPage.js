@@ -4,7 +4,7 @@ import classNames from "classnames"
 import { BodyContainer } from "phenomic"
 import { Content, Grid, Cell } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
-import SiteFooter from "../../components/SiteFooter"
+import Footer from "../../components/Footer"
 
 import styles from "./RibbonPage.scss"
 
@@ -38,8 +38,8 @@ class RibbonPage extends Component {
               </BodyContainer>
             </Cell>
           </Grid>
+          <Footer />
         </Content>
-        <SiteFooter />
       </div>
     )
   }

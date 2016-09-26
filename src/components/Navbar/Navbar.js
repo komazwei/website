@@ -18,13 +18,6 @@ export default class Navbar extends Component {
   };
 
   render() {
-    const ctaButtonClasses = cx (
-      "mdl-button",
-      "mdl-js-button",
-      "mdl-js-ripple-effect",
-      "mdl-button--raised",
-      "mdl-button--accent"
-    )
 
     return (
       <Header
@@ -48,9 +41,6 @@ export default class Navbar extends Component {
           </Link>
           <Link to="/contact" className={ cx(styles.link) } activeClassName="active">
             { "Contact Us" }
-          </Link>
-          <Link to={ "/contact" } className={ cx(ctaButtonClasses, styles.cta) }>
-            { "Get Started" }
           </Link>
         </Navigation>
       </Header>

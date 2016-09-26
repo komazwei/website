@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 import classNames from "classnames"
 import { Content, Grid, Cell, Card, CardText, Icon } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
+import Footer from "../../components/Footer"
 import styles from "./Contact.scss"
 
 export default class Contact extends Component {
@@ -100,6 +101,7 @@ export default class Contact extends Component {
             </Cell>
           </Grid>
         </Content>
+        <Footer />
       </div>
     )
   }

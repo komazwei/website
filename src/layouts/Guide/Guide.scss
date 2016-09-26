@@ -1,5 +1,4 @@
 @import "../../styles/color-definitions";
-
 @media (min-width: 771px) {
   .primaryContainer {
     text-align: center;
@@ -21,7 +20,6 @@
     padding-left: 128px;
   }
 }
-
 @media (min-width: 1186px) {
   .pageWidthContainer {
     margin: 0 auto;
@@ -44,9 +42,11 @@
   display: inline-block;
   position: relative;
   width: 100%;
+
   a {
     text-decoration: none;
   }
+
   img {
     max-width: 100%;
   }

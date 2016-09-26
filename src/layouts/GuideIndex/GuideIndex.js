@@ -1,5 +1,6 @@
 /* @flow */
 import React, { Component, PropTypes } from "react"
+import Helmet from "react-helmet"
 // import { Link } from "react-router"
 // import enhanceCollection from "phenomic/lib/enhance-collection"
 import SiteFooter from "../../components/SiteFooter"
@@ -27,6 +28,9 @@ export default class GuideIndex extends Component {
   render() {
     return (
       <div>
+        <Helmet
+          title={ this.props.head.title + " Help" }
+        />
         <AppBar key={ this.props.head.name } url={ this.props.__url } title={ this.props.head.title } />
         <div className={ cx(styles.content) }>
           <section className={ cx(styles.primaryContainer) }>
