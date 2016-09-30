@@ -1,44 +1,43 @@
 /* @flow */
-import React, { Component, PropTypes } from "react"
+import React, { PropTypes } from "react"
 import classNames from "classnames"
-import { Header, Icon } from "react-mdl"
+import { Header, IconButton } from "react-mdl"
 import { Link } from "react-router"
 import styles from "./Ribbon.scss"
 
-export default class Ribbon extends Component {
-  static propTypes = {
-    title: PropTypes.string,
-    link: PropTypes.string,
-  }
+const Ribbon = ({ title, link, back }) => {
 
-  render() {
-    const { title, link } = this.props
+  const backIcon = back
+  ? <IconButton name="arrow_back" />
+  : null
 
-    const buttonClasses = classNames(
-      "mdl-button",
-      "mdl-js-button",
-      "mdl-js-ripple-effect",
-      "mdl-button--icon"
-    )
+  const headerTitle = (
+    <Link to={ link }>
+      { backIcon }
+      { title }
+    </Link>
+  )
 
-    return (
-      <div>
-        <Header
-          className={ classNames(styles.header) }
-          scroll
-          title={ title }
-        >
-          { link &&
-            <Link
-              to={ link }
-              className={ buttonClasses }
-            >
-              <Icon name={ "arrow_back" } />
-            </Link>
-          }
-        </Header>
-        <div className={ classNames(styles.ribbon) } />
-      </div>
-    )
-  }
+  return (
+    <div
+      className={ classNames(styles.container) }
+    >
+      <Header
+        className={ classNames(styles.header) }
+        title={ headerTitle }
+        scroll
+      />
+      <div
+        className={ classNames(styles.ribbon) }
+      />
+    </div>
+  )
 }
+
+Ribbon.propTypes = {
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  back: PropTypes.bool,
+}
+
+export default Ribbon

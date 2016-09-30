@@ -1,0 +1,50 @@
+@import "../../styles/color-definitions";
+
+.main {
+  margin-top: -334px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.map {
+  padding: 24px;
+  padding-bottom: 60px;
+}
+
+.icon {
+  background-color: $palette-grey-300;
+  display: inline-block;
+  font-size: 48px;
+  text-align: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  margin: 20px 32px;
+  top: 0;
+  i {
+    font-size: 40px;
+    color: $color-white;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+.container h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}

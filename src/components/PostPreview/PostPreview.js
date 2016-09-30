@@ -16,11 +16,11 @@ const PostPreview = ({ __url, date, title, description, image }) => {
   return (
     <Card className={ classNames(styles.card) }>
       <div className={ classNames(styles.media, imgUrl) }>
-        <h3>
+        <h2>
           <Link to={ __url } className={ classNames(styles.link) }>
             { title }
           </Link>
-        </h3>
+        </h2>
       </div>
       {
         description &&

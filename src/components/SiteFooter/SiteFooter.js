@@ -1,27 +1,20 @@
-import React, { Component } from "react"
-import cx from "classnames"
-// import { Link } from "react-router"
-import { Footer,
-  FooterSection,
-  FooterLinkList } from "react-mdl"
+import React from "react"
+import { Link } from "react-router"
+import { Footer, FooterSection, FooterLinkList } from "react-mdl"
 
-import styles from "./SiteFooter.scss"
+const SiteFooter = () => {
 
-// import styles from "./SiteFooter.scss"
-
-export default class SiteFooter extends Component {
-  render() {
-    return (
-      <Footer size="mini" className={ cx(styles.footer) }>
-        <FooterSection type="left" logo="" className={ cx(styles.logo) }>
-          <FooterLinkList>
-            <span className={ cx(styles.logo) }>©2016 Agrista</span>
-            <a href="/docs">Help</a>
-            <a href="/terms">Terms</a>
-            <a href="/privacy">Privacy</a>
-          </FooterLinkList>
-        </FooterSection>
-      </Footer>
-    )
-  }
+  return (
+    <Footer size={ "mini" }>
+      <FooterSection type="left" logo={ "©2016 Agrista" }>
+        <FooterLinkList>
+          <Link to={ "/docs" }>{ "Help" }</Link>
+          <Link to={ "/privacy" }>{ "Privacy" }</Link>
+          <Link to={ "/terms" }>{ "Terms" }</Link>
+        </FooterLinkList>
+      </FooterSection>
+    </Footer>
+  )
 }
+
+export default SiteFooter
