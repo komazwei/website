@@ -17,7 +17,7 @@ features:
   image: /images/pages/home/features/revenues.png
 - name: financial-plans-feature
   title: Financial Plans
-  description: Use our easy-to-use document editor to rapidly prepare financial plans required by creditors. Updates are just as easy and you you can securily share regular updates with your creditor with the click of a button.
+  description: Use our easy-to-use document editor to rapidly prepare financial plans required by creditors. Updates are just as easy and you you can securely share regular updates with your creditor with the click of a button.
   image: /images/pages/home/features/financial-plan.png
 featurettes:
 - name: capture-asset-featurette
@@ -27,14 +27,14 @@ featurettes:
   isImgBottom: true
 - name: revenue-projection-featurette
   title: Generate cash flow budgets easily
-  description: We host community contributed enterprise budgets that you can easily assign to fields to automatically genereate finance requirements and profit margins per enterprise. .
+  description: We host community contributed enterprise budgets that you can easily assign to fields to automatically generate finance requirements and profit margins per enterprise.
   image: /images/pages/home/featurettes/revenues.png
   isReverse: true
   isInverse: true
   isImgFull: true
 - name: financial-plans-featurette
   title: Effortlessly prepare financial plans
-  description: Use our powerful tools to incorporate your asset register and production plans to automatically create cash flow budgets and a statement of assets and liabilities. Securily share documents online with your service providers and creditors.
+  description: Use our powerful tools to incorporate your asset register and production plans to automatically create cash flow budgets and a statement of assets and liabilities. Securely share documents online with your service providers and creditors.
   image: /images/pages/home/featurettes/financials.png
   isImgFull: true
 featureHighlights:
