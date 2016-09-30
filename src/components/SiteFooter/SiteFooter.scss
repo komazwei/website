@@ -1,65 +1,10 @@
 @import "../../styles/color-definitions";
 
-.footer {
-  background-color: $palette-grey-50;
-  padding: 16px 0;
-}
-@media (min-width: 976px) {
-  .footer {
-    clear: both;
-  }
+.footer{
+  clear: both;
 }
 @media (min-width: 1186px) {
   .footer {
     text-align: center;
   }
-}
-
-.footer .links {
-  color: $palette-grey-500;
-  margin: 0 10px;
-}
-@media (min-width: 1186px) {
-  .footer .links {
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0;
-    padding-left: 12px;
-    text-align: left;
-    width: 1170px;
-  }
-}
-@media (min-width: 1351px) {
-  .footer .links {
-    padding: 0 64px 0 80px;
-    width: 100%;
-  }
-}
-@media (min-width: 771px) {
-  .footer .links ul {
-    margin-right: 48px;
-  }
-}
-
-.footer ul {
-  font-size: 13px;
-  line-height: 48px;
-  width: initial;
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-.footer li {
-  padding: 10px;
-  display: inline-block;
-}
-
-.footer .links a {
-    color: $palette-grey-500;
-    text-decoration: none;
-    font-weight: 300;
 }

@@ -23,8 +23,8 @@ const AppContainer = (props) => {
       <SiteHeader />
       <Content>
         { props.children }
+        <SiteFooter />
       </Content>
-      <SiteFooter />
     </Layout>
   )
 
