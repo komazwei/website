@@ -6,62 +6,6 @@ app: farm-valuation
 
 Compiling a farm valuation report requires the completion of a few tasks. Each task can be edited to capture or updated the required information. Once a task is finished it can be marked as **Complete** and will be removed from your task list.
 
-
-## Add farm description
-
-1. Select Add Farm Description task and click Edit
-2. Complete the Add Farm Description task and add attachments if desired
-3. Select the Done button
-
-![Farm description](/images/guides/farm-valuation/ENT_farm_description.png)
-
-4. Click Complete. The task cannot be edited further.
-
-## Edit farm services
-
-1. Choose the Select Farm Services task and click Edit
-2. Edit farm services details and add attachments if applicable
-3. Select the Done button
-
-![Farm services 1](/images/guides/farm-valuation/ENT_farm_services.png)
-
-![Farm services 2](/images/guides/farm-valuation/ENT_farm_services_ii.png)
-
-![Farm services 3](/images/guides/farm-valuation/ENT_farm_services_iii.png)
-
-4. Click Complete. The task cannot be edited further.
-
-## Capture fixed improvements
-
-	Fixed improvements are pulled through from the customer portfolio. Return to the Customer to add additional fixed improvements if necessary.
-
-1.	Select the Capture Fixed Improvements task and click Edit
-2.	Perform necessary edits and then click Done.
-
-![Fixed improvements](/images/guides/farm-valuation/ENT_capture_fixed_improvements.png)
-
-3. Click Complete. The task cannot be edited further.
-
-## Capture land component values
-
-	Land assets are pulled through from the customer portfolio. Navigate to the Customer to add fields to define the land use and add cropland, pasture and permanent crop assets.
-
-1. Select the Capture Land Component Values task and click Edit
-2. Perform necessary edits and then click Done
-
-![Land component value](/images/guides/farm-valuation/ENT_land_component_values.png)
-
-3. Click Complete. The task cannot be edited further.
-
-## Add market research
-
-1. Select the Add Market Research task and click Edit
-2. Enter market research information, attach related images, and add additional headings and sections if needed
-
-![Market research](/images/guides/farm-valuation/ENT_market_research.png)
-
-3. Click Complete. The task cannot be edited further.
-
 ## Select comparable properties
 
 1. Choose the Select Comparable Properties task and click Add
