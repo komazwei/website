@@ -12,18 +12,18 @@ To select a farm for editing you can either:
 
 A modal will open showing the farm map, farm name and the list of portions included in the farm.
 
-### Adding a portion
+# Adding a portion
 
 1. Click the **Edit** button to open the Farm modal
 2. Click on the map to highlight the new portion. The portion is added to the Portions list
 3. Assign ownership by selecting a legal entity from the *Owner* drop down list.
 4. Click **Save**
 
-### Removing a portion
+# Removing a portion
 
 There are two ways to remove a portion from a farm; removing the portion from the farm map or deleting the farmland asset.
 
-#### Deleting a farmland asset
+## Deleting a farmland asset
 
 1. Go to the **Assets** tab and select the portion you wish to remove. The **Farmland** modal will open.
 2. Click the **Edit** button.
@@ -32,7 +32,7 @@ There are two ways to remove a portion from a farm; removing the portion from th
 
 The portion is now removed from the customer portfolio.
 
-#### Removing a portion from the farm map
+## Removing a portion from the farm map
 
 1. Open the Farm modal for editing
 2. Click on the *Delete layers* button on the farm map. *Save* and *Cancel* options appear next to this button.

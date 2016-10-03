@@ -6,8 +6,6 @@ topic: accounts-getting-started
 index: 5
 ---
 
-# System requirements
-
 Enterprise Mobile can be installed on mobile devices running the following operating systems:
 
 * Android: version 4.4 or higher
