@@ -1,7 +1,8 @@
 @import "../../styles/color-definitions";
 
 .container {
-  margin-top: -40vh;
+  margin-top: -334px;
+  margin-bottom: 64px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -59,7 +60,10 @@
   align-items: flex-end;
   cursor: pointer;
 
-  h3 {
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 300;
     margin: 0;
   }
 }

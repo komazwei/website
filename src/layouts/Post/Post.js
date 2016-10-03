@@ -1,10 +1,10 @@
+/* @flow */
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import cx from "classnames"
 import { BodyContainer } from "phenomic"
 import { Grid, Cell, Card } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
-import SiteFooter from "../../components/SiteFooter"
 
 import styles from "./Post.scss"
 
@@ -39,7 +39,9 @@ const Post = (props, context) => {
         ] }
       />
       <Ribbon
+        title={ "" }
         link="/blog"
+        back
       />
       <div className={ cx(styles.container) }>
         <div>
@@ -50,9 +52,9 @@ const Post = (props, context) => {
             >
               <Card className={ cx(styles.card) }>
                 <div className={ cx(styles.media, imgUrl) }>
-                  <h3>
+                  <h2>
                     { post.title }
-                  </h3>
+                  </h2>
                 </div>
                 <div className={ cx(
                   "mdl-color-text--grey-700",
@@ -82,7 +84,6 @@ const Post = (props, context) => {
             </Cell>
           </Grid>
         </div>
-        <SiteFooter />
       </div>
     </div>
   )

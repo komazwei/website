@@ -21,7 +21,7 @@ features:
   image: /images/pages/home/features/financial-plan.png
 featurettes:
 - name: capture-asset-featurette
-  title: Manage farm assets in one place
+  title: Manage farm assets in one convenient place
   description: We help you organise your farming assets and liabilities. Use our interactive farm map to locate farms, fields and other assets. Import professional valuations from our partners to help you get started and to keep track of market developments in values of assets.
   image: /images/pages/home/featurettes/assets.png
   isImgBottom: true

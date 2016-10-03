@@ -1,8 +1,10 @@
 @import "../../styles/color-definitions";
 
-.footer {
-  background-color: transparent !important;
-  a:hover {
-    text-decoration: underline;
+.footer{
+  clear: both;
+}
+@media (min-width: 1186px) {
+  .footer {
+    text-align: center;
   }
 }

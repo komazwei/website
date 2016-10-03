@@ -1,4 +1,9 @@
 @import "../../styles/color-definitions";
+
+.primaryContainer {
+  margin-top: -334px;
+}
+
 @media (min-width: 771px) {
   .primaryContainer {
     text-align: center;
@@ -7,7 +12,7 @@
 @media (min-width: 976px) {
   .primaryContainer {
     background-color: $color-primary;
-    padding: 0 0 64px 12px;
+    padding: 0 0 64px 80px;
   }
 }
 @media (min-width: 1186px) {
@@ -42,6 +47,8 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  margin-bottom: 64px;
+
 
   a {
     text-decoration: none;
@@ -168,21 +175,21 @@
   }
 }
 
-.siblingNav .siblingList a.siblingLink {
+.siblingNav .siblingList a.link {
   border-left: 2px solid transparent;
   color: $color-primary-light;
   display: block;
   padding: 14px 0 14px 14px;
 }
 @media (min-width: 976px) {
-  .siblingNav .siblingList a.siblingLink {
+  .siblingNav .siblingList a.link {
     padding: 6px 0 6px 14px;
   }
 }
 
-.sibling-nav a.title-link:visited,
-.siblingNav a.title-link {
-  color: #fff;
+.siblingNav a.titleLink:visited,
+.siblingNav a.titleLink {
+  color: $color-white;
 }
 
 .siblingNav > ul {
@@ -229,25 +236,26 @@
   }
 }
 
-.siblingNav a.siblingLink:hover {
+.siblingNav a.link:hover {
   background-color: $color-primary-hover;
   text-decoration: none;
 }
 
-.siblingNav .siblingList a.siblingLink.siblingLinkCurrent {
+.siblingNav .siblingList a.link.linkCurrent {
   border-left: 2px solid $color-white;
   color: $color-white;
   font-weight: 700;
 }
 
-.siblingNav .siblingList a.siblingLink {
+.siblingNav .siblingList a.link {
   border-left: 2px solid transparent;
-  color: #EFEBE9;
+  color: $palette-brown-50;
   display: block;
   padding: 14px 0 14px 14px;
+  text-decoration: none;
 }
 @media (min-width: 976px) {
-  .siblingNav .siblingList a.siblingLink {
+  .siblingNav .siblingList a.link {
     padding: 6px 0 6px 14px;
   }
 }

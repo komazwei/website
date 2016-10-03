@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+/* @flow */
+import React from "react"
 import Helmet from "react-helmet"
 import TopBarProgressIndicator from "react-topbar-progress-indicator"
 import { Spinner } from "react-mdl"
@@ -13,19 +14,18 @@ TopBarProgressIndicator.config({
   shadowBlur: 0,
 })
 
-export default class PageLoading extends Component {
-
-  render() {
-    return (
-      <div>
-        <Helmet
-          title={ "Loading..." }
-        />
-        <TopBarProgressIndicator />
-        <div className={ styles.spinnerContainer }>
-          <Spinner singleColor />
-        </div>
+const PageLoading = () => {
+  return (
+    <div>
+      <Helmet
+        title={ "Loading..." }
+      />
+      <TopBarProgressIndicator />
+      <div className={ styles.spinnerContainer }>
+        <Spinner singleColor />
       </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default PageLoading

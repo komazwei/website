@@ -27,21 +27,27 @@
 }
 
 .title {
+  font-size: 28px;
   color: $palette-grey-800;
+}
+@media only screen and (min-width: 48rem) {
+  .title {
+    font-size: 42px;
+  }
 }
 
 .imageContainer {
   margin-top: 1em;
   text-align: center;
 }
-@media only screen and (min-width: 64rem) {
-  .imageContainer {
-    margin: 0;
-  }
-}
 @media only screen and (min-width: 48rem) {
   .imageContainer {
     text-align: left;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .imageContainer {
+    margin: 0;
   }
 }
 
@@ -87,8 +93,7 @@
 }
 
 .image .imgFull {
-  
-}
+  }
 
 .section {
   padding-bottom: 0;

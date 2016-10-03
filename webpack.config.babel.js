@@ -1,14 +1,34 @@
 import path from "path"
 import webpack from "webpack"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
-import { phenomicLoader } from "phenomic"
+import {phenomicLoader} from "phenomic"
+import PhenomicLoaderFeedWebpackPlugin from "phenomic/lib/loader-feed-webpack-plugin"
 
 import pkg from "./package.json"
 
-export const makeConfig = (config = {}) => {
+export default(config = {}) => {
+  const postcssPlugins = () => [
+    require("stylelint")(),
+    require("postcss-cssnext")({
+      browsers: "last 2 versions",
+      features: {
+        customProperties: {
+          variables: {
+            mainColor: "#111",
+            mainColorContrasted: "#eee"
+          }
+        }
+      }
+    }),
+    require("postcss-reporter")(),
+    ...!config.production
+      ? [require("postcss-browser-reporter")()]
+      : []
+  ]
+
   return {
     ...config.dev && {
-      devtool: "#cheap-module-eval-source-map",
+      devtool: "#cheap-module-eval-source-map"
     },
     module: {
       noParse: /\.min\.js/,
@@ -20,34 +40,34 @@ export const makeConfig = (config = {}) => {
           // phenomic requirement
           test: /\.md$/,
           loader: phenomicLoader,
-          // config is in phenomic.contentLoader section below
-          // so you can use functions (and not just JSON) due to a restriction
-          // of webpack that serialize/deserialize loader `query` option.
+          query: {
+            context: path.join(__dirname, config.source),
+            // plugins: [
+            //   ...require("phenomic/lib/loader-preset-markdown").default
+            // ]
+            // see https://phenomic.io/docs/usage/plugins/
+          }
         },
 
         // *.json => like in node, return json
         // (not handled by webpack by default)
         {
           test: /\.json$/,
-          loader: "json-loader",
+          loader: "json-loader"
         },
 
         // *.js => babel + eslint
         {
           test: /\.js$/,
-          loaders: [
-            `babel-loader${
-              config.dev
-                ? "?cacheDirectory=true&presets[]=babel-preset-react-hmre"
-                : "?cacheDirectory=true"
-              }`,
-            "eslint-loader?fix",
-          ],
           include: [
             path.resolve(__dirname, "scripts"),
-            path.resolve(__dirname, "src"),
+            path.resolve(__dirname, "src")
           ],
-        },
+          loaders: [
+          "babel-loader?cacheDirectory",
+          "eslint-loader" + (config.dev ? "?emitWarning" : ""),
+        ],
+      },
 
         // ! \\
         // by default *.css files are considered as CSS Modules
@@ -58,15 +78,43 @@ export const makeConfig = (config = {}) => {
           test: /\.css$/,
           exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "src"),
+          // webpack 1
           loader: ExtractTextPlugin.extract(
-            "style-loader", [`css-loader?modules&localIdentName=${
+            "style-loader",
+            [ `css-loader?modules&localIdentName=${
               config.production
-                ? "[hash:base64:5]"
-                : "[path][name]--[local]--[hash:base64:5]"
+              ? "[hash:base64:5]"
+              : "[path][name]--[local]--[hash:base64:5]"
               }`,
               "postcss-loader",
             ].join("!"),
           ),
+          /*
+          // webpack 2
+          loader: ExtractTextPlugin.extract({
+            fallbackLoader: "style-loader",
+            loader: [
+              {
+                loader: "css-loader",
+                query: {
+                  modules: true,
+                  localIdentName: (
+                    config.production
+                    ? "[hash:base64:5]"
+                    : "[path][name]--[local]--[hash:base64:5]"
+                  ),
+                },
+              },
+              {
+                loader: "postcss-loader",
+                // query for postcss can't be used right now
+                // https://github.com/postcss/postcss-loader/issues/99
+                // meanwhile, see webpack.LoaderOptionsPlugin in plugins list
+                // query: { plugins: postcssPlugins },
+              },
+            ],
+          }),
+          */
         },
         // *.global.css => global (normal) css
         {
@@ -83,15 +131,18 @@ export const makeConfig = (config = {}) => {
             "style-loader",
             "css-loader" + (
               "?modules" +
-              "&localIdentName=" +
-              (
+              "&localIdentName=" + (
                 process.env.NODE_ENV === "production" ?
-                  "[hash:base64:5]" :
-                  "[path][name]--[local]--[hash:base64:5]"
-              ).toString()
-            ) + "!" +
-            "postcss-loader!sass-loader",
+                "[hash:base64:5]"
+                : "[path][name]--[local]--[hash:base64:5]"
+              ).toString()) +
+              "!" +
+              "postcss-loader!sass-loader",
           ),
+          include: [
+            path.resolve(__dirname, "src/styles"),
+            path.resolve(__dirname, "src")
+          ]
         },
         // ! \\
         // If you want global CSS only, just remove the 2 sections above
@@ -123,88 +174,113 @@ export const makeConfig = (config = {}) => {
         // copy assets and return generated path in js
         {
           test: /\.(html|ico|jpe?g|png|gif)$/,
-          loader: "file-loader" +
-          "?name=[path][name].[hash].[ext]&context=" +
-          path.join(__dirname, config.source),
+          loader: "file-loader",
+          query: {
+            name: "[path][name].[hash].[ext]",
+            context: path.join(__dirname, config.source)
+          }
         },
 
         // svg as raw string to be inlined
         {
           test: /\.svg$/,
-          loader: "raw-loader",
-        },
-      ],
+          loader: "raw-loader"
+        }
+      ]
     },
 
-    phenomic: {
-      context: path.join(__dirname, config.source),
-      // renderer: (text) => html
-      description: {
-        pruneLength: 1000,
-      },
-      feedsOptions: {
-        title: pkg.config.sitename,
-        site_url: pkg.homepage,
-      },
-      feeds: {
-        "feed.xml": {
-          collectionOptions: {
-            filter: {
-              layout: "Post",
-            },
-            sort: "date",
-            reverse: true,
-            limit: 20,
-          },
-        },
-      },
-    },
-
-    postcss: () => [
-      require("postcss-import")(),
-      require("postcss-cssnext")({
-        browsers: "last 2 versions",
-      }),
-      require("postcss-reporter")(),
-      ...config.production ? [
-        require("postcss-browser-reporter")(),
-      ] : [],
-    ],
-
-    sassLoader: {
+    /*    sassLoader: {
       includePaths: [
         path.join(config.cwd, "src/styles"),
         path.join(config.cwd, "src"),
         path.join(config.cwd, "node_modules"),
       ],
     },
-
+*/
     plugins: [
-      new ExtractTextPlugin("[name].[hash].css", {
+      // webpack 2
+      /*
+      // You should be able to remove the block below when the following
+      // issue has been correctly handled (and postcss-loader supports
+      // "plugins" option directly in query, see postcss-loader usage above)
+      // https://github.com/postcss/postcss-loader/issues/99
+      new webpack.LoaderOptionsPlugin({
+        test: /\.css$/,
+        options: {
+          postcss: postcssPlugins,
+          // required to avoid issue css-loader?modules
+          // this is normally the default value, but when we use
+          // LoaderOptionsPlugin, we must specify it again, otherwise,
+          // context is missing (and css modules names can be broken)!
+          context: __dirname
+        }
+      }),
+      */
+
+      new PhenomicLoaderFeedWebpackPlugin({
+        // here you define generic metadata for your feed
+        feedsOptions: {
+          title: pkg.name,
+          site_url: pkg.homepage
+        },
+        feeds: {
+          // here we define one feed, but you can generate multiple, based
+          // on different filters
+          "feed.xml": {
+            collectionOptions: {
+              filter: {
+                layout: "Post"
+              },
+              sort: "date",
+              reverse: true,
+              limit: 20
+            }
+          }
+        }
+      }),
+
+      // webpack 1
+      new ExtractTextPlugin("[name].[hash].css", {disable: config.dev}),
+      // webpack 2
+      /*
+      new ExtractTextPlugin({
+        filename: "[name].[hash].css",
         disable: config.dev,
       }),
+      */
+
       ...config.production && [
+        // webpack 2
+        // DedupePlugin does not work correctly with Webpack 2, yet ;)
+        // https://github.com/webpack/webpack/issues/2644
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({
           compress: {
-            warnings: false,
-          },
-        }),
-      ],
+            warnings: false
+          }
+        })
+      ]
     ],
 
     output: {
       path: path.join(__dirname, config.destination),
       publicPath: config.baseUrl.pathname,
-      filename: "[name].[hash].js",
+      filename: "[name].[hash].js"
     },
 
+    // webpack 1
     resolve: {
-      extensions: [".js", ".json", ""],
-      root: [path.join(__dirname, "node_modules")],
+      extensions: [
+        ".js", ".json", ""
+      ],
+      root: [path.join(__dirname, "node_modules")]
     },
     resolveLoader: {
-      root: [path.join(__dirname, "node_modules")],
+      root: [path.join(__dirname, "node_modules")]
     },
+    // webpack 2
+    /*
+    resolve: { extensions: [ ".js", ".json" ] },
+    */
   }
 }

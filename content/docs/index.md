@@ -1,6 +1,6 @@
 ---
-title: Documentation
-layout: DocsIndex
+title: Agrista Help
+layout: Docs
 faq:
 - slug: lost-password
   question: How do I recover my lost password?

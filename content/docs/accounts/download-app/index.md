@@ -5,11 +5,11 @@ app: accounts
 topic: accounts-getting-started
 index: 3
 ---
-## Download the app
+# Download the app
 
 The Enterprise Mobile is designed to help you while you are out in the field. We have ensured that all primary functionality is available offline so that you can sync your tablet and head out for the day.
 
-### Installing
+## Installing
 
 The Enterprise Mobile app is available from the Google Play Store or Apple App Store.
 
