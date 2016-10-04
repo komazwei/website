@@ -8,7 +8,7 @@ index: 5
 
 Assets are categorised into  the following types:
 
-- Land assets
-- Fixed assets
-- Movable assets
-- Seasonal assets
+- [Land assets](/docs/assets/farmland)
+- [Fixed assets](/docs/assets/improvements)
+- [Movable assets](/docs/assets/livestock)
+- [Seasonal assets](/docs/assets/crops)
