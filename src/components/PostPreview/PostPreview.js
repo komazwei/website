@@ -9,13 +9,15 @@ import { Card } from "react-mdl"
 const PostPreview = ({ __url, date, title, description, image }) => {
   const pageDate = date ? new Date(date) : null
 
-  const imgUrl = {
-    backgroundImage: "url(" + image + ")",
-  }
+  const imgStyle = image
+    ? { backgroundImage: "url('" + image + "')" }
+    : null
+
+  console.log(imgStyle)
 
   return (
     <Card className={ classNames(styles.card) }>
-      <div className={ classNames(styles.media, imgUrl) }>
+      <div style={ imgStyle } className={ styles.media }>
         <h2>
           <Link to={ __url } className={ classNames(styles.link) }>
             { title }
