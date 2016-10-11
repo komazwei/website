@@ -15,9 +15,9 @@ const Post = (props, context) => {
 
   const post = head
 
-  const imgUrl = {
-    backgroundImage: "url(" + head.image + ")",
-  }
+  const imgStyle = post.image
+    ? { backgroundImage: "url('" + post.image + "')" }
+    : null
 
   const pageDate = head.date ? new Date(head.date) : null
 
@@ -51,7 +51,7 @@ const Post = (props, context) => {
               shadow={ 0 }
             >
               <Card className={ cx(styles.card) }>
-                <div className={ cx(styles.media, imgUrl) }>
+                <div style={ imgStyle } className={ cx(styles.media) }>
                   <h2>
                     { post.title }
                   </h2>

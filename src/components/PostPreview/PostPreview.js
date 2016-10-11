@@ -13,8 +13,6 @@ const PostPreview = ({ __url, date, title, description, image }) => {
     ? { backgroundImage: "url('" + image + "')" }
     : null
 
-  console.log(imgStyle)
-
   return (
     <Card className={ classNames(styles.card) }>
       <div style={ imgStyle } className={ styles.media }>
