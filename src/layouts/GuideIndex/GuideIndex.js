@@ -2,6 +2,7 @@
 import React, { PropTypes } from "react"
 // import { Link } from "react-router"
 // import enhanceCollection from "phenomic/lib/enhance-collection"
+import Page from "../Page"
 import TopicAccordion from "./TopicAccordion"
 import Ribbon from "../../components/Ribbon"
 // import PagesList from "../../components/PagesList"
@@ -13,7 +14,7 @@ const GuideIndex = (props) => {
   const head = props.head
 
   return (
-    <div>
+    <Page { ...props }>
       <Ribbon
         title={ "Agrista Help" }
         link={ "docs" }
@@ -43,7 +44,7 @@ const GuideIndex = (props) => {
           </div>
         </section>
       </div>
-    </div>
+    </Page>
   )
 }
 
