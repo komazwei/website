@@ -8,7 +8,7 @@ index: 10
 
 Data can be entered into the FRP via the Toolbox.
 
-1. Click the **Toolbox** button at the top right corner of the display. 
+1. Click the **Toolbox** button at the top right corner of the display.
 
 The **Toolbox** will slide out from the right side of the page. Each toolbox action can be used to enter data into the FRP
 Work your way through the Toolbox in the following order:
@@ -24,6 +24,4 @@ Work your way through the Toolbox in the following order:
 9. [Add Expense](/docs/financial-plans/expense-add)
 10. [Add Financials](/docs/financial-plans/financials-add)
 
-![Toolbox](/images/guides/financial-plans/Toolbox.jpg)
-
-
+![Toolbox](/images/guides/financial-plans/toolbox.jpg)

@@ -4,7 +4,7 @@ date: 2013-08-09
 layout: Post
 published: true
 author: diane
-image: /images/blog/road.jpg
+image: /images/posts/farm-map.jpg
 ---
 
 Maps have always played an important role in farming. They show the invisible boundaries between you and your neighbours, they helped your ancestors divide family farms between their sons, they show the location of fields, orchards, rivers and dams, and now they can assist you in keeping a digital record of your assets.
