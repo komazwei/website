@@ -1,5 +1,5 @@
 ---
-metaTitle: "Agrista, an online service empowering farmers to obtain credit."
+metaTitle: "Agrista. Farm different."
 layout: Homepage
 title: Show creditors how you farm different.
 subTitle: Let is help you prepare your farm records and financial plans without the pain of using spreadsheets.

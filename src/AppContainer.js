@@ -3,7 +3,7 @@ import classNames from "classnames"
 // import "./index.global.css"
 // import "./highlight.global.css"
 import "./styles/global.styles"
-import "./styles/react-mdl/material.min.js"
+import "react-mdl/extra/material.js"
 
 // import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
