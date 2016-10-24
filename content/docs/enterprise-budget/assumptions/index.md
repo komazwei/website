@@ -1,12 +1,10 @@
 ---
-title: Budget assumptions
+title: Editing budget assumptions
 layout: Guide
 app: enterprise-budgets
 topic: budget-editing
 index: 5
 ---
-
-### Editing budget assumptions
 
 The budget's assumptions define the following:
 

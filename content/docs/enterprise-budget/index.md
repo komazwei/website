@@ -9,4 +9,6 @@ topics:
   title: Getting started
 - name: budget-editing
   title: Budget editing
+- name: budget-faq
+  title: Frequently asked Questions
 ---
