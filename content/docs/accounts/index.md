@@ -13,4 +13,3 @@ topics:
   title: Administering accounts
 ---
 
-# Welcome to the Agrista Account Help Center
