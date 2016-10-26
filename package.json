@@ -12,7 +12,9 @@
     "start": "phenomic start",
     "build": "phenomic build",
     "pretest": "npm run lint",
-    "test": "npm run build"
+    "test": "npm run build",
+    "deploy:staging": "npm run build && aws s3 sync dist s3://staging-www.agrista.com --region eu-central-1",
+    "deploy:prod": "npm run build && aws s3 sync dist s3://www.agrista.com --region eu-central-1"
   },
   "phenomic": {
     "assets": "images",
