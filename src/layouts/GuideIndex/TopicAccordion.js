@@ -4,27 +4,27 @@ import { Link } from "react-router"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import classNames from "classnames"
 
-import styles from "./TopicAccordion.scss"
+import styles from "./TopicAccordion.less"
 
 class TopicAccordion extends Component {
 
   constructor() {
     super()
     this.state = {
-      active: false,
+      active: false
     }
   }
 
   handleToggle = () =>  {
     this.setState({
-      active: !this.state.active,
+      active: !this.state.active
     })
   }
 
   render() {
     const guides = enhanceCollection(this.context.collection, {
       filter: { layout: "Guide", topic: this.props.topic },
-      sort: "index",
+      sort: "index"
     })
 
     const stateStyle = this.state.active ? styles.active : styles.inactive
@@ -67,11 +67,11 @@ class TopicAccordion extends Component {
 
 TopicAccordion.propTypes = {
   title: PropTypes.string.isRequired,
-  topic: PropTypes.string.isRequired,
+  topic: PropTypes.string.isRequired
 }
 
 TopicAccordion.contextTypes = {
-  collection: PropTypes.array.isRequired,
+  collection: PropTypes.array.isRequired
 }
 
 export default TopicAccordion

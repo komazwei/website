@@ -4,7 +4,7 @@ import classNames from "classnames"
 import { Link } from "react-router"
 import { Grid, Cell } from "react-mdl"
 
-import styles from "./Hero.scss"
+import styles from "./Hero.less"
 
 const Hero = ({ title, cta }) => {
   const ctaButtonClasses = classNames(
@@ -57,7 +57,7 @@ const Hero = ({ title, cta }) => {
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  cta: PropTypes.string.isRequired,
+  cta: PropTypes.string.isRequired
 }
 
 export default Hero

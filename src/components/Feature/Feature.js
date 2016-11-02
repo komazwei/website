@@ -2,7 +2,7 @@
 import React, { PropTypes } from "react"
 import { Grid, Cell } from "react-mdl"
 import classNames from "classnames"
-import styles from "./Feature.scss"
+import styles from "./Feature.less"
 
 const Feature = ({ features }) => {
   return (
@@ -28,7 +28,7 @@ const Feature = ({ features }) => {
 }
 
 Feature.propTypes = {
-  features: PropTypes.array.isRequired,
+  features: PropTypes.array.isRequired
 }
 
 export default Feature

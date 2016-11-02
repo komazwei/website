@@ -9,17 +9,17 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 import Ribbon from "../../components/Ribbon"
 // import SiteFooter from "../../components/SiteFooter"
 
-import styles from "./Guide.scss"
+import styles from "./Guide.less"
 
 const Guide = (props,context) => {
 
   const {
-    collection,
+    collection
   } = context
 
   const {
     head,
-    body,
+    body
   } = props
 
   const markdown = (
@@ -32,7 +32,7 @@ const Guide = (props,context) => {
     <div>
       { enhanceCollection(collection, {
         filter: { layout: "GuideIndex", app: head.app },
-        limit: 1,
+        limit: 1
       })
         .map((item) => {
           return (
@@ -69,7 +69,7 @@ const Guide = (props,context) => {
                       {
                         enhanceCollection(collection, {
                           filter: { layout: "Guide", topic: head.topic },
-                          sort: "index",
+                          sort: "index"
                         })
                         .map((item) => {
                           return (
@@ -102,14 +102,14 @@ Guide.propTypes = {
   __url: PropTypes.string.isRequired,
   __filename: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired
   //rawBody: PropTypes.string.isRequired,
 }
 
 Guide.contextTypes = {
   metadata: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired,
-  collection: PropTypes.array,
+  collection: PropTypes.array
 }
 
 export default Guide

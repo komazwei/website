@@ -3,7 +3,7 @@ import React, { PropTypes } from "react"
 import classNames from "classnames"
 import { Header, IconButton } from "react-mdl"
 import { Link } from "react-router"
-import styles from "./Ribbon.scss"
+import styles from "./Ribbon.less"
 
 const Ribbon = ({ title, link, back }) => {
 
@@ -37,7 +37,7 @@ const Ribbon = ({ title, link, back }) => {
 Ribbon.propTypes = {
   title: PropTypes.string.isRequired,
   link: PropTypes.string,
-  back: PropTypes.bool,
+  back: PropTypes.bool
 }
 
 export default Ribbon

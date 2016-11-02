@@ -2,7 +2,7 @@
 import React, { PropTypes } from "react"
 import classNames from "classnames/bind"
 import { Grid, Cell } from "react-mdl"
-import styles from "./Featurette.scss"
+import styles from "./Featurette.less"
 
 const cx = classNames.bind(styles)
 
@@ -13,17 +13,17 @@ const Featurette = ({
   isReverse,
   isInverse,
   isImgBottom,
-  isImgFull,
+  isImgFull
 }) => {
 
   const sectionClasses = cx(styles.section, {
     reverse: isReverse,
-    inverse: isInverse,
+    inverse: isInverse
   })
 
   const imgClasses = cx({
     imgBottom: isImgBottom,
-    imgFull: isImgFull,
+    imgFull: isImgFull
   })
 
   return (
@@ -66,7 +66,7 @@ Featurette.propTypes = {
   isReverse: PropTypes.bool,
   isInverse: PropTypes.bool,
   isImgBottom: PropTypes.bool,
-  isImgFull: PropTypes.bool,
+  isImgFull: PropTypes.bool
 }
 
 export default Featurette

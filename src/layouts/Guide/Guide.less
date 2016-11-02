@@ -1,0 +1,264 @@
+@brand-primary: #8BC34A;
+@brand-primary-light: #AED581;
+@brand-primary-hover: #689F38;
+@brand-secondary-light: #EFEBE9;
+
+.primaryContainer {
+  margin-top: -334px;
+}
+
+@media (min-width: 771px) {
+  .primaryContainer {
+    text-align: center;
+  }
+}
+@media (min-width: 976px) {
+  .primaryContainer {
+    background-color: @brand-primary;
+    padding: 0 0 64px 80px;
+  }
+}
+@media (min-width: 1186px) {
+  .primaryContainer {
+    padding-left: 16px;
+  }
+}
+@media (min-width: 1351px) {
+  .primaryContainer {
+    padding-left: 128px;
+  }
+}
+@media (min-width: 1186px) {
+  .pageWidthContainer {
+    margin: 0 auto;
+    padding-left: 8px;
+    text-align: left;
+    width: 1170px;
+  }
+}
+@media (min-width: 1351px) {
+  .pageWidthContainer {
+    padding-left: 0;
+    width: initial;
+  }
+}
+
+.page {
+  background-color: #ffffff;
+  text-align: left;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 64px;
+
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 771px) {
+  .page {
+    box-sizing: border-box;
+    padding: 32px;
+  }
+}
+@media (min-width: 976px) {
+  .page {
+    float: left;
+    width: 640px;
+  }
+}
+@media (min-width: 1186px) {
+  .page {
+    padding: 64px;
+    width: 832px;
+  }
+}
+
+.articleContainer {
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 32px 0 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 24px 0 8px;
+  }
+}
+@media (min-width: 771px) {
+  .articleContainer {
+    padding: 0;
+  }
+}
+@media (min-width: 975px) {
+  .articleContainer {
+    min-height: 232px;
+  }
+}
+
+.articleTitle {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 8px;
+}
+@media (min-width: 771px) {
+  .articleTitle {
+    font-size: 34px;
+    line-height: 40px;
+    margin: 0 0 26px;
+  }
+}
+
+.primaryNav {
+  background-color: @brand-primary;
+}
+@media (min-width: 976px) {
+  .primaryNav {
+    display: table-cell;
+    width: 222px;
+  }
+}
+
+.primaryNav nav {
+  margin-left: 10px;
+  width: 256px;
+}
+@media (min-width: 771px) {
+  .primaryNav nav {
+    margin-left: 32px;
+    text-align: left;
+  }
+}
+@media (min-width: 976px) {
+  .primaryNav nav {
+    min-height: 262px;
+  }
+}
+@media (min-width: 1351px) {
+  .primaryNav nav {
+    margin-left: 64px;
+  }
+}
+
+.siblingNav {
+  display: inline-block;
+  margin-top: 10px;
+}
+@media (min-width: 771px) {
+  .siblingNav {
+    width: 100%;
+  }
+}
+@media (min-width: 976px) {
+  .siblingNav {
+    margin-top: 2px;
+    min-height: 268px;
+  }
+}
+
+.siblingNav h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 20px 16px 0 4px;
+}
+@media (min-width: 771px) {
+  .siblingNav h4 {
+    margin-top: 6px;
+  }
+}
+
+.siblingNav .siblingList a.link {
+  border-left: 2px solid transparent;
+  color: @brand-primary-light;
+  display: block;
+  padding: 14px 0 14px 14px;
+}
+@media (min-width: 976px) {
+  .siblingNav .siblingList a.link {
+    padding: 6px 0 6px 14px;
+  }
+}
+
+.siblingNav a.titleLink:visited,
+.siblingNav a.titleLink {
+  color: #ffffff;
+}
+
+.siblingNav > ul {
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.siblingNav > h4 {
+  margin-bottom: 16px;
+}
+
+.siblingNav .siblingList {
+  margin-bottom: 15px;
+}
+@media (min-width: 976px) {
+  .siblingNav .siblingList {
+    margin-bottom: 0;
+  }
+}
+
+.siblingNav .siblingList li {
+  padding: 0;
+}
+
+.siblingNav a.titleLink,
+.siblingNav a.titleLink:visited {
+  color: #ffffff;
+}
+
+.siblingNav h4 {
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 20px 0 4px;
+}
+@media (min-width: 771px) {
+  .siblingNav h4 {
+    margin-top: 6px;
+  }
+}
+
+.siblingNav a.link:hover {
+  background-color: @brand-primary-hover;
+  text-decoration: none;
+}
+
+.siblingNav .siblingList a.link.linkCurrent {
+  border-left: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.siblingNav .siblingList a.link {
+  border-left: 2px solid transparent;
+  color: @brand-secondary-light;
+  display: block;
+  padding: 14px 0 14px 14px;
+  text-decoration: none;
+}
+@media (min-width: 976px) {
+  .siblingNav .siblingList a.link {
+    padding: 6px 0 6px 14px;
+  }
+}

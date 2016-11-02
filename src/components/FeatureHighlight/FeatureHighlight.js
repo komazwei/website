@@ -3,7 +3,7 @@ import React, { PropTypes } from "react"
 import cx from "classnames"
 import { Grid, Cell } from "react-mdl"
 import invariant from "invariant"
-import styles from "./FeatureHighight.scss"
+import styles from "./FeatureHighlight.less"
 
 const FeatureHighlight = (props) => {
   invariant(
@@ -42,7 +42,7 @@ const FeatureHighlight = (props) => {
 
 FeatureHighlight.propTypes = {
   __filename: PropTypes.string.isRequired,
-  head: PropTypes.object.isRequired,
+  head: PropTypes.object.isRequired
 }
 
 export default FeatureHighlight

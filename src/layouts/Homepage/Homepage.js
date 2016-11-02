@@ -36,7 +36,7 @@ const Homepage = (props) => {
 }
 
 Homepage.propTypes = {
-  head: PropTypes.object.isRequired,
+  head: PropTypes.object.isRequired
 }
 
 export default Homepage

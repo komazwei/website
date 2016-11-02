@@ -38,7 +38,7 @@ export default(config = {}) => {
         // allow to generate collection and rss feed.
         {
           // phenomic requirement
-          test: /\.md$/,
+          test: /\.(md|markdown)$/,
           loader: phenomicLoader,
           query: {
             context: path.join(__dirname, config.source),
@@ -64,8 +64,8 @@ export default(config = {}) => {
             path.resolve(__dirname, "src")
           ],
           loaders: [
-          "babel-loader?cacheDirectory",
-          "eslint-loader" + (config.dev ? "?emitWarning" : ""),
+            "babel-loader?cacheDirectory",
+            "eslint-loader" + (config.dev ? "?emitWarning" : ""),
         ],
       },
 
@@ -122,11 +122,11 @@ export default(config = {}) => {
           loader: ExtractTextPlugin.extract(
             "style-loader",
             "css-loader" +
-            "!postcss!sass-loader"
+            "!postcss!less-loader"
           ),
         },
         {
-          test: /\.scss$/,
+          test: /\.less$/,
           loader: ExtractTextPlugin.extract(
             "style-loader",
             "css-loader" + (
@@ -137,7 +137,7 @@ export default(config = {}) => {
                 : "[path][name]--[local]--[hash:base64:5]"
               ).toString()) +
               "!" +
-              "postcss-loader!sass-loader",
+              "postcss-loader!less-loader",
           ),
           include: [
             path.resolve(__dirname, "src/styles"),
@@ -173,7 +173,7 @@ export default(config = {}) => {
 
         // copy assets and return generated path in js
         {
-          test: /\.(html|ico|jpe?g|png|gif)$/,
+          test: /\.(html|ico|jpe?g|png|gif|eot|otf|webp|ttf|woff|woff2)$/,
           loader: "file-loader",
           query: {
             name: "[path][name].[hash].[ext]",

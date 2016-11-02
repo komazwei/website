@@ -7,13 +7,13 @@ import Page from "../Page"
 import Ribbon from "../../components/Ribbon"
 import { Content, Grid, Cell } from "react-mdl"
 import FAQAccordion from "./FAQAccordion"
-import styles from "./Docs.scss"
+import styles from "./Docs.less"
 
 const Docs = (props, { collection }) => {
 
   const apps = enhanceCollection(collection, {
     filter: { layout: "GuideIndex" },
-    sort: "index",
+    sort: "index"
   })
 
   const faqs = props.head.faq
@@ -74,11 +74,11 @@ const Docs = (props, { collection }) => {
 
 Docs.propTypes = {
   head: PropTypes.object.isRequired,
-  __url: PropTypes.string,
+  __url: PropTypes.string
 }
 
 Docs.contextTypes = {
-  collection: PropTypes.array.isRequired,
+  collection: PropTypes.array.isRequired
 }
 
 export default Docs

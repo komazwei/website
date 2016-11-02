@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router"
 import cx from "classnames"
 import { Footer, FooterSection, FooterLinkList } from "react-mdl"
-import styles from "./SiteFooter.scss"
+import styles from "./SiteFooter.less"
 
 const SiteFooter = () => {
 

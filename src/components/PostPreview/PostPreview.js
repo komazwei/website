@@ -2,7 +2,7 @@
 import React, { PropTypes } from "react"
 import { Link } from "react-router"
 import classNames from "classnames"
-import styles from "./PostPreview.scss"
+import styles from "./PostPreview.less"
 
 import { Card } from "react-mdl"
 
@@ -51,7 +51,7 @@ PostPreview.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.string
 }
 
 export default PostPreview

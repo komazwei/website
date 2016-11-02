@@ -1,0 +1,113 @@
+.aux {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.section {
+  background: #ffffff;
+  padding: 22px 22px 0;
+}
+@media only screen and (min-width: 1024px) {
+  .section {
+    padding: 90px 20px 0;
+  }
+}
+
+.section .grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+}
+
+.section .button {
+  padding: 21px 20px 23px;
+}
+
+.title {
+  font-size: 28px;
+  color: #424242;
+}
+@media only screen and (min-width: 48rem) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+.imageContainer {
+  margin-top: 1em;
+  text-align: center;
+}
+@media only screen and (min-width: 48rem) {
+  .imageContainer {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .imageContainer {
+    margin: 0;
+  }
+}
+
+.section .image {
+  margin-bottom: 0;
+}
+
+.image img {
+  display: inline-block;
+  max-width: 70%;
+}
+@media only screen and (max-width: 30rem) {
+  .image img {
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .image img {
+    margin: 0;
+    max-width: 100%;
+    max-height: 577px;
+  }
+}
+
+.inverse {
+  background-color: #F5F5F5;
+}
+@media only screen and (min-width: 768px) {
+  .reverse .grid {
+    direction: rtl;
+    text-align: left;
+  }
+
+  .reverse .grid > .cell {
+    direction: ltr;
+    text-align: left;
+  }
+}
+
+.image .imgBottom {
+  max-width: 150%;
+  margin-left: -60%;
+}
+
+.image .imgFull {
+  }
+
+.section {
+  padding-bottom: 0;
+}
+@media only screen and (max-width: 30rem) {
+  .section .content {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 48.0625rem) and (max-width: 63.9375rem) {
+  .section .content {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .section .content {
+    margin-bottom: 90px;
+  }
+}

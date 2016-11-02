@@ -3,7 +3,7 @@ import React, { PropTypes } from "react"
 import { Grid, Cell } from "react-mdl"
 import classNames from "classnames"
 
-import styles from "./Lead.scss"
+import styles from "./Lead.less"
 
 const Lead = ({ title, description }) => {
 
@@ -34,7 +34,7 @@ const Lead = ({ title, description }) => {
 
 Lead.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default Lead

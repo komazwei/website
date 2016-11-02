@@ -4,7 +4,7 @@ import classNames from "classnames"
 import { Content, Grid, Cell, Card, CardText, Icon } from "react-mdl"
 import Page from "../Page"
 import Ribbon from "../../components/Ribbon"
-import styles from "./Contact.scss"
+import styles from "./Contact.less"
 
 const Contact = (props) => {
 
@@ -126,7 +126,7 @@ Contact.propType = {
   __filename: PropTypes.string.isRequired,
 //    __url: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired
 }
 
 export default Contact

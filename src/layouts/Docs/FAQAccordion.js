@@ -4,7 +4,7 @@ import React, { Component, PropTypes } from "react"
 // import enhanceCollection from "phenomic/lib/enhance-collection"
 import cx from "classnames"
 
-import styles from "./FAQAccordion.scss"
+import styles from "./FAQAccordion.less"
 
 export default class FAQAccordion extends Component {
 
@@ -17,19 +17,19 @@ export default class FAQAccordion extends Component {
     // className: PropTypes.string,
     // title: PropTypes.string.isRequired,
     question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired
   }
 
   constructor() {
     super()
     this.state = {
-      active: false,
+      active: false
     }
   }
 
   handleToggle = () =>  {
     this.setState({
-      active: !this.state.active,
+      active: !this.state.active
     })
   }
 

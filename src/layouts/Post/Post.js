@@ -6,7 +6,7 @@ import { BodyContainer } from "phenomic"
 import { Grid, Cell, Card } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
 
-import styles from "./Post.scss"
+import styles from "./Post.less"
 
 const Post = (props, context) => {
   const { metadata } = context
@@ -35,7 +35,7 @@ const Post = (props, context) => {
           { property: "og:url", content: metadata.pkg.homepage + __url },
           // { property: "og:image", content: header.image },
           // { name: "twitter:image", content: header.image },
-          { name: "twitter:creator", content: `@${ head.twitter }` },
+          { name: "twitter:creator", content: `@${ head.twitter }` }
         ] }
       />
       <Ribbon
@@ -93,12 +93,12 @@ Post.propTypes = {
   __url: PropTypes.string.isRequired,
   __filename: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired
 }
 
 Post.contextTypes = {
   metadata: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 }
 
 export default Post

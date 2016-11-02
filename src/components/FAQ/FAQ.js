@@ -31,7 +31,7 @@ class FAQ extends Component {
 }
 
 FAQ.propTypes = {
-  head: PropTypes.object.isRequired,
+  head: PropTypes.object.isRequired
 }
 
 export default FAQ

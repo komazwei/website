@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from "react"
 import { Link } from "react-router"
 import cx from "classnames"
 
-import styles from "./Accordion.scss"
+import styles from "./Accordion.less"
 
 export default class Accordion extends Component {
 
@@ -30,6 +30,7 @@ export default class Accordion extends Component {
 
     return (
       <section className={ cx(styles.parent) }>
+        <section cl
         <h2 onClick={ this.handleToggle }>{ this.props.summary }</h2>
         <div className={ cx(styles.overflow, stateStyle) }>
           <div className={ cx(styles.children) }>

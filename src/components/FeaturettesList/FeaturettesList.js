@@ -24,7 +24,7 @@ const FeaturettesList = ({ featurettes }) => {
 }
 
 FeaturettesList.propTypes = {
-  featurettes: PropTypes.array.isRequired,
+  featurettes: PropTypes.array.isRequired
 }
 
 export default FeaturettesList

@@ -5,7 +5,7 @@ import { BodyContainer } from "phenomic"
 import { Content, Grid, Cell } from "react-mdl"
 import Ribbon from "../../components/Ribbon"
 
-import styles from "./RibbonPage.scss"
+import styles from "./RibbonPage.less"
 
 const RibbonPage = (props) => {
 
@@ -39,7 +39,7 @@ const RibbonPage = (props) => {
 
 RibbonPage.propTypes = {
   head: PropTypes.object.isRequired,
-  body: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired
 }
 
 export default RibbonPage

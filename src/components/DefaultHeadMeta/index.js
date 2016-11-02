@@ -5,33 +5,37 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
   <div hidden>
     <Helmet
       link={ [
-        { "rel": "icon", "href": "/assets/favicon.png" },
+        { "rel": "icon", "href": "/assets/favicon.png" }
       ] }
       meta={ [
         {
           name: "generator", content: `${
-          process.env.PHENOMIC_NAME } ${ process.env.PHENOMIC_VERSION }`,
+          process.env.PHENOMIC_NAME } ${ process.env.PHENOMIC_VERSION }`
         },
         { property: "og:site_name", content: pkg.name },
-        { name: "twitter:site", content: `@${ pkg.twitter }` },
+        { name: "twitter:site", content: `@${ pkg.twitter }` }
       ] }
       script={ [
-        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" },
+        { src: "https://cdn.polyfill.io/v2/polyfill.min.js" }
       ] }
     />
 
     { /* meta viewport safari/chrome/edge */ }
     <Helmet
       meta={ [ {
-        name: "viewport", content: "width=device-width, initial-scale=1",
+        name: "viewport", content: "width=device-width, initial-scale=1"
       } ] }
     />
     <style>{ "@-ms-viewport { width: device-width; }" }</style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </div>
 )
 
 DefaultHeadMeta.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: PropTypes.object.isRequired
 }
 
 export default DefaultHeadMeta

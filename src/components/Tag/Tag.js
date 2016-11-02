@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react"
-import styles from "./Tag.scss"
+import styles from "./Tag.less"
 
 const Tag = ({ name, ...props }) => {
   return (

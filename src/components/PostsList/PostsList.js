@@ -4,7 +4,7 @@ import classNames from "classnames"
 import { Grid, Cell } from "react-mdl"
 import PostPreview from "../../components/PostPreview"
 
-import styles from "./PostsList.scss"
+import styles from "./PostsList.less"
 
 const PostsList = ({ posts }) => {
   return (
@@ -32,7 +32,7 @@ const PostsList = ({ posts }) => {
 }
 
 PostsList.propTypes = {
-  posts: PropTypes.array.isRequired,
+  posts: PropTypes.array.isRequired
 }
 
 export default PostsList

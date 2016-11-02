@@ -30,7 +30,7 @@ const PageContainer = (props) => (
       GuideIndex,
       Guide,
       RibbonPage,
-      Contact,
+      Contact
     } }
   />
 )

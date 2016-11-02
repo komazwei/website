@@ -1,90 +1,64 @@
 /* @flow */
-import React from "react"
-import { Link } from "react-router"
-import cx from "classnames"
-import Svg from "react-svg-inline"
-
-import agristaLogo from "../../../content/images/agrista-logo.svg"
-import {
-  Header, Navigation, IconButton, Menu, MenuItem,
-} from "react-mdl"
-
-import styles from "./SiteHeader.scss"
+import React from "react";
+//import cx from "classnames";
+import Svg from "react-svg-inline";
+import agristaLogo from "../../../content/images/agrista-logo.svg";
+//import { Navigation, IconButton, Menu, MenuItem } from "react-mdl";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
+import { Header, Brand, Toggle, Collapse } from "react-bootstrap/lib/Navbar"
+import { LinkContainer } from "react-router-bootstrap"
+//import { LinkContainer } from 'react-router-bootstrap';
+//import styles from "./SiteHeader.less";
 
 const SiteHeader = () => {
 
-  return (
-      <Header
-        title={
-          <Link to="/">
-            <Svg
-              svg={ agristaLogo }
-              height="42px"
-              width="148px"
-            />
-          </Link>
-        }
-        className={ cx(styles.header) }
-      >
-        <Navigation className={ cx(styles.navBar) }>
-          <Link
-            to="/docs"
-            className={ cx(styles.link) }
-            activeClassName="active"
-          >
-            { "Docs" }
-          </Link>
-          <Link
-            to="/blog"
-            className={ cx(styles.link) }
-            activeClassName="active"
-          >
-            { "Blog" }
-          </Link>
-          <Link
-            to="/contact"
-            className={ cx(styles.link) }
-            activeClassName="active"
-          >
-            { "Contact Us" }
-          </Link>
-        </Navigation>
-        <Navigation
-          className={ cx(styles.navMenu) }
+    return (
+        <Navbar
+          fixedTop
         >
-          <IconButton
-            name={ "more_vert" }
-            id={ "nav-menu" }
-            ripple
-            className={ cx(styles.menuBtn) }
-          />
-          <Menu
-            target={ "nav-menu" }
-            align={ "right" }
+          <Header>
+            <LinkContainer to={ "/" }>
+              <Brand>
+                <Svg
+                  svg={ agristaLogo }
+                  height="42px"
+                  width="148px"
+                />
+              </Brand>
+            </LinkContainer>
+            <Toggle />
+          </Header>
+          <Collapse
+            className="bs-navbar-collapse"
           >
-            <Link
-              to={ "/docs" }
-              className={ cx(styles.menuLink) }
+            <Nav
+              pullRight
             >
-              <MenuItem>
-                { "Docs" }
-              </MenuItem>
-            </Link>
-            <Link
-              to={ "/blog" }
-              className={ cx(styles.menuLink) }
-            >
-              <MenuItem>{ "Blog" }</MenuItem>
-            </Link>
-            <Link
-              to={ "/contact" }
-              className={ cx(styles.menuLink) }
-            >
-              <MenuItem>{ "Contact Us" }</MenuItem>
-            </Link>
-          </Menu>
-        </Navigation>
-      </Header>
+              <LinkContainer
+                to={ "/docs" }
+              >
+                <NavItem>
+                  { "Docs" }
+
+                </NavItem>
+              </LinkContainer>
+              <LinkContainer
+                to="/blog"
+              >
+                <NavItem>
+                  { "Blog" }
+                </NavItem>
+              </LinkContainer>
+              <LinkContainer
+                to="/contact"
+              >
+                <NavItem>
+                  { "Contact Us" }
+                </NavItem>
+              </LinkContainer>
+            </Nav>
+          </Collapse>
+        </Navbar>
     )
 }
 

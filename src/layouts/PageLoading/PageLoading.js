@@ -4,14 +4,14 @@ import Helmet from "react-helmet"
 import TopBarProgressIndicator from "react-topbar-progress-indicator"
 import { Spinner } from "react-mdl"
 
-import styles from "./PageLoading.scss"
+import styles from "./PageLoading.less"
 
 TopBarProgressIndicator.config({
   barColors: {
     "0": "#689F38",
-    "1.0": "#689F38",
+    "1.0": "#689F38"
   },
-  shadowBlur: 0,
+  shadowBlur: 0
 })
 
 const PageLoading = () => {

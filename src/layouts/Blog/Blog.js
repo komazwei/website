@@ -5,7 +5,7 @@ import Page from "../../layouts/Page"
 import Ribbon from "../../components/Ribbon"
 import PostsList from "../../components/PostsList"
 // import { Link } from "react-router"
-import styles from "./Blog.scss"
+import styles from "./Blog.less"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 // import Icon from "../../components/Icon"
 
@@ -15,7 +15,7 @@ const Blog = (props, { collection }) => {
   const latestPosts = enhanceCollection(collection, {
     filter: { layout: "Post" },
     sort: "date",
-    limit: numberOfLatestPosts,
+    limit: numberOfLatestPosts
   })
 
   return (
@@ -31,7 +31,7 @@ const Blog = (props, { collection }) => {
 }
 
 Blog.contextTypes = {
-  collection: PropTypes.array.isRequired,
+  collection: PropTypes.array.isRequired
 }
 
 export default Blog

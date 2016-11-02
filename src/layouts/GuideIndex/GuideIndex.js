@@ -8,7 +8,7 @@ import Ribbon from "../../components/Ribbon"
 // import PagesList from "../../components/PagesList"
 import cx from "classnames"
 
-import styles from "./GuideIndex.scss"
+import styles from "./GuideIndex.less"
 
 const GuideIndex = (props) => {
   const head = props.head
@@ -54,11 +54,11 @@ GuideIndex.propTypes = {
   __url: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired,
   body: PropTypes.string/* .isRequired */,
-  className: PropTypes.string,
+  className: PropTypes.string
 }
 
 GuideIndex.contextTypes = {
-  collection: PropTypes.array.isRequired,
+  collection: PropTypes.array.isRequired
 }
 
 export default GuideIndex
