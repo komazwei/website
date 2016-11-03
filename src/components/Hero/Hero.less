@@ -1,18 +1,6 @@
 @brand-primary: #8BC34A;
 
-.hero {
-  position: relative;
-//  text-align: center;
-  vertical-align: middle;
-  margin-top: 56px;
-}
-@media only screen and (min-width: 1024px) {
-  .hero {
-    margin-top: 80px;
-  }
-}
-
-.container {
+.background {
   background-size: cover;
   display: inline-block;
   width: 100%;
@@ -20,28 +8,28 @@
   background-repeat: no-repeat;
 }
 
-.container {
+.background {
   background-image: url("/images/pages/home/hero/hero-bg-480.jpg");
 }
 @media only screen and (min-width: 768px) {
-  .container {
+  .background {
     background-image: url("/images/pages/home/hero/hero-bg-768.jpg");
   }
 }
 @media only screen and (min-width: 1024px) {
-  .container {
+  .background {
     background-image: url("/images/pages/home/hero/hero-bg-1024.jpg");
   }
 }
 @media only screen and (min-width: 1200px) {
-  .container {
+  .background {
     background-image: url("/images/pages/home/hero/hero-bg-1200.jpg");
   }
 }
 
 .overlay {
   height: 100%;
-  width: 90%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.298039);
   padding: 12% 5% 8%;
 }
@@ -51,18 +39,14 @@
   }
 }
 
-.heroBlock {
-  text-align: left;
-}
-
-.hero h1 {
+h1 {
   font-size: 33px;
   margin: 8px 0 0;
   color: #ffffff;
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 @media only screen and (min-width: 768px) {
-  .hero h1 {
+  .h1 {
       font-size: 53px;
       margin: 24px 0 38px 0;
   }
@@ -76,34 +60,9 @@
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.hero .cta {
-  height: 48px !important;
+.cta {
+  height: 48px;
   line-height: 48px !important;
-  margin-top: 24px !important;
-  padding: 3px 21px;
-}
-
-.hero .fab {
-  margin-left: -28px;
-  margin-bottom: -28px;
-  width: 56px;
-  background-color: #ffffff;
-  bottom: 0;
-  color: @brand-primary;
-  display: none;
-  left: 50%;
-  position: absolute;
-  .material-icons {
-    margin-top: 2px;
-    margin-top: 0.125rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .hero .fab {
-    display: block;
-  }
-}
-
-.hero .fab:hover {
-  background-color: #FAFAFA;
+  margin-top: 24px;
+  padding: 3px 21px !important;
 }

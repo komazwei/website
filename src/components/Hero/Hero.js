@@ -1,56 +1,38 @@
 /* @flow */
 import React, { PropTypes } from "react"
-import classNames from "classnames"
-import { Link } from "react-router"
-import { Grid, Cell } from "react-mdl"
+import cx from "classnames"
+//import { Link } from "react-router"
+//import { Grid, Cell } from "react-mdl"
+import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap'
+import { LinkContainer } from "react-router-bootstrap"
+
 
 import styles from "./Hero.less"
 
 const Hero = ({ title, cta }) => {
-  const ctaButtonClasses = classNames(
-    "mdl-button",
-    "mdl-js-button",
-    "mdl-js-ripple-effect",
-    "mdl-button--raised",
-    "mdl-button--accent"
-  )
-
-  const fabButtonClasses = classNames(
-    "mdl-button",
-    "mdl-js-button",
-    "mdl-button--fab",
-    "mdl-js-ripple-effect",
-    "mdl-shadow--4dp"
-  )
 
   return (
-    <div className={ classNames(styles.hero) }>
-      <div className={ classNames(styles.container) }>
-        <div className={ classNames(styles.overlay) }>
-          <Grid>
-            <Cell
-              col={ 6 }
-              className={ classNames(styles.heroBlock) }
-            >
-              <h1>
-                { title }
-              </h1>
-              <Link to={ "/contact" }
-                className={ classNames(ctaButtonClasses, styles.cta) }
+    <div className={cx(styles.background)}>
+      <Grid className={cx(styles.overlay)}>
+        <Row>
+          <Col md={6}>
+            <Jumbotron>
+              <h1>{ title}</h1>
+              <LinkContainer
+                to="/store"
               >
-                { cta }
-              </Link>
-            </Cell>
-          </Grid>
-        </div>
-      </div>
-      <Link to="#feature"
-        className={ classNames(fabButtonClasses, styles.fab) }
-      >
-        <i className={ "material-icons" }>
-          { "expand_more" }
-        </i>
-      </Link>
+                <Button
+                  bsStyle="primary"
+                  bsSize="large"
+                  className={cx("btn-raised",styles.cta)}
+                >
+                  { cta }
+                </Button>
+              </LinkContainer>
+            </Jumbotron>
+          </Col>
+        </Row>
+      </Grid>
     </div>
   )
 }
