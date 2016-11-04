@@ -14,3 +14,5 @@ Land assets are pulled through from the customer portfolio so that any existing 
 The following sections of this help centre describe how to add different types of land components.
 
 Click the **Done** button to save your changes before navigating away from the task.
+
+![Capture Land Components task](/images/guides/farm-valuation/capture_land_components.jpg)

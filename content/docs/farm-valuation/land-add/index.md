@@ -18,3 +18,5 @@ To add additional land assets click on the *Add Land Component* drop down list a
 - Water right
 
 A form will open for each of the different land asset types. Each is explained in the following help pages.
+
+![Add land component](/images/guides/farm-valuation/add_land_component.jpg)

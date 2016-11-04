@@ -24,4 +24,10 @@ In the **Details** tab select the following:
 11. Switch the *Intensified* toggle to ON. Further drop down lists will be displayed.
 12. Choose a *Crop* from the drop down list.
 13. If necessary add a *Planted Date* in the following format: DD/MM/YYYY
-14. Click the **Save** button
+
+On the **Attachments** tab
+
+14. Upload a photo by dropping a file in the upload box, or clicking in the box to navigate your local storage.
+15. Click the **Save** button
+
+![Planted pastures details tab](/images/guides/farm-valuation/planted_pasture.jpg)
