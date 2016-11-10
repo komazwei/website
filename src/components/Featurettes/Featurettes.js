@@ -1,10 +1,10 @@
 /* @flow */
 import React, { PropTypes } from "react"
-import Featurette from "../../components/Featurette"
+import Featurette from "./Featurette"
 
 // import styles from "./FeaturettesList.scss"
 
-const FeaturettesList = ({ featurettes }) => {
+const Featurettes = ({ featurettes }) => {
   return (
     <div>
       { featurettes.map((featurette) => (
@@ -23,8 +23,8 @@ const FeaturettesList = ({ featurettes }) => {
   )
 }
 
-FeaturettesList.propTypes = {
+Featurettes.propTypes = {
   featurettes: PropTypes.array.isRequired
 }
 
-export default FeaturettesList
+export default Featurettes

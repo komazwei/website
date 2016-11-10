@@ -1,31 +1,26 @@
 /* @flow */
 import React, { PropTypes } from "react"
-import { Grid, Cell } from "react-mdl"
-import classNames from "classnames"
+import { Grid, Row, Col } from "react-bootstrap"
+import cx from "classnames"
 
-import styles from "./Lead.less"
+//import styles from "./Lead.less"
 
 const Lead = ({ title, description }) => {
 
   return (
-    <section className={ classNames(styles.section) }>
-      <div className={ classNames(styles.aux) }>
+    <section className={ cx("block") }>
+      <div>
         <Grid>
-          <Cell
-            col={ 12 }
-            className={ classNames(styles.container) }
-          >
-            <h2
-              className={ classNames(styles.title) }
-            >
-              { title }
-            </h2>
-            <p
-              className={ classNames(styles.description) }
-            >
-              { description }
-            </p>
-          </Cell>
+          <Row>
+            <Col className={cx("text-center")}>
+              <h2>
+                { title }
+              </h2>
+              <p>
+                { description }
+              </p>
+            </Col>
+          </Row>
         </Grid>
       </div>
     </section>

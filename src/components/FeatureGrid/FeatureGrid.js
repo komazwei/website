@@ -1,28 +1,25 @@
 import React, { PropTypes } from "react"
 // import { Link } from "react-router"
 import cx from "classnames"
-import { Grid, Cell } from "react-mdl"
+import { Grid, Row, Col } from "react-bootstrap"
 import invariant from "invariant"
-import styles from "./FeatureHighlight.less"
+import styles from "./FeatureGrid.less"
 
-const FeatureHighlight = (props) => {
+const FeatureGrid = (props) => {
   invariant(
     props.head && props.head.featureHighlights,
-    "Home page needs a feature highlight list"
+    "Home page needs a feature grid list"
   )
 
   return (
-    <section className={ cx(styles.section) }>
-      <div className={ cx(styles.aux) }>
-        <Grid>
+    <section className={ cx("bock","block-feature-grid") }>
+      <Grid>
+        <Row>
           {
             props.head && props.head.featureHighlights &&
             props.head.featureHighlights.map((featureHighlight) => {
               return (
-                <Cell
-                  key={ featureHighlight.name }
-                  className={ styles.item }
-                >
+                <Col key={ featureHighlight.name } sm={8} smOffset={2} md={4} className={cx("text-center")}>
                   <div className={ cx(styles.image) }>
                     <i className={ "material-icons" }>
                       { featureHighlight.icon }
@@ -30,19 +27,19 @@ const FeatureHighlight = (props) => {
                   </div>
                   <h4>{ featureHighlight.title }</h4>
                   <p>{ featureHighlight.description }</p>
-                </Cell>
+                </Col>
               )
             })
           }
-        </Grid>
-      </div>
+        </Row>
+      </Grid>
     </section>
   )
 }
 
-FeatureHighlight.propTypes = {
+FeatureGrid.propTypes = {
   __filename: PropTypes.string.isRequired,
   head: PropTypes.object.isRequired
 }
 
-export default FeatureHighlight
+export default FeatureGrid

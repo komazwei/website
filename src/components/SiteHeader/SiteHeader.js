@@ -7,53 +7,36 @@ import agristaLogo from "../../../content/images/agrista-logo.svg";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 import { Header, Brand, Toggle, Collapse } from "react-bootstrap/lib/Navbar"
 import { LinkContainer } from "react-router-bootstrap"
-//import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router'
 //import styles from "./SiteHeader.less";
 
 const SiteHeader = () => {
 
     return (
-        <Navbar
-          fixedTop
-        >
+        <Navbar fixedTop>
           <Header>
-            <LinkContainer to={ "/" }>
+            <Link to="/">
               <Brand>
-                <Svg
-                  svg={ agristaLogo }
-                  height="42px"
-                  width="148px"
-                />
+                <Svg svg={ agristaLogo } height="42px" width="148px"/>
               </Brand>
-            </LinkContainer>
+            </Link>
             <Toggle />
           </Header>
-          <Collapse
-            className="bs-navbar-collapse"
-          >
-            <Nav
-              pullRight
-            >
-              <LinkContainer
-                to={ "/docs" }
-              >
+          <Collapse className="bs-navbar-collapse">
+            <Nav pullRight>
+              <LinkContainer to="/docs">
                 <NavItem>
-                  { "Docs" }
-
+                  Docs
                 </NavItem>
               </LinkContainer>
-              <LinkContainer
-                to="/blog"
-              >
+              <LinkContainer to="/blog">
                 <NavItem>
-                  { "Blog" }
+                  Blog
                 </NavItem>
               </LinkContainer>
-              <LinkContainer
-                to="/contact"
-              >
+              <LinkContainer to="/contact">
                 <NavItem>
-                  { "Contact Us" }
+                  Contact Us
                 </NavItem>
               </LinkContainer>
             </Nav>

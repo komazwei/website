@@ -32,7 +32,7 @@ if (module.hot) {
     () => phenomicClient({
       metadata: require("../src/metadata.js").default,
       routes: require("../src/routes.js").default,
-      store: require("../src/store.js").default
+      store: require("../src/store.js").default,
     })
     // webpack 2
     /*

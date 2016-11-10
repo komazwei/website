@@ -5,14 +5,12 @@ import React, { PropTypes } from "react"
 import Page from "../Page"
 import Hero from "../../components/Hero"
 import Lead from "../../components/Lead"
-import Feature from "../../components/Feature"
-import FeaturettesList from "../../components/FeaturettesList"
-import FeatureHighlight from "../../components/FeatureHighlight"
+import Features from "../../components/Features"
+import Featurettes from "../../components/Featurettes"
+import FeatureGrid from "../../components/FeatureGrid"
 // import Feature from "../../components/Feature"
 
 const Homepage = (props) => {
-
-  const features = props.head.features
 
   return (
     <Page { ...props }>
@@ -24,13 +22,13 @@ const Homepage = (props) => {
         title={ props.head.lead }
         description={ props.head.leadDescription }
       />
-      <Feature
-        features={ features }
+      <Features
+        features={ props.head.features }
       />
-      <FeaturettesList
+      <Featurettes
         featurettes={ props.head.featurettes }
       />
-      <FeatureHighlight { ...props } />
+      <FeatureGrid { ...props } />
     </Page>
   )
 }
