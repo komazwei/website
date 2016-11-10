@@ -1,0 +1,64 @@
+.jumbotron-home {
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-image: url("/images/pages/home/hero/hero-bg-480.jpg");
+  @media only screen and (min-width: 768px) {
+    background-image: url("/images/pages/home/hero/hero-bg-768.jpg");
+  }
+  @media only screen and (min-width: 1024px) {
+    background-image: url("/images/pages/home/hero/hero-bg-1024.jpg");
+  }
+  @media only screen and (min-width: 1200px) {
+    background-image: url("/images/pages/home/hero/hero-bg-1200.jpg");
+  }
+  &:after {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.298039);
+    padding: 12% 5% 8%;
+    @media only screen and (min-width: 768px) {
+      padding: 12% 5%;
+    }
+  }
+}
+
+.jumbotron-home::after {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.298039);
+    padding: 12% 5% 8%;
+    @media only screen and (min-width: 768px) {
+      padding: 12% 5%;
+    }
+}
+
+h1 {
+  font-size: 33px;
+  margin: 8px 0 0;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media only screen and (min-width: 768px) {
+  .h1 {
+      font-size: 53px;
+      margin: 24px 0 38px 0;
+  }
+}
+
+.hero p {
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.4;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cta {
+  height: 48px;
+  line-height: 48px !important;
+  margin-top: 24px;
+  padding: 3px 21px !important;
+}

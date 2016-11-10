@@ -2,9 +2,9 @@
 import React from "react"
 import { Link } from "react-router"
 import cx from "classnames"
-import Svg from "react-svg-inline"
+//import Svg from "react-svg-inline"
 
-import agristaLogo from "../../../content/images/agrista-logo.svg"
+//import agristaLogo from "../../../content/images/agrista-logo.svg"
 import {
   Header, Navigation, IconButton, Menu, MenuItem,
 } from "react-mdl"
@@ -17,10 +17,10 @@ const SiteHeader = () => {
       <Header
         title={
           <Link to="/">
-            <Svg
-              svg={ agristaLogo }
-              height="42px"
-              width="148px"
+            <img
+              alt="Agrista Logo"
+              src="/images/logo-agrista-1x.png"
+              srcSet="/images/logo-agrista-1x.png, /images/logo-agrista-2x.png 2x"
             />
           </Link>
         }

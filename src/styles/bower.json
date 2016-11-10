@@ -1,0 +1,37 @@
+{
+  "name": "website",
+  "homepage": "https://www.agrista.com",
+  "authors": [
+    "Helmut Drewes <helmut@agrista.com>"
+  ],
+  "description": "Agrista's Material Design theme for Bootstrap 3",
+  "ignore": [
+    "test",
+    "screenshots",
+    "demo",
+    ".editorconfig",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "CONTRIBUTING.md",
+    "Gruntfile.json",
+    "index.html",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "material",
+    "design",
+    "bootstrap",
+    "theme",
+    "google",
+    "android"
+  ],
+  "license": "https://github.com/FezVrasta/bootstrap-material-design/blob/master/LICENSE.md",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.7"
+  }
+}
