@@ -23,4 +23,10 @@ In the **Details** tab select the following:
 10. Choose a *Crop* from the drop down list.
 11. Choose the *Irrigation Type* from the drop down list.
 12. Enter the tree's/vine's *Established* date in the following format DD/MM/YYYY. If only the year is know enter the first of January as a place-holder: 01/01/YYYY
-13. Click the **Save** button
+
+On the **Attachments** tab
+
+13. Upload a photo by dropping a file in the upload box, or clicking in the box to navigate your local storage.
+14. Click the **Save** button
+
+![Permanent crop details tab](/images/guides/farm-valuation/permanent_crop.jpg)

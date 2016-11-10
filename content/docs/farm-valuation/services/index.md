@@ -20,4 +20,4 @@ The **Select Farm Services** task provides drop down lists to easily capture the
 
 ![Farm services 1](/images/guides/farm-valuation/ENT_farm_services.png)
 
-When the **Complete** button is pushed the task is removed from you list and cannot be edited further.
+When the **Complete** button is pushed the task is removed from your list and cannot be edited further.

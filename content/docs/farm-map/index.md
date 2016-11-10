@@ -17,4 +17,3 @@ topics:
   title: Points of interest
 ---
 
-# Welcome to the Agrista Farm Map help center

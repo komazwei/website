@@ -1,7 +1,7 @@
 ---
-title: Accounts
+title: Agri-Business Accounts
 layout: GuideIndex
-index: 1
+index: 2
 app: accounts
 image: /images/apps/account.png
 topics:
@@ -13,4 +13,3 @@ topics:
   title: Administering accounts
 ---
 
-# Welcome to the Agrista Account Help Center

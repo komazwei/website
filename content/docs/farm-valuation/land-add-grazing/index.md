@@ -21,4 +21,10 @@ In the **Details** tab select the following:
 8. Choose the soil's *Effective Depth* from the drop down list.
 9. Choose the *Terrain* from the drop down list.
 10. Leave the *Irrigation Land* toggle switched to OFF.
-11. Click the **Save** button
+
+On the **Attachments** tab
+
+11. Upload a photo by dropping a file in the upload box, or clicking in the box to navigate your local storage.
+12. Click the **Save** button
+
+![Natural grazing details tab](/images/guides/farm-valuation/natural_grazing.jpg)

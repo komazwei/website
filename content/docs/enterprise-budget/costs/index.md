@@ -1,12 +1,10 @@
 ---
-title: Budget costs
+title: Editing budget costs
 layout: Guide
 app: enterprise-budgets
 topic: budget-editing
 index: 10
 ---
-
-### Editing production income and expenses
 
 Income and expenses are estimated per the budget's assumptions, i.e. costs per ha for crops, or costs per herd (based on the herd size assumptions). 
 
@@ -16,12 +14,3 @@ Income and expenses are estimated per the budget's assumptions, i.e. costs per h
 4. Click Save
 
 ![Add costs](/images/guides/enterprise-budgets/add_costs.jpg)
-
----
-Frequently Asked Questions:
-
-*I cloned a budget with unit costs on the expense categories, how do I get rid of them?*
-
-1. Place your cursor over the expense you wish to edit
-2. Click the red delete icon that appears next to the category name
-3. Re-add the category using the Add Category drop down list

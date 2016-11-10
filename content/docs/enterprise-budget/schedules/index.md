@@ -1,12 +1,10 @@
 ---
-title: Budget schedules
+title: Editing budget schedules
 layout: Guide
 app: enterprise-budgets
 topic: budget-editing
 index: 5
 ---
-
-### Editing schedules
 
 Schedules specify when a cost occurs. For instance if a crop budget starts in August, the costs associated with planting seed may occur from August to October. The Plant/Seed schedule can be set up to distribute these costs across the 3 months.
 

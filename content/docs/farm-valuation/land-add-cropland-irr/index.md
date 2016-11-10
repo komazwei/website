@@ -25,4 +25,10 @@ In the **Details** tab select the following:
 12. Choose the *Irrigation Type* from the drop down list.
 13. Choose the *Water Type* from the drop down list.
 14. Enter the *Constructed* date in the following format DD/MM/YYYY. If only the year is know enter the first of January as a place-holder: 01/01/YYYY
-15. Click the **Save** button
+
+On the **Attachments** tab
+
+15. Upload a photo by dropping a file in the upload box, or clicking in the box to navigate your local storage.
+16. Click the **Save** button
+
+![Irrigated cropland details tab](/images/guides/farm-valuation/irrigated_cropland.jpg)
