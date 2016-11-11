@@ -4,11 +4,11 @@
   position: relative;
 //  text-align: center;
   vertical-align: middle;
-  margin-top: 56px;
+//  margin-top: 56px;
 }
 @media only screen and (min-width: 1024px) {
   .hero {
-    margin-top: 80px;
+//    margin-top: 80px;
   }
 }
 
@@ -41,7 +41,7 @@
 
 .overlay {
   height: 100%;
-  width: 90%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.298039);
   padding: 12% 5% 8%;
 }

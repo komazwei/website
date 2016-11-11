@@ -8,7 +8,7 @@ import "react-mdl/extra/material.js"
 // import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"
 import SiteHeader from "./components/SiteHeader"
-import { Layout, Content } from "react-mdl"
+//import { Layout, Content } from "react-mdl"
 import SiteFooter from "./components/SiteFooter"
 
 const AppContainer = (props) => {
@@ -18,14 +18,12 @@ const AppContainer = (props) => {
   )
 
   return (
-    <Layout fixedHeader className={ layoutClasses }>
+    <div fixedHeader className={ layoutClasses }>
       <DefaultHeadMeta />
       <SiteHeader />
-      <Content>
-        { props.children }
-        <SiteFooter />
-      </Content>
-    </Layout>
+      { props.children }
+      <SiteFooter />
+    </div>
   )
 
 }
