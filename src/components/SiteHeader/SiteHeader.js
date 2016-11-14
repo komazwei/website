@@ -34,6 +34,15 @@ const SiteHeader = () => {
         </Header>
         <Collapse className="bs-navbar-collapse">
           <Nav pullRight>
+            <NavItem href="http://staging-procurement.agrista.com/page/store">
+                Store
+            </NavItem>
+            <NavItem href="http://staging-procurement.agrista.com/shop">
+              Procurement
+            </NavItem>
+            <NavItem href="http://staging-procurement.agrista.com/partners">
+              Partners
+            </NavItem>
             <LinkContainer to="/docs">
               <NavItem>
                 Docs
@@ -44,11 +53,9 @@ const SiteHeader = () => {
                 Blog
               </NavItem>
             </LinkContainer>
-            <LinkContainer to="/contact">
-              <NavItem>
-                Contact Us
-              </NavItem>
-            </LinkContainer>
+            <NavItem href="http://staging-procurement.agrista.com/page/contactus">
+              Contact Us
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
