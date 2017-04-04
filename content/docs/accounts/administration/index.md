@@ -11,11 +11,11 @@ Congratulations on signing up for an Agrista Enterprise account! During the regi
 Setting up your organisation to use Agrista basically involves the following steps:
 
 
-`1` Signing in as the administrator
+1. Signing in as the administrator
 
-`2` Creating users, roles and organisation units 
+2. Creating users, roles and organisation units 
 
-`3` Assign users to roles and organisational units
+3. Assign users to roles and organisational units
 
 ## Signing in as the administrator
 
@@ -34,7 +34,6 @@ The Role Manager is a tool to control what users can and cannot do within the sy
 
 ![Role Manager](/images/guides/accounts/ENT_role_manager.jpg)
  
-
 #### Add a user role
 
 Set up different user roles in the Role Manager and assign applications to each role.
